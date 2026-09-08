@@ -1,0 +1,62 @@
+[
+  {
+    "code": "FSTN",
+    "name": "Fasteners",
+    "baseUnitCost": 2.4
+  },
+  {
+    "code": "BRNG",
+    "name": "Bearings",
+    "baseUnitCost": 68
+  },
+  {
+    "code": "HYDR",
+    "name": "Hydraulics",
+    "baseUnitCost": 190
+  },
+  {
+    "code": "PNEU",
+    "name": "Pneumatics",
+    "baseUnitCost": 84
+  },
+  {
+    "code": "ELEC",
+    "name": "Electrical Components",
+    "baseUnitCost": 47
+  },
+  {
+    "code": "HRNS",
+    "name": "Wire Harness",
+    "baseUnitCost": 320
+  },
+  {
+    "code": "CAST",
+    "name": "Castings",
+    "baseUnitCost": 410
+  },
+  {
+    "code": "FORG",
+    "name": "Forgings",
+    "baseUnitCost": 560
+  },
+  {
+    "code": "MACH",
+    "name": "Machined Components",
+    "baseUnitCost": 275
+  },
+  {
+    "code": "SEAL",
+    "name": "Seals and Gaskets",
+    "baseUnitCost": 18
+  },
+  {
+    "code": "STRC",
+    "name": "Structural Steel",
+    "baseUnitCost": 730
+  },
+  {
+    "code": "COAT",
+    "name": "Coatings and Chemicals",
+    "baseUnitCost": 96
+  }
+]

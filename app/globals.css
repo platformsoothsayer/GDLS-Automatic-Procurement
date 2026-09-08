@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-canvas text-navy antialiased;
+    font-feature-settings: "kern" 1;
+  }
+
+  /* Every number and every identifier renders in IBM Plex Mono. */
+  .mono {
+    @apply font-mono tabular-nums tracking-tight;
+  }
+}
+
+@layer components {
+  /* The only gradient permitted anywhere: the 3px cyan top bar on primary cards. */
+  .card-topbar::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(90deg, #00A3C4 0%, #7FD1E2 100%);
+  }
+
+  /* Data view overlay: applied to every data bearing element while Data view is on. */
+  .traced {
+    outline: 1px dotted #00A3C4;
+    outline-offset: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 120ms ease;
+  }
+
+  .traced:hover,
+  .traced-active {
+    background-color: #E6F6FA;
+  }
+
+  .traced-active {
+    outline-style: solid;
+  }
+}

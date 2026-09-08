@@ -1,0 +1,2561 @@
+[
+  {
+    "clusterId": "DUP-0001",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000018",
+      "P-001692"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.86,
+    "combinedSpend24m": 63764.26,
+    "priceSpreadPct": 22.2,
+    "recommendedSurvivorPartKey": "P-000018",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0002",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000957",
+      "P-001959"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.978,
+    "combinedSpend24m": 78953.4,
+    "priceSpreadPct": 15.1,
+    "recommendedSurvivorPartKey": "P-001959",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0003",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000317",
+      "P-001204",
+      "P-001351"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.91,
+    "combinedSpend24m": 72920.1,
+    "priceSpreadPct": 22.2,
+    "recommendedSurvivorPartKey": "P-001204",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0004",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000801",
+      "P-001282",
+      "P-001025"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.868,
+    "combinedSpend24m": 119490.62,
+    "priceSpreadPct": 26.2,
+    "recommendedSurvivorPartKey": "P-001282",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0005",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001273",
+      "P-000933",
+      "P-001842"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.844,
+    "combinedSpend24m": 242744.31,
+    "priceSpreadPct": 19.3,
+    "recommendedSurvivorPartKey": "P-000933",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0006",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000823",
+      "P-001843",
+      "P-000389"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.907,
+    "combinedSpend24m": 92946.88,
+    "priceSpreadPct": 10.9,
+    "recommendedSurvivorPartKey": "P-000389",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0007",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002075",
+      "P-001592",
+      "P-000429",
+      "P-000308"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.926,
+    "combinedSpend24m": 2210547.31,
+    "priceSpreadPct": 38.7,
+    "recommendedSurvivorPartKey": "P-000308",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0008",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002167",
+      "P-001889"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.966,
+    "combinedSpend24m": 871721.21,
+    "priceSpreadPct": 9.1,
+    "recommendedSurvivorPartKey": "P-001889",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0009",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000987",
+      "P-000195",
+      "P-000130",
+      "P-002103",
+      "P-001668"
+    ],
+    "memberCount": 5,
+    "similarityScore": 0.917,
+    "combinedSpend24m": 46442.34,
+    "priceSpreadPct": 43.5,
+    "recommendedSurvivorPartKey": "P-002103",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0010",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001350",
+      "P-000318"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.916,
+    "combinedSpend24m": 503435.67,
+    "priceSpreadPct": 6.4,
+    "recommendedSurvivorPartKey": "P-001350",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0011",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002022",
+      "P-000994",
+      "P-001339"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.886,
+    "combinedSpend24m": 596423.28,
+    "priceSpreadPct": 5.6,
+    "recommendedSurvivorPartKey": "P-002022",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0012",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001316",
+      "P-000900"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.921,
+    "combinedSpend24m": 24176.2,
+    "priceSpreadPct": 16.3,
+    "recommendedSurvivorPartKey": "P-000900",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0013",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001651",
+      "P-000383",
+      "P-001203",
+      "P-002291",
+      "P-001455"
+    ],
+    "memberCount": 5,
+    "similarityScore": 0.955,
+    "combinedSpend24m": 392743.93,
+    "priceSpreadPct": 54.1,
+    "recommendedSurvivorPartKey": "P-000383",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0014",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001671",
+      "P-001705"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.961,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 25.3,
+    "recommendedSurvivorPartKey": "P-001705",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0015",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001619",
+      "P-001057"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.916,
+    "combinedSpend24m": 29121.07,
+    "priceSpreadPct": 30.9,
+    "recommendedSurvivorPartKey": "P-001619",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0016",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001964",
+      "P-000021",
+      "P-000829"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.859,
+    "combinedSpend24m": 272130.76,
+    "priceSpreadPct": 7.8,
+    "recommendedSurvivorPartKey": "P-000829",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0017",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001184",
+      "P-000614"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.919,
+    "combinedSpend24m": 23704.65,
+    "priceSpreadPct": 20.3,
+    "recommendedSurvivorPartKey": "P-000614",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0018",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001097",
+      "P-002204"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.902,
+    "combinedSpend24m": 724174.91,
+    "priceSpreadPct": 5.4,
+    "recommendedSurvivorPartKey": "P-001097",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0019",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000478",
+      "P-001873"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.898,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 25.1,
+    "recommendedSurvivorPartKey": "P-000478",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0020",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000951",
+      "P-001893"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.864,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 9.9,
+    "recommendedSurvivorPartKey": "P-000951",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0021",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002387",
+      "P-001292"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.867,
+    "combinedSpend24m": 187605.3,
+    "priceSpreadPct": 14.8,
+    "recommendedSurvivorPartKey": "P-001292",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0022",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000445",
+      "P-001375",
+      "P-001536",
+      "P-000927"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.91,
+    "combinedSpend24m": 197287.38,
+    "priceSpreadPct": 31.7,
+    "recommendedSurvivorPartKey": "P-001536",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0023",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001400",
+      "P-001969",
+      "P-001548"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.937,
+    "combinedSpend24m": 472887.88,
+    "priceSpreadPct": 11.6,
+    "recommendedSurvivorPartKey": "P-001548",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0024",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000425",
+      "P-001616"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.848,
+    "combinedSpend24m": 31387.96,
+    "priceSpreadPct": 0.5,
+    "recommendedSurvivorPartKey": "P-000425",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0025",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001186",
+      "P-000437",
+      "P-000303"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.962,
+    "combinedSpend24m": 497367.34,
+    "priceSpreadPct": 29.5,
+    "recommendedSurvivorPartKey": "P-000437",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0026",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001666",
+      "P-002191",
+      "P-000567",
+      "P-000426"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.877,
+    "combinedSpend24m": 544319.65,
+    "priceSpreadPct": 21.8,
+    "recommendedSurvivorPartKey": "P-000426",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0027",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002166",
+      "P-000886",
+      "P-002285"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.944,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 12.7,
+    "recommendedSurvivorPartKey": "P-000886",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0028",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001887",
+      "P-002159"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.961,
+    "combinedSpend24m": 11111.04,
+    "priceSpreadPct": 19.6,
+    "recommendedSurvivorPartKey": "P-002159",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0029",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001497",
+      "P-001219"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.841,
+    "combinedSpend24m": 48561.91,
+    "priceSpreadPct": 10.8,
+    "recommendedSurvivorPartKey": "P-001219",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0030",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002128",
+      "P-002374",
+      "P-001863"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.949,
+    "combinedSpend24m": 548832.58,
+    "priceSpreadPct": 23.6,
+    "recommendedSurvivorPartKey": "P-002128",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0031",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001487",
+      "P-000278",
+      "P-001150"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.936,
+    "combinedSpend24m": 107314.63,
+    "priceSpreadPct": 20.1,
+    "recommendedSurvivorPartKey": "P-001487",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0032",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001850",
+      "P-001975",
+      "P-000619"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.88,
+    "combinedSpend24m": 209114.97,
+    "priceSpreadPct": 20.3,
+    "recommendedSurvivorPartKey": "P-000619",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0033",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000809",
+      "P-001816",
+      "P-001809",
+      "P-000861"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.885,
+    "combinedSpend24m": 7186.54,
+    "priceSpreadPct": 17.5,
+    "recommendedSurvivorPartKey": "P-001816",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0034",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000035",
+      "P-000140"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.859,
+    "combinedSpend24m": 410049.95,
+    "priceSpreadPct": 15.6,
+    "recommendedSurvivorPartKey": "P-000140",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0035",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001521",
+      "P-001682",
+      "P-000620",
+      "P-000678"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.9,
+    "combinedSpend24m": 148601.82,
+    "priceSpreadPct": 19.5,
+    "recommendedSurvivorPartKey": "P-001521",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0036",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001558",
+      "P-000186",
+      "P-001424"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.846,
+    "combinedSpend24m": 212762.58,
+    "priceSpreadPct": 27.3,
+    "recommendedSurvivorPartKey": "P-000186",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0037",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000504",
+      "P-002170"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.864,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 0.5,
+    "recommendedSurvivorPartKey": "P-000504",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0038",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001333",
+      "P-001085",
+      "P-001599"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.888,
+    "combinedSpend24m": 126830.65,
+    "priceSpreadPct": 21.1,
+    "recommendedSurvivorPartKey": "P-001599",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0039",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002136",
+      "P-000510"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.88,
+    "combinedSpend24m": 88141.42,
+    "priceSpreadPct": 23.4,
+    "recommendedSurvivorPartKey": "P-000510",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0040",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001767",
+      "P-001462",
+      "P-000360",
+      "P-002145"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.977,
+    "combinedSpend24m": 19244.45,
+    "priceSpreadPct": 18.3,
+    "recommendedSurvivorPartKey": "P-000360",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0041",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002289",
+      "P-001800"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.959,
+    "combinedSpend24m": 98099.85,
+    "priceSpreadPct": 33.4,
+    "recommendedSurvivorPartKey": "P-001800",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0042",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001415",
+      "P-002279"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.945,
+    "combinedSpend24m": 270205.39,
+    "priceSpreadPct": 21,
+    "recommendedSurvivorPartKey": "P-002279",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0043",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000050",
+      "P-001774"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.91,
+    "combinedSpend24m": 154095.2,
+    "priceSpreadPct": 23.1,
+    "recommendedSurvivorPartKey": "P-001774",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0044",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000243",
+      "P-001835"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.922,
+    "combinedSpend24m": 551492.71,
+    "priceSpreadPct": 1.9,
+    "recommendedSurvivorPartKey": "P-001835",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0045",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002393",
+      "P-001984",
+      "P-000622",
+      "P-002138"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.852,
+    "combinedSpend24m": 132497.64,
+    "priceSpreadPct": 25.6,
+    "recommendedSurvivorPartKey": "P-001984",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0046",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001505",
+      "P-002143"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.963,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 6.5,
+    "recommendedSurvivorPartKey": "P-001505",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0047",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002065",
+      "P-001366"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.858,
+    "combinedSpend24m": 42651.29,
+    "priceSpreadPct": 7.9,
+    "recommendedSurvivorPartKey": "P-001366",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0048",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000895",
+      "P-000098"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.912,
+    "combinedSpend24m": 308796,
+    "priceSpreadPct": 30.5,
+    "recommendedSurvivorPartKey": "P-000895",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0049",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001291",
+      "P-000082",
+      "P-001370"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.879,
+    "combinedSpend24m": 83086.36,
+    "priceSpreadPct": 7.5,
+    "recommendedSurvivorPartKey": "P-001370",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0050",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000715",
+      "P-002148",
+      "P-001787"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.864,
+    "combinedSpend24m": 1206211.08,
+    "priceSpreadPct": 34,
+    "recommendedSurvivorPartKey": "P-002148",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0051",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-002349",
+      "P-001753"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.918,
+    "combinedSpend24m": 18814.53,
+    "priceSpreadPct": 11,
+    "recommendedSurvivorPartKey": "P-002349",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0052",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000440",
+      "P-000517"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.879,
+    "combinedSpend24m": 1509969.28,
+    "priceSpreadPct": 7.9,
+    "recommendedSurvivorPartKey": "P-000517",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0053",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001563",
+      "P-001911"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.934,
+    "combinedSpend24m": 191797.6,
+    "priceSpreadPct": 27.8,
+    "recommendedSurvivorPartKey": "P-001563",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0054",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000228",
+      "P-001326",
+      "P-000808",
+      "P-000177"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.907,
+    "combinedSpend24m": 110722.93,
+    "priceSpreadPct": 21.6,
+    "recommendedSurvivorPartKey": "P-000228",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0055",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-001465",
+      "P-001920"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.925,
+    "combinedSpend24m": 39285.82,
+    "priceSpreadPct": 17.7,
+    "recommendedSurvivorPartKey": "P-001920",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0056",
+    "cause": "COPY_PASTE_VARIATION",
+    "memberPartKeys": [
+      "P-000670",
+      "P-000736",
+      "P-000465",
+      "P-000742",
+      "P-000463"
+    ],
+    "memberCount": 5,
+    "similarityScore": 0.869,
+    "combinedSpend24m": 744931.36,
+    "priceSpreadPct": 26,
+    "recommendedSurvivorPartKey": "P-000742",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0057",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000560",
+      "P-001853",
+      "P-000711",
+      "P-000812"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.714,
+    "combinedSpend24m": 285243.34,
+    "priceSpreadPct": 26.6,
+    "recommendedSurvivorPartKey": "P-001853",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0058",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000070",
+      "P-000399"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.749,
+    "combinedSpend24m": 153391.58,
+    "priceSpreadPct": 16,
+    "recommendedSurvivorPartKey": "P-000070",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0059",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000639",
+      "P-000965",
+      "P-001503",
+      "P-000722"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.838,
+    "combinedSpend24m": 51134.93,
+    "priceSpreadPct": 30,
+    "recommendedSurvivorPartKey": "P-000722",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0060",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000291",
+      "P-001027"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.816,
+    "combinedSpend24m": 235506.12,
+    "priceSpreadPct": 0.4,
+    "recommendedSurvivorPartKey": "P-001027",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0061",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000226",
+      "P-001035",
+      "P-000516",
+      "P-000872"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.874,
+    "combinedSpend24m": 216904.83,
+    "priceSpreadPct": 7.1,
+    "recommendedSurvivorPartKey": "P-000226",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0062",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001064",
+      "P-002211",
+      "P-001443"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.745,
+    "combinedSpend24m": 158218.87,
+    "priceSpreadPct": 22,
+    "recommendedSurvivorPartKey": "P-002211",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0063",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001952",
+      "P-001861",
+      "P-001759",
+      "P-001698",
+      "P-001934"
+    ],
+    "memberCount": 5,
+    "similarityScore": 0.834,
+    "combinedSpend24m": 5082.08,
+    "priceSpreadPct": 30.6,
+    "recommendedSurvivorPartKey": "P-001952",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0064",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000042",
+      "P-000628"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.749,
+    "combinedSpend24m": 385009.93,
+    "priceSpreadPct": 24.2,
+    "recommendedSurvivorPartKey": "P-000042",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0065",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000936",
+      "P-001197"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.814,
+    "combinedSpend24m": 37644.27,
+    "priceSpreadPct": 16.7,
+    "recommendedSurvivorPartKey": "P-000936",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0066",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000765",
+      "P-002364"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.869,
+    "combinedSpend24m": 68168.77,
+    "priceSpreadPct": 12.6,
+    "recommendedSurvivorPartKey": "P-000765",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0067",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001492",
+      "P-002312",
+      "P-001813",
+      "P-001637",
+      "P-001537"
+    ],
+    "memberCount": 5,
+    "similarityScore": 0.896,
+    "combinedSpend24m": 181399.93,
+    "priceSpreadPct": 23,
+    "recommendedSurvivorPartKey": "P-002312",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0068",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001738",
+      "P-001402",
+      "P-001314",
+      "P-002200"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.773,
+    "combinedSpend24m": 194559.17,
+    "priceSpreadPct": 21.8,
+    "recommendedSurvivorPartKey": "P-002200",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0069",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001588",
+      "P-001939"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.778,
+    "combinedSpend24m": 1106300.95,
+    "priceSpreadPct": 16.9,
+    "recommendedSurvivorPartKey": "P-001588",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0070",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000952",
+      "P-001648",
+      "P-002131",
+      "P-001930"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.724,
+    "combinedSpend24m": 1293.87,
+    "priceSpreadPct": 30.9,
+    "recommendedSurvivorPartKey": "P-001930",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0071",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000940",
+      "P-001965",
+      "P-002004",
+      "P-000869"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.721,
+    "combinedSpend24m": 4346.9,
+    "priceSpreadPct": 40.9,
+    "recommendedSurvivorPartKey": "P-000940",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0072",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000654",
+      "P-001244",
+      "P-000789",
+      "P-001161"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.883,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 57.2,
+    "recommendedSurvivorPartKey": "P-000789",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0073",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000498",
+      "P-001192"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.782,
+    "combinedSpend24m": 2847.06,
+    "priceSpreadPct": 15.3,
+    "recommendedSurvivorPartKey": "P-000498",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0074",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000169",
+      "P-001476"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.85,
+    "combinedSpend24m": 72154.69,
+    "priceSpreadPct": 13.6,
+    "recommendedSurvivorPartKey": "P-000169",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0075",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000949",
+      "P-000072",
+      "P-001909"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.844,
+    "combinedSpend24m": 2459081.89,
+    "priceSpreadPct": 15.1,
+    "recommendedSurvivorPartKey": "P-001909",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0076",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-002355",
+      "P-000862",
+      "P-002037"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.747,
+    "combinedSpend24m": 1530529.89,
+    "priceSpreadPct": 31.8,
+    "recommendedSurvivorPartKey": "P-002037",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0077",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001906",
+      "P-000729",
+      "P-000462"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.877,
+    "combinedSpend24m": 211701.14,
+    "priceSpreadPct": 12.8,
+    "recommendedSurvivorPartKey": "P-000729",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0078",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000590",
+      "P-001721",
+      "P-000271",
+      "P-000893"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.762,
+    "combinedSpend24m": 52341.03,
+    "priceSpreadPct": 61.2,
+    "recommendedSurvivorPartKey": "P-000271",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0079",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001328",
+      "P-000636"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.886,
+    "combinedSpend24m": 147172.47,
+    "priceSpreadPct": 13.8,
+    "recommendedSurvivorPartKey": "P-001328",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0080",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000085",
+      "P-000596"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.876,
+    "combinedSpend24m": 69217.75,
+    "priceSpreadPct": 10.5,
+    "recommendedSurvivorPartKey": "P-000596",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0081",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-002181",
+      "P-001905"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.75,
+    "combinedSpend24m": 32102.25,
+    "priceSpreadPct": 1.4,
+    "recommendedSurvivorPartKey": "P-002181",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0082",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001331",
+      "P-001243",
+      "P-000123"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.794,
+    "combinedSpend24m": 84524.38,
+    "priceSpreadPct": 18.1,
+    "recommendedSurvivorPartKey": "P-001243",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0083",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001404",
+      "P-000221",
+      "P-000312",
+      "P-001463"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.777,
+    "combinedSpend24m": 159765.03,
+    "priceSpreadPct": 47.6,
+    "recommendedSurvivorPartKey": "P-000221",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0084",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001240",
+      "P-000762"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.755,
+    "combinedSpend24m": 677863.43,
+    "priceSpreadPct": 21.7,
+    "recommendedSurvivorPartKey": "P-000762",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0085",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000401",
+      "P-001981"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.854,
+    "combinedSpend24m": 2581.9,
+    "priceSpreadPct": 11.3,
+    "recommendedSurvivorPartKey": "P-001981",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0086",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001329",
+      "P-002025"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.72,
+    "combinedSpend24m": 831368.54,
+    "priceSpreadPct": 4.5,
+    "recommendedSurvivorPartKey": "P-002025",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0087",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000086",
+      "P-000632",
+      "P-002261"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.806,
+    "combinedSpend24m": 13368.93,
+    "priceSpreadPct": 12,
+    "recommendedSurvivorPartKey": "P-000086",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0088",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000849",
+      "P-001046"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.872,
+    "combinedSpend24m": 413747.67,
+    "priceSpreadPct": 3.3,
+    "recommendedSurvivorPartKey": "P-000849",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0089",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-001071",
+      "P-001113"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.723,
+    "combinedSpend24m": 736.32,
+    "priceSpreadPct": 21.2,
+    "recommendedSurvivorPartKey": "P-001113",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0090",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-002347",
+      "P-000725",
+      "P-000132"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.877,
+    "combinedSpend24m": 40784.73,
+    "priceSpreadPct": 24.8,
+    "recommendedSurvivorPartKey": "P-000725",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0091",
+    "cause": "REVISION_ABUSE",
+    "memberPartKeys": [
+      "P-000420",
+      "P-000677"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.744,
+    "combinedSpend24m": 34076.65,
+    "priceSpreadPct": 2.5,
+    "recommendedSurvivorPartKey": "P-000420",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0092",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001103",
+      "P-001359",
+      "P-002395"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.908,
+    "combinedSpend24m": 85478.84,
+    "priceSpreadPct": 25.1,
+    "recommendedSurvivorPartKey": "P-001359",
+    "orgSpread": [
+      101,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0093",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-002352",
+      "P-001312",
+      "P-000441"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.794,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 35.5,
+    "recommendedSurvivorPartKey": "P-000441",
+    "orgSpread": [
+      101,
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0094",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001264",
+      "P-001047"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.91,
+    "combinedSpend24m": 15228.15,
+    "priceSpreadPct": 1.9,
+    "recommendedSurvivorPartKey": "P-001047",
+    "orgSpread": [
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0095",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001490",
+      "P-000136"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.861,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 18.9,
+    "recommendedSurvivorPartKey": "P-000136",
+    "orgSpread": [
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0096",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001703",
+      "P-001502"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.808,
+    "combinedSpend24m": 5996.3,
+    "priceSpreadPct": 19.5,
+    "recommendedSurvivorPartKey": "P-001703",
+    "orgSpread": [
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0097",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001517",
+      "P-001513"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.79,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 9.2,
+    "recommendedSurvivorPartKey": "P-001517",
+    "orgSpread": [
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0098",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001760",
+      "P-001392",
+      "P-000538",
+      "P-000739"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.811,
+    "combinedSpend24m": 46991.11,
+    "priceSpreadPct": 20.2,
+    "recommendedSurvivorPartKey": "P-001392",
+    "orgSpread": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0099",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001419",
+      "P-001741"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.907,
+    "combinedSpend24m": 1536798.44,
+    "priceSpreadPct": 3.7,
+    "recommendedSurvivorPartKey": "P-001741",
+    "orgSpread": [
+      101,
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0100",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-000120",
+      "P-002007",
+      "P-000703"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.916,
+    "combinedSpend24m": 137801.46,
+    "priceSpreadPct": 34.4,
+    "recommendedSurvivorPartKey": "P-000120",
+    "orgSpread": [
+      101,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0101",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001926",
+      "P-001614",
+      "P-000325"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.783,
+    "combinedSpend24m": 1333237.88,
+    "priceSpreadPct": 17,
+    "recommendedSurvivorPartKey": "P-000325",
+    "orgSpread": [
+      101,
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0102",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001171",
+      "P-001363"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.838,
+    "combinedSpend24m": 46291.76,
+    "priceSpreadPct": 30.3,
+    "recommendedSurvivorPartKey": "P-001363",
+    "orgSpread": [
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0103",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-000730",
+      "P-001765"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.846,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 23.4,
+    "recommendedSurvivorPartKey": "P-001765",
+    "orgSpread": [
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0104",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001101",
+      "P-001784",
+      "P-001259"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.885,
+    "combinedSpend24m": 2040022.85,
+    "priceSpreadPct": 28.1,
+    "recommendedSurvivorPartKey": "P-001259",
+    "orgSpread": [
+      101,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0105",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-002275",
+      "P-002365",
+      "P-001114",
+      "P-000212"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.858,
+    "combinedSpend24m": 234664.9,
+    "priceSpreadPct": 46.9,
+    "recommendedSurvivorPartKey": "P-002365",
+    "orgSpread": [
+      101,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0106",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-000028",
+      "P-001361"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.909,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 2.3,
+    "recommendedSurvivorPartKey": "P-001361",
+    "orgSpread": [
+      102,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0107",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-000870",
+      "P-000105",
+      "P-001484",
+      "P-000745",
+      "P-001579"
+    ],
+    "memberCount": 5,
+    "similarityScore": 0.816,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 15.8,
+    "recommendedSurvivorPartKey": "P-000745",
+    "orgSpread": [
+      101,
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0108",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001725",
+      "P-001700"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.873,
+    "combinedSpend24m": 415796.31,
+    "priceSpreadPct": 6.8,
+    "recommendedSurvivorPartKey": "P-001700",
+    "orgSpread": [
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0109",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001211",
+      "P-002213",
+      "P-001005"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.824,
+    "combinedSpend24m": 4530.81,
+    "priceSpreadPct": 11.6,
+    "recommendedSurvivorPartKey": "P-001211",
+    "orgSpread": [
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0110",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001568",
+      "P-001371",
+      "P-000415"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.915,
+    "combinedSpend24m": 330099.45,
+    "priceSpreadPct": 49.6,
+    "recommendedSurvivorPartKey": "P-000415",
+    "orgSpread": [
+      101,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0111",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001014",
+      "P-001216"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.878,
+    "combinedSpend24m": 3219.48,
+    "priceSpreadPct": 23.6,
+    "recommendedSurvivorPartKey": "P-001216",
+    "orgSpread": [
+      101,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0112",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-000508",
+      "P-000624",
+      "P-000376"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.856,
+    "combinedSpend24m": 89299.82,
+    "priceSpreadPct": 23.8,
+    "recommendedSurvivorPartKey": "P-000624",
+    "orgSpread": [
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0113",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-000008",
+      "P-000493",
+      "P-000536"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.802,
+    "combinedSpend24m": 785223.32,
+    "priceSpreadPct": 33,
+    "recommendedSurvivorPartKey": "P-000493",
+    "orgSpread": [
+      101,
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0114",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-001582",
+      "P-000758",
+      "P-000784",
+      "P-001644",
+      "P-002255"
+    ],
+    "memberCount": 5,
+    "similarityScore": 0.828,
+    "combinedSpend24m": 140072.03,
+    "priceSpreadPct": 41.2,
+    "recommendedSurvivorPartKey": "P-001582",
+    "orgSpread": [
+      101,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0115",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-000332",
+      "P-000014"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.91,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 2.7,
+    "recommendedSurvivorPartKey": "P-000332",
+    "orgSpread": [
+      101,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0116",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-002238",
+      "P-001379"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.929,
+    "combinedSpend24m": 86863.12,
+    "priceSpreadPct": 19.2,
+    "recommendedSurvivorPartKey": "P-002238",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0117",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-002322",
+      "P-002380",
+      "P-001602"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.836,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 44.9,
+    "recommendedSurvivorPartKey": "P-002380",
+    "orgSpread": [
+      101
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0118",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-002257",
+      "P-000805",
+      "P-000937"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.851,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 27.9,
+    "recommendedSurvivorPartKey": "P-002257",
+    "orgSpread": [
+      101,
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0119",
+    "cause": "SUPPLIER_PART_NUMBER",
+    "memberPartKeys": [
+      "P-000472",
+      "P-001862",
+      "P-000712"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.918,
+    "combinedSpend24m": 69024.87,
+    "priceSpreadPct": 17.1,
+    "recommendedSurvivorPartKey": "P-001862",
+    "orgSpread": [
+      101,
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0120",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000889",
+      "P-000969",
+      "P-000551"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.958,
+    "combinedSpend24m": 167939.56,
+    "priceSpreadPct": 24.6,
+    "recommendedSurvivorPartKey": "P-000889",
+    "orgSpread": [
+      101,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0121",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000365",
+      "P-001783"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.933,
+    "combinedSpend24m": 145082.66,
+    "priceSpreadPct": 16.3,
+    "recommendedSurvivorPartKey": "P-001783",
+    "orgSpread": [
+      101,
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0122",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-001112",
+      "P-002001"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.948,
+    "combinedSpend24m": 40793.02,
+    "priceSpreadPct": 18.5,
+    "recommendedSurvivorPartKey": "P-001112",
+    "orgSpread": [
+      101,
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0123",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-001198",
+      "P-001898"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.984,
+    "combinedSpend24m": 8260.23,
+    "priceSpreadPct": 13.7,
+    "recommendedSurvivorPartKey": "P-001898",
+    "orgSpread": [
+      102,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0124",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000164",
+      "P-001688",
+      "P-000246"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.952,
+    "combinedSpend24m": 265024.37,
+    "priceSpreadPct": 39.5,
+    "recommendedSurvivorPartKey": "P-000246",
+    "orgSpread": [
+      101,
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0125",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000242",
+      "P-000544"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.982,
+    "combinedSpend24m": 0,
+    "priceSpreadPct": 25.7,
+    "recommendedSurvivorPartKey": "P-000242",
+    "orgSpread": [
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0126",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000615",
+      "P-001901"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.946,
+    "combinedSpend24m": 39323.11,
+    "priceSpreadPct": 0.1,
+    "recommendedSurvivorPartKey": "P-001901",
+    "orgSpread": [
+      101,
+      102
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0127",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000491",
+      "P-000290",
+      "P-002180",
+      "P-002342"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.968,
+    "combinedSpend24m": 271442.39,
+    "priceSpreadPct": 21.2,
+    "recommendedSurvivorPartKey": "P-002342",
+    "orgSpread": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0128",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-002305",
+      "P-001221"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.966,
+    "combinedSpend24m": 1172355.05,
+    "priceSpreadPct": 10.7,
+    "recommendedSurvivorPartKey": "P-002305",
+    "orgSpread": [
+      102,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0129",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-001782",
+      "P-000975",
+      "P-000165"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.943,
+    "combinedSpend24m": 314809.99,
+    "priceSpreadPct": 25.9,
+    "recommendedSurvivorPartKey": "P-001782",
+    "orgSpread": [
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0130",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000265",
+      "P-000231",
+      "P-000032"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.942,
+    "combinedSpend24m": 53030.21,
+    "priceSpreadPct": 12.6,
+    "recommendedSurvivorPartKey": "P-000231",
+    "orgSpread": [
+      101,
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0131",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000655",
+      "P-002386",
+      "P-000277",
+      "P-000216"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.991,
+    "combinedSpend24m": 106519.41,
+    "priceSpreadPct": 33.5,
+    "recommendedSurvivorPartKey": "P-002386",
+    "orgSpread": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0132",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-002397",
+      "P-001471",
+      "P-000574"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.976,
+    "combinedSpend24m": 158190.15,
+    "priceSpreadPct": 23.8,
+    "recommendedSurvivorPartKey": "P-000574",
+    "orgSpread": [
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0133",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-001674",
+      "P-000912",
+      "P-001394",
+      "P-001290"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.971,
+    "combinedSpend24m": 294855.93,
+    "priceSpreadPct": 25.1,
+    "recommendedSurvivorPartKey": "P-001674",
+    "orgSpread": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0134",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-001988",
+      "P-000555"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.986,
+    "combinedSpend24m": 807599.07,
+    "priceSpreadPct": 26.6,
+    "recommendedSurvivorPartKey": "P-001988",
+    "orgSpread": [
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0135",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000892",
+      "P-002251",
+      "P-001196",
+      "P-000755"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.966,
+    "combinedSpend24m": 10197.31,
+    "priceSpreadPct": 40.5,
+    "recommendedSurvivorPartKey": "P-001196",
+    "orgSpread": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0136",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-002320",
+      "P-000252",
+      "P-000909"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.932,
+    "combinedSpend24m": 143611.04,
+    "priceSpreadPct": 11.9,
+    "recommendedSurvivorPartKey": "P-002320",
+    "orgSpread": [
+      101,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0137",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-001079",
+      "P-000240"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.954,
+    "combinedSpend24m": 156234.12,
+    "priceSpreadPct": 10,
+    "recommendedSurvivorPartKey": "P-001079",
+    "orgSpread": [
+      101,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0138",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-002095",
+      "P-000192",
+      "P-001182",
+      "P-001187"
+    ],
+    "memberCount": 4,
+    "similarityScore": 0.979,
+    "combinedSpend24m": 20303.86,
+    "priceSpreadPct": 12.6,
+    "recommendedSurvivorPartKey": "P-002095",
+    "orgSpread": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0139",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-002035",
+      "P-000408",
+      "P-001364"
+    ],
+    "memberCount": 3,
+    "similarityScore": 0.982,
+    "combinedSpend24m": 68827.67,
+    "priceSpreadPct": 17.1,
+    "recommendedSurvivorPartKey": "P-000408",
+    "orgSpread": [
+      101,
+      102,
+      103
+    ],
+    "reviewState": "UNREVIEWED"
+  },
+  {
+    "clusterId": "DUP-0140",
+    "cause": "ORG_REGISTRATION_SPLIT",
+    "memberPartKeys": [
+      "P-000091",
+      "P-000843"
+    ],
+    "memberCount": 2,
+    "similarityScore": 0.983,
+    "combinedSpend24m": 16661.4,
+    "priceSpreadPct": 17.9,
+    "recommendedSurvivorPartKey": "P-000843",
+    "orgSpread": [
+      101,
+      104
+    ],
+    "reviewState": "UNREVIEWED"
+  }
+]

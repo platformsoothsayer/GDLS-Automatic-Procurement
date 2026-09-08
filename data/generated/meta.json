@@ -1,0 +1,21 @@
+{
+  "seed": 1592598347,
+  "generatedFor": "Industrial data fabric preview for the manufacturer",
+  "periodStart": "2024-10-01",
+  "periodEnd": "2026-09-30",
+  "asOf": "2026-09-01",
+  "counts": {
+    "inventoryOrgs": 4,
+    "commodityGroups": 12,
+    "suppliers": 320,
+    "parts": 2400,
+    "engineeringParts": 1850,
+    "duplicateClusters": 140,
+    "duplicateMembers": 391,
+    "purchaseOrderLines": 5600,
+    "requisitions": 480,
+    "maintainableAssets": 210,
+    "pricePoints": 288
+  },
+  "notice": "Illustrative data. Not connected to any production system."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "orgId": 101,
+    "orgCode": "PLT-N01",
+    "orgName": "Northern Assembly Plant",
+    "orgRole": "ASSEMBLY"
+  },
+  {
+    "orgId": 102,
+    "orgCode": "PLT-S02",
+    "orgName": "Southern Fabrication Plant",
+    "orgRole": "FABRICATION"
+  },
+  {
+    "orgId": 103,
+    "orgCode": "PLT-C03",
+    "orgName": "Central Machining Plant",
+    "orgRole": "MACHINING"
+  },
+  {
+    "orgId": 104,
+    "orgCode": "DEP-M04",
+    "orgName": "Sustainment Depot",
+    "orgRole": "DEPOT"
+  }
+]

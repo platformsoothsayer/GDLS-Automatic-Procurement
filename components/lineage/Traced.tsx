@@ -42,8 +42,13 @@ type TracedProps = {
   label?: string
   as?: ElementType
   tag?: TagPosition
-  /** "compact" is a layer letter and a system mark. "object" adds the source object. */
-  detail?: "compact" | "object"
+  /**
+   * How much the tag says.
+   *   layer    a layer letter alone, for tags inside a narrow column
+   *   compact  layer letter and system mark, the default
+   *   object   adds the source object, where there is room for it
+   */
+  detail?: "layer" | "compact" | "object"
   className?: string
 }
 
@@ -74,7 +79,8 @@ export function Traced({
     >
       <span className={`inline-block h-1.5 w-1.5 rounded-[1px] ${LAYER_DOT[source.layer]}`} aria-hidden />
       <span className="mono uppercase">
-        {LAYER_LETTER[source.layer]}·{SYSTEM_SHORT[source.system]}
+        {LAYER_LETTER[source.layer]}
+        {detail !== "layer" && `·${SYSTEM_SHORT[source.system]}`}
       </span>
       {detail === "object" && <span className="mono max-w-[190px] truncate">{source.object}</span>}
     </span>

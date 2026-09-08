@@ -15,15 +15,20 @@
 import { createContext, useCallback, useContext, useMemo, useState } from "react"
 import type { ReactNode } from "react"
 
-export type ActionKind =
-  | "PROBLEM_SELECTED"
-  | "PART_SELECTED"
-  | "SIGNAL_SELECTED"
-  | "CLUSTER_REVIEWED"
-  | "REQUISITION_PROPOSED"
-  | "REQUISITION_RELEASED"
-  | "LINEAGE_INSPECTED"
-  | "NOTE"
+export const ACTION_KINDS = [
+  "PROBLEM_SELECTED",
+  "PART_SELECTED",
+  "SIGNAL_SELECTED",
+  "CLUSTER_MERGED",
+  "CLUSTER_ROUTED_TO_ENGINEERING",
+  "SUPPLIER_RESOLVED",
+  "REQUISITION_PROPOSED",
+  "REQUISITION_RELEASED",
+  "LINEAGE_INSPECTED",
+  "NOTE",
+] as const
+
+export type ActionKind = (typeof ACTION_KINDS)[number]
 
 export type SessionAction = {
   id: number
@@ -48,6 +53,10 @@ type SessionValue = {
   actions: SessionAction[]
   logAction: (action: Omit<SessionAction, "id">) => void
   actionCount: number
+  /** How many times each kind of action was taken. The populated fabric reads this. */
+  counts: Record<ActionKind, number>
+  /** Total across several kinds, for a tile that stands for more than one action. */
+  countOf: (...kinds: ActionKind[]) => number
   resetSession: () => void
 }
 
@@ -87,6 +96,17 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     [logAction]
   )
 
+  const counts = useMemo(() => {
+    const tally = Object.fromEntries(ACTION_KINDS.map((k) => [k, 0])) as Record<ActionKind, number>
+    for (const action of actions) tally[action.kind] += 1
+    return tally
+  }, [actions])
+
+  const countOf = useCallback(
+    (...kinds: ActionKind[]) => kinds.reduce((sum, kind) => sum + (counts[kind] ?? 0), 0),
+    [counts]
+  )
+
   const resetSession = useCallback(() => {
     setSelectedProblemId(null)
     setSelectedPart(null)
@@ -105,9 +125,23 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       actions,
       logAction,
       actionCount: actions.length,
+      counts,
+      countOf,
       resetSession,
     }),
-    [selectedProblemId, selectProblem, selectedPart, selectPart, selectedSignal, selectSignal, actions, logAction, resetSession]
+    [
+      selectedProblemId,
+      selectProblem,
+      selectedPart,
+      selectPart,
+      selectedSignal,
+      selectSignal,
+      actions,
+      logAction,
+      counts,
+      countOf,
+      resetSession,
+    ]
   )
 
   return <SessionCtx.Provider value={value}>{children}</SessionCtx.Provider>

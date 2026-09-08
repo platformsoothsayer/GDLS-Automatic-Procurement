@@ -14,15 +14,16 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 
 | Built | Not built |
 | --- | --- |
-| Navigation, routing and the walkthrough order | Screens 2 to 7 |
+| Navigation, routing and the walkthrough order | Screens 3, 4, 5 and 7 |
 | Design system and layout frame | — |
 | Nomenclature registry | — |
 | Deterministic data generation | — |
 | Business view / Data view overlay and lineage panel | — |
 | Cross module session state | — |
 | Screen 1, problem selection | — |
+| Screens 2 and 6, the fabric | — |
 
-Screens 2 to 7 render a scaffold that names the screen, states its intent and
+The remaining screens render a scaffold that names the screen, states its intent and
 exercises the overlay. Those scaffolds are deleted one at a time as real screens land.
 
 ### Screen 1 · Problem selection
@@ -123,12 +124,43 @@ The most important shared component in the build.
 Files: `context/DataViewContext.tsx`, `components/lineage/Traced.tsx`,
 `components/lineage/LineagePanel.tsx`.
 
+### Screens 2 and 6 · The fabric
+
+One component, `components/screens/fabric/FabricDiagram.tsx`, rendered twice.
+`/fabric` passes `populated={false}`, `/fabric/live` passes `populated` and reads the
+session context. The two states occupy exactly the same footprint down to the pixel,
+so the room sees one diagram filling in rather than two different pictures.
+
+Every figure in it is derived, never written by hand. `lib/fabric.ts` computes row
+counts from the seeded dataset, object counts by counting distinct objects in the
+registry, and mart names from the registry entry for each mart. The resolve stage
+takes its parts and suppliers figures from the dataset and its merged and routed
+figures from the session action log.
+
+The accretion slider and the residency control both animate the diagram in place.
+Nothing unmounts: dormant source boxes transition colour, and the resolved entity
+chips are all mounted at every position and expand into view. The residency control
+changes one line of text and nothing else, which is the point of it.
+
+Copy lives in `data/fabric-content.ts` so the argument can be edited without touching
+the diagram.
+
 ## Cross module session state
 
 `context/SessionContext.tsx` holds the selected problem, the selected part, the
-selected MRO signal and an ordered log of every action the presenter takes. Screens
-5 and 6 read from it — the populated fabric screen must reflect what actually
-happened in the session rather than fixed numbers.
+selected MRO signal and an ordered log of every action the presenter takes, plus a
+tally per action kind. Screens 5 and 6 read from it — the populated fabric screen
+must reflect what actually happened in the session rather than fixed numbers.
+
+The context is mounted above the router, so it survives navigation between screens
+and is cleared by a page reload. Verified in a browser, along with the fact that the
+build touches no browser storage at all.
+
+Screens 3, 4 and 5 are the ones that emit `CLUSTER_MERGED`,
+`CLUSTER_ROUTED_TO_ENGINEERING`, `SIGNAL_SELECTED` and the requisition actions. Until
+they are built, the populated fabric reads those counts as zero, correctly. The
+derived figures beside them, which come from the dataset rather than the session, are
+populated already.
 
 ## Generated dataset
 

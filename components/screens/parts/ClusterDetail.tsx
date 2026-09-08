@@ -230,6 +230,7 @@ export function ClusterDetail({ cluster }: { cluster: ClusterRow }) {
             Impact <span className="mono text-navy">{compactMoney(cluster.estimatedImpact)}</span> a year ·
             carrying <span className="mono">{compactMoney(cluster.carryingCost)}</span> · leverage{" "}
             <span className="mono">{compactMoney(cluster.leverageLoss)}</span>
+            <span className="block text-[9.5px] text-navy-faint">Illustrative, on illustrative rates.</span>
           </div>
         </div>
 

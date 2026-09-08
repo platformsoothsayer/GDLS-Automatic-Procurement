@@ -213,11 +213,11 @@ export function FabricDiagram({
   const totalWeight = PIPELINE.reduce((s, st) => s + st.weight, 0)
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 [@media(max-height:860px)]:gap-1.5">
       {/* ---------------- The three layers ---------------- */}
-      <div className="flex flex-col gap-1.5">
+      <div className="flex flex-col gap-1.5 [@media(max-height:860px)]:gap-1">
         {/* Layer 3 */}
-        <section className="rounded-card border border-hairline bg-surface px-4 py-2 shadow-card">
+        <section className="rounded-card border border-hairline bg-surface px-4 py-2 [@media(max-height:860px)]:py-1 shadow-card">
           <LayerLabel n={3} title="Systems of engagement" />
           <div className="grid grid-cols-3 gap-3">
             {ENGAGEMENT_SYSTEMS.map((sys) => {
@@ -225,7 +225,7 @@ export function FabricDiagram({
               return (
                 <div
                   key={sys.id}
-                  className={`flex h-[38px] items-center justify-between gap-2 rounded border px-3 transition-colors duration-500 ${
+                  className={`flex h-[38px] [@media(max-height:860px)]:h-[32px] items-center justify-between gap-2 rounded border px-3 transition-colors duration-500 ${
                     populated ? "border-cyan-line bg-cyan-soft" : "border-hairline bg-canvas"
                   }`}
                 >
@@ -247,7 +247,7 @@ export function FabricDiagram({
         </section>
 
         {/* Layer 2 */}
-        <section className="card-topbar relative rounded-card border border-hairline bg-surface px-4 pb-2.5 pt-3.5 shadow-card">
+        <section className="card-topbar relative rounded-card border border-hairline bg-surface px-4 pb-2.5 pt-3.5 [@media(max-height:860px)]:pb-1.5 [@media(max-height:860px)]:pt-2.5 shadow-card">
           <LayerLabel n={2} title="The fabric" />
 
           <div className="flex items-stretch gap-1.5">
@@ -308,7 +308,7 @@ export function FabricDiagram({
           <span className="sr-only">{`Pipeline weight total ${totalWeight}`}</span>
 
           {/* Governance bar */}
-          <div className="mt-2 flex items-center gap-3 rounded border border-hairline bg-canvas px-3 py-1">
+          <div className="mt-2 [@media(max-height:860px)]:mt-1 flex items-center gap-3 rounded border border-hairline bg-canvas px-3 py-1">
             <span className="shrink-0 text-[10px] font-semibold uppercase tracking-wider text-navy-muted">
               Governance and ownership
             </span>
@@ -323,7 +323,7 @@ export function FabricDiagram({
           </div>
 
           {/* Security and residency bar */}
-          <div className="mt-1.5 rounded border border-hairline bg-canvas px-3 py-1.5">
+          <div className="mt-1.5 [@media(max-height:860px)]:mt-1 rounded border border-hairline bg-canvas px-3 py-1.5">
             <div className="flex items-center gap-3">
               <span className="shrink-0 text-[10px] font-semibold uppercase tracking-wider text-navy-muted">
                 Security and residency
@@ -354,7 +354,7 @@ export function FabricDiagram({
         </section>
 
         {/* Layer 1 */}
-        <section className="rounded-card border border-hairline bg-surface px-4 py-1.5 shadow-card">
+        <section className="rounded-card border border-hairline bg-surface px-4 py-1.5 [@media(max-height:860px)]:py-1 shadow-card">
           <LayerLabel n={1} title="Systems of record" />
           <div className="flex items-start gap-4">
             <div className="flex shrink-0 gap-2">
@@ -396,7 +396,7 @@ export function FabricDiagram({
       </div>
 
       {/* ---------------- Accretion and federation ---------------- */}
-      <div className="grid grid-cols-[1fr_400px] gap-3">
+      <div className="grid grid-cols-[1fr_400px] gap-3 [@media(max-height:860px)]:gap-2">
         <AccretionSlider stepIndex={stepIndex} onChange={setStepIndex} />
         <FederationPanel />
       </div>
@@ -404,7 +404,7 @@ export function FabricDiagram({
       <p
         className={
           populated
-            ? "text-[15px] font-semibold leading-snug text-navy"
+            ? "text-[15px] font-semibold leading-snug text-navy [@media(max-height:860px)]:text-[13px]"
             : "text-[12px] text-navy-muted"
         }
       >
@@ -447,7 +447,7 @@ function AccretionSlider({
   )
 
   return (
-    <section className="flex flex-col rounded-card border border-hairline bg-surface px-4 py-3 shadow-card">
+    <section className="flex flex-col rounded-card border border-hairline bg-surface px-4 py-3 [@media(max-height:860px)]:py-2 shadow-card">
       <div className="flex items-baseline justify-between gap-3">
         <p className="text-[10px] font-semibold uppercase tracking-wider text-navy-faint">Accretion</p>
         <p className="text-[11px] text-navy-muted">{step.summary}</p>

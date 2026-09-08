@@ -78,7 +78,7 @@ export function PartsScreen({
   }
 
   return (
-    <div className="flex h-[calc(100vh-184px)] flex-col gap-2.5">
+    <div className="flex screen-h flex-col gap-2.5">
       {/* Queue strip */}
       <div className="grid grid-cols-4 gap-3">
         <Tile value={int(open)} label="Open clusters" note="waiting for a reviewer" />

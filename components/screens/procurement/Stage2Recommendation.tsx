@@ -120,6 +120,7 @@ export function Stage2Recommendation({ recommendation }: { recommendation: Recom
               <span className="text-[10.5px] text-navy-muted">
                 line value <span className="mono text-navy">{compactMoney(recommendation.lineValue)}</span>
               </span>
+              <span className="text-[9.5px] text-navy-faint">Prices are illustrative.</span>
             </div>
           </Block>
         </div>

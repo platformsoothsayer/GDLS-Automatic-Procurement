@@ -22,7 +22,7 @@ export function MroScreen({ rows, signals }: { rows: AssetRow[]; signals: Signal
   }
 
   return (
-    <div className="grid h-[calc(100vh-184px)] grid-cols-[3fr_2fr] gap-3">
+    <div className="grid screen-h grid-cols-[3fr_2fr] gap-3">
       <AssetTable rows={rows} selectedAsset={selectedAsset} onSelect={select} />
       <SignalPanel signals={signals} selectedAsset={selectedAsset} onSelectAsset={setSelectedAsset} />
     </div>

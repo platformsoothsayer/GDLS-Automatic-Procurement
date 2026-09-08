@@ -11,7 +11,13 @@ import { readFileSync, readdirSync, statSync } from "node:fs"
 import { join, relative } from "node:path"
 
 const ROOT = process.cwd()
-const ALLOWED = ["data/nomenclature.ts", "scripts/check-nomenclature.mjs"]
+const ALLOWED = [
+  "data/nomenclature.ts",
+  "scripts/check-nomenclature.mjs",
+  // Generated from the registry by scripts/nomenclature-review.ts. It is a rendering
+  // of the one file, not a second copy of the names, and it is not deployed.
+  "docs/nomenclature-review.md",
+]
 const SKIP_DIRS = new Set(["node_modules", ".next", ".git", "data/generated"])
 
 const RULES = [

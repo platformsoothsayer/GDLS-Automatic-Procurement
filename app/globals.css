@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Top bar, page padding and the clearance the next control needs. */
+    --shell-chrome: 184px;
+  }
+
+  @media (max-height: 860px) {
+    :root {
+      --shell-chrome: 140px;
+    }
+  }
+
   html,
   body {
     @apply bg-canvas text-navy antialiased;
@@ -16,6 +27,11 @@
 }
 
 @layer components {
+  /* Screens that fill the viewport rather than sizing to their content. */
+  .screen-h {
+    height: calc(100vh - var(--shell-chrome));
+  }
+
   /* The only gradient permitted anywhere: the 3px cyan top bar on primary cards. */
   .card-topbar::before {
     content: "";

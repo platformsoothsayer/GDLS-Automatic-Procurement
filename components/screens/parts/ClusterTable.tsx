@@ -144,7 +144,8 @@ export function ClusterTable({
 
         <span className="ml-auto text-[11px] text-navy-faint">
           <span className="mono text-navy-muted">{int(filtered.length)}</span> of{" "}
-          <span className="mono text-navy-muted">{int(rows.length)}</span> clusters
+          <span className="mono text-navy-muted">{int(rows.length)}</span> clusters · impact figures
+          illustrative
         </span>
       </div>
 

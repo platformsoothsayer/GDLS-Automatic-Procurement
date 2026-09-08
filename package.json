@@ -12,7 +12,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "check:nomenclature": "node scripts/check-nomenclature.mjs",
-    "verify": "npm run check:nomenclature && npm run typecheck && npm run build"
+    "verify": "npm run check:nomenclature && npm run typecheck && npm run build",
+    "review": "tsx scripts/nomenclature-review.ts"
   },
   "dependencies": {
     "next": "15.5.4",

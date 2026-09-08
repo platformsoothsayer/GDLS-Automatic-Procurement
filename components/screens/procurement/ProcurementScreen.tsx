@@ -97,7 +97,7 @@ export function ProcurementScreen({
   const canEnter = (id: StageId) => id === "intake" || Boolean(recommendation)
 
   return (
-    <div className="grid h-[calc(100vh-184px)] grid-cols-[1fr_132px] gap-2.5">
+    <div className="grid screen-h grid-cols-[1fr_132px] gap-2.5">
       <div className="flex min-h-0 gap-1.5">
         {STAGES.map((spec) => {
           const active = stage === spec.id

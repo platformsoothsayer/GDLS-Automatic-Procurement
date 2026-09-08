@@ -9,8 +9,8 @@ import { ProblemDetailPanel } from "@/components/screens/problems/ProblemDetailP
  */
 export default function ProblemsPage() {
   return (
-    <div className="flex flex-col gap-3.5">
-      <section className="card-topbar relative rounded-card border border-hairline bg-surface px-5 pb-4 pt-6 shadow-card">
+    <div className="flex screen-h flex-col gap-3.5">
+      <section className="card-topbar relative flex min-h-0 flex-1 flex-col rounded-card border border-hairline bg-surface px-5 pb-4 pt-6 shadow-card">
         <ProblemScatter />
       </section>
 

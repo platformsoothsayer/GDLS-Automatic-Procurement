@@ -213,7 +213,7 @@ function HoverCard({ point, at, width }: { point: Point; at: { x: number; y: num
  * Chart
  * ---------------------------------------------------------------- */
 
-export function ProblemScatter({ height = 354 }: { height?: number }) {
+export function ProblemScatter({ height }: { height?: number }) {
   const [hovered, setHovered] = useState<{ point: Point; at: { x: number; y: number } } | null>(null)
   const [width, setWidth] = useState(1000)
   const shell = useRef<HTMLDivElement>(null)
@@ -228,7 +228,11 @@ export function ProblemScatter({ height = 354 }: { height?: number }) {
   }, [])
 
   return (
-    <div className="relative" style={{ height }} ref={shell}>
+    <div
+      className={height === undefined ? "relative h-full min-h-[236px]" : "relative"}
+      style={height === undefined ? undefined : { height }}
+      ref={shell}
+    >
       <ResponsiveContainer width="100%" height="100%">
         <ScatterChart margin={{ top: 26, right: 28, bottom: 26, left: 6 }}>
           <CartesianGrid stroke="#E4E9ED" strokeDasharray="2 4" />
@@ -243,7 +247,7 @@ export function ProblemScatter({ height = 354 }: { height?: number }) {
             tickLine={{ stroke: "#E4E9ED" }}
             axisLine={{ stroke: "#E4E9ED" }}
             label={{
-              value: "Size of prize · annual",
+              value: "Size of prize · annual · illustrative",
               position: "insideBottom",
               offset: -18,
               fill: "#8A9AA8",

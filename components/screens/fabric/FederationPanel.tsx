@@ -13,7 +13,7 @@ import { Chip } from "@/components/ui/Chip"
 
 export function FederationPanel() {
   return (
-    <section className="rounded-card border border-hairline bg-surface px-4 py-2 shadow-card">
+    <section className="rounded-card border border-hairline bg-surface px-4 py-2 [@media(max-height:860px)]:py-1.5 shadow-card">
       <p className="text-[10px] font-semibold uppercase tracking-wider text-navy-faint">
         How the fabric gets built
       </p>

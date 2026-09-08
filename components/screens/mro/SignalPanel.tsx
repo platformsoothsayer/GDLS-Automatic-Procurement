@@ -160,7 +160,8 @@ export function SignalPanel({
         </span>
         <span className="text-[10px] text-navy-faint">
           <span className="mono text-blocked">{timingCount}</span> timing ·{" "}
-          <span className="mono text-navy-muted">{signals.length - timingCount}</span> stock
+          <span className="mono text-navy-muted">{signals.length - timingCount}</span> stock · values
+          illustrative
         </span>
       </header>
 

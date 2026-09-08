@@ -25,11 +25,11 @@ function ShellBody({ children }: { children: ReactNode }) {
       <TopBar />
       <LeftNav />
       <main
-        className={`ml-nav min-h-screen pb-20 pt-14 transition-[margin] duration-150 ${
+        className={`ml-nav min-h-screen pb-20 pt-14 transition-[margin] duration-150 [@media(max-height:860px)]:pb-12 ${
           panelOpen ? "mr-panel" : ""
         }`}
       >
-        <div className="mx-auto max-w-[1120px] px-8 py-6">{children}</div>
+        <div className="mx-auto max-w-[1120px] px-8 py-6 [@media(max-height:860px)]:py-4">{children}</div>
       </main>
       <LineagePanel />
       <NextControl panelOpen={panelOpen} />

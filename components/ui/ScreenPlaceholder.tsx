@@ -52,7 +52,7 @@ export function ScreenPlaceholder({
                 {check.label}
               </dt>
               <dd className="mt-2">
-                <Traced sourceKey={check.key} label={check.label}>
+                <Traced sourceKey={check.key} label={check.label} detail="object">
                   <span className="mono text-[20px] font-medium text-navy">{check.value}</span>
                 </Traced>
               </dd>

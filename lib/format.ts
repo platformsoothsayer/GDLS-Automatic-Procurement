@@ -8,7 +8,8 @@ const LOCALE = "en-GB"
 export const int = (n: number) => new Intl.NumberFormat(LOCALE).format(Math.round(n))
 
 export const money = (n: number, fractionDigits = 0) =>
-  new Intl.NumberFormat(LOCALE, {
+  // en-US, because en-GB renders USD as "US$".
+  new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
     minimumFractionDigits: fractionDigits,

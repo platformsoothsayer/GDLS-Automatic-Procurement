@@ -14,16 +14,29 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 
 | Built | Not built |
 | --- | --- |
-| Navigation, routing and the walkthrough order | Any screen content |
-| Design system and layout frame | Charts |
+| Navigation, routing and the walkthrough order | Screens 2 to 7 |
+| Design system and layout frame | — |
 | Nomenclature registry | — |
 | Deterministic data generation | — |
 | Business view / Data view overlay and lineage panel | — |
 | Cross module session state | — |
+| Screen 1, problem selection | — |
 
-Each of the seven routes currently renders a scaffold that names the screen, states
-its intent, and exercises the overlay so the shell can be confirmed working. Those
-scaffolds are meant to be deleted one at a time as real screens land.
+Screens 2 to 7 render a scaffold that names the screen, states its intent and
+exercises the overlay. Those scaffolds are deleted one at a time as real screens land.
+
+### Screen 1 · Problem selection
+
+Runs for about ninety seconds and establishes that the problem is chosen before any
+tool is shown. A scatter plot of fourteen candidates, size of prize on a logarithmic
+axis against strategic alignment, with circle area proportional to the data readiness
+effort each needs. A faint diagonal band marks where to start. Three candidates are
+highlighted and expanded in the detail panel beneath.
+
+The candidate catalogue is in `data/problems.ts`. It is curated content rather than
+seeded data: the positions are composed by hand so the plot reads in the few seconds
+a presenter has, which is not something random generation can do. Every figure in it
+is illustrative.
 
 ## Running it
 

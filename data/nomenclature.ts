@@ -865,6 +865,12 @@ export const SYSTEM_LABEL: Record<SourceRef["system"], string> = {
   TEAMCENTER: "Teamcenter",
 }
 
+/** Short marks for the compact tag shown on dense screens. */
+export const SYSTEM_SHORT: Record<SourceRef["system"], string> = {
+  ORACLE_EBS: "EBS",
+  TEAMCENTER: "TC",
+}
+
 export const LAYER_LABEL: Record<SourceRef["layer"], string> = {
   BRONZE: "Bronze",
   SILVER: "Silver",

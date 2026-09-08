@@ -1,18 +1,20 @@
-import { ScreenPlaceholder } from "@/components/ui/ScreenPlaceholder"
-import { SCREENS } from "@/lib/routes"
+import { ProblemScatter } from "@/components/screens/problems/ProblemScatter"
+import { ProblemDetailPanel } from "@/components/screens/problems/ProblemDetailPanel"
 
-const SCREEN = SCREENS[0]
-
-export default function Page() {
+/**
+ * Screen 1. Runs for about ninety seconds.
+ *
+ * The point is that the problem is chosen before any tool is shown, so the text on
+ * screen stays minimal and the presenter speaks the method.
+ */
+export default function ProblemsPage() {
   return (
-    <ScreenPlaceholder
-      screen={SCREEN}
-      intent="Pick the problem the room actually cares about. Everything after this screen follows from that choice."
-      sourceChecks={[
-        { key: "FABRIC.GOLD_PART_MASTER", label: "Parts in the item master", value: "2,400" },
-        { key: "DUP.CLUSTER_MEMBERSHIP", label: "Duplicate clusters found", value: "140" },
-        { key: "FABRIC.GOLD_MRO", label: "Maintainable assets", value: "210" },
-      ]}
-    />
+    <div className="flex flex-col gap-3.5">
+      <section className="card-topbar relative rounded-card border border-hairline bg-surface px-5 pb-4 pt-6 shadow-card">
+        <ProblemScatter />
+      </section>
+
+      <ProblemDetailPanel />
+    </div>
   )
 }

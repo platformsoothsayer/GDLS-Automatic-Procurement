@@ -14,10 +14,10 @@ import {
   AWARD_JUSTIFICATION_PROMPT,
   RANKING_NOTE,
   RFQ_CHANNEL,
+  RANKING_WEIGHTS,
   RFQ_STEPS,
 } from "@/data/procurement-content"
 import type { QuoteAnalysis, RankedQuote, Recommendation } from "@/lib/procurement"
-import { RANKING_WEIGHTS } from "@/lib/procurement"
 import { Traced } from "@/components/lineage/Traced"
 import { compactMoney, int, money, shortDate } from "@/lib/format"
 

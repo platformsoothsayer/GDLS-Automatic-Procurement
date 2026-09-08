@@ -5,15 +5,16 @@
   "description": "Client-facing pre-sales preview of an industrial data fabric. All data is illustrative.",
   "scripts": {
     "generate": "tsx scripts/generate.ts",
-    "prebuild": "npm run check:nomenclature && npm run generate",
+    "prebuild": "npm run check:nomenclature && npm run check:bundles && npm run generate",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "check:nomenclature": "node scripts/check-nomenclature.mjs",
-    "verify": "npm run check:nomenclature && npm run typecheck && npm run build",
-    "review": "tsx scripts/nomenclature-review.ts"
+    "verify": "npm run check:nomenclature && npm run check:bundles && npm run typecheck && npm run build",
+    "review": "tsx scripts/nomenclature-review.ts",
+    "check:bundles": "node scripts/check-client-bundles.mjs"
   },
   "dependencies": {
     "next": "15.5.4",
@@ -30,5 +31,8 @@
     "tailwindcss": "3.4.17",
     "tsx": "4.19.3",
     "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
   }
 }

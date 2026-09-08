@@ -11,6 +11,7 @@ import { DATASET } from "./dataset"
 import { buildSignals, type Signal } from "./mro"
 import type { PartRecord, QuoteSet, SupplierQuote } from "./domain"
 import { getSource } from "@/data/nomenclature"
+import { RANKING_WEIGHTS } from "@/data/procurement-content"
 
 const { parts, suppliers, purchaseOrderLines, quoteSets, orgs, assets, meta } = DATASET
 
@@ -308,8 +309,6 @@ export type QuoteAnalysis = {
   cheapestIsInfeasible: boolean
   quantity: number
 }
-
-export const RANKING_WEIGHTS = { price: 50, delivery: 25, quality: 15, terms: 10 }
 
 export function buildQuoteAnalysis(signalId: string): QuoteAnalysis | null {
   const recommendation = buildRecommendation(signalId)

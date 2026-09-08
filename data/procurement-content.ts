@@ -101,6 +101,9 @@ export const RFQ_STEPS = [
 
 export const RFQ_CHANNEL = "the supplier portal"
 
+/** How a quotation is scored once it has passed the feasibility gate. */
+export const RANKING_WEIGHTS = { price: 50, delivery: 25, quality: 15, terms: 10 }
+
 export const RANKING_NOTE =
   "Feasibility is a gate, not a weighting. A quotation that cannot arrive before the need date is not eligible to win on price."
 

@@ -48,8 +48,23 @@ is illustrative.
 npm install
 npm run generate   # writes /data/generated, deterministic from a fixed seed
 npm run dev        # http://localhost:3000 → redirects to /problems
-npm run verify     # nomenclature guard, typecheck, production build
+npm run verify     # both guards, typecheck, production build
+npm run review     # regenerate docs/nomenclature-review.md
 ```
+
+## Deploying
+
+The production build is verified from a clean checkout. Deploy with the Vercel CLI:
+
+```bash
+npm i -g vercel
+vercel login
+vercel deploy --prod
+```
+
+`vercel.json` pins the framework, the build command and the region. `.vercelignore`
+keeps `docs/` out of the deployment. Nothing else is needed: there are no environment
+variables, no secrets and no external services.
 
 ## Routes
 
@@ -90,6 +105,20 @@ codebase. It is enforced, not just documented:
 ```bash
 npm run check:nomenclature   # also runs on every build via prebuild
 ```
+
+### 4. The dataset never reaches the browser
+
+`lib/dataset.ts` imports roughly six megabytes of generated JSON. Anything that value
+imports a module reaching it drags all of that into the client bundle. Enforced:
+
+```bash
+npm run check:bundles        # also runs on every build via prebuild
+```
+
+This check exists because it happened. One client component imported a constant from
+`lib/procurement`, and that route shipped 808kB to the browser instead of 121kB.
+Nothing about the screen looked wrong, which is why it needs a check rather than an
+eye.
 
 Every entry is marked `NEEDS_SME_REVIEW`. The verification chip renders from that
 field and appears **only in Data view** — it can never leak into the client's view.

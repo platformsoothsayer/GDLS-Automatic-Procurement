@@ -14,7 +14,7 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 
 | Built | Not built |
 | --- | --- |
-| Navigation, routing and the walkthrough order | Screen 7 |
+| Navigation, routing and the walkthrough order | — |
 | Design system and layout frame | — |
 | Nomenclature registry | — |
 | Deterministic data generation | — |
@@ -25,9 +25,9 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 | Screen 3, part master intelligence | — |
 | Screen 4, MRO signals | — |
 | Screen 5, automated procurement | — |
+| Screen 7, what it takes | — |
 
-The remaining screens render a scaffold that names the screen, states its intent and
-exercises the overlay. Those scaffolds are deleted one at a time as real screens land.
+All seven screens are built. No scaffolds remain.
 
 ### Screen 1 · Problem selection
 
@@ -221,6 +221,23 @@ Stage 4 is the RFQ branch, reached from a control at stage 3 and treated as a fi
 class path. Ranking gates on feasibility before it looks at price, so the cheapest
 response loses when it cannot arrive before the need date, and the row says why. An
 award that is not the top ranked response cannot be recorded without a justification.
+
+### Screen 7 · What it takes
+
+The closing screen, and the only one with no new demonstration content. The
+architecture diagram reads the same derived figures the fabric screen uses, so the
+two cannot disagree, and the roadmap bands are the accretion horizons from screen 6.
+
+Five sections in order: the end to end architecture with the human approval gate drawn
+as its own element on the write back path; three deployment options with no
+recommendation between them; what we need from the manufacturer; a roadmap whose later
+bands are deliberately thinner; and staffing by role. No pricing, no logos, no
+testimonials.
+
+This is the one screen that scrolls. It is a document rather than a view, and
+compressing five sections into a single 900px viewport would mean type too small to
+read on a projector. Roughly one screen of scroll, with clearance so nothing sits
+under the end of walkthrough marker.
 
 ## Cross module session state
 

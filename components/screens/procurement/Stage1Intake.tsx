@@ -9,6 +9,7 @@
 
 import { INTAKE_LINE, SIGNAL_SOURCES } from "@/data/procurement-content"
 import type { Signal } from "@/lib/mro"
+import { Traced } from "@/components/lineage/Traced"
 import { compactMoney, int } from "@/lib/format"
 
 export function Stage1Intake({
@@ -110,15 +111,21 @@ export function Stage1Intake({
                     {signal.timingCondition ? "timing" : "stock"}
                   </span>
                 </td>
-                <td
-                  className={`mono px-2.5 py-1 text-right ${
-                    signal.slackDays < 0 ? "font-semibold text-blocked" : "text-navy-muted"
-                  }`}
-                >
-                  {signal.slackDays}d
+                <td className="px-2.5 py-1 text-right">
+                  <Traced sourceKey="MRO.CONDITION_SIGNAL" label={`${signal.signalId} slack`} tag="inline" detail="layer">
+                    <span
+                      className={`mono ${
+                        signal.slackDays < 0 ? "font-semibold text-blocked" : "text-navy-muted"
+                      }`}
+                    >
+                      {signal.slackDays}d
+                    </span>
+                  </Traced>
                 </td>
-                <td className="mono px-2.5 py-1 text-right text-navy-muted">
-                  {compactMoney(signal.estimatedValue)}
+                <td className="px-2.5 py-1 text-right">
+                  <Traced sourceKey="REQ.LINE" label={`${signal.signalId} estimated value`} tag="inline" detail="layer">
+                    <span className="mono text-navy-muted">{compactMoney(signal.estimatedValue)}</span>
+                  </Traced>
                 </td>
               </tr>
             ))}

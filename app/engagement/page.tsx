@@ -1,18 +1,10 @@
-import { ScreenPlaceholder } from "@/components/ui/ScreenPlaceholder"
-import { SCREENS } from "@/lib/routes"
+import { EngagementScreen } from "@/components/screens/engagement/EngagementScreen"
+import { buildFabricFigures } from "@/lib/fabric"
 
-const SCREEN = SCREENS[6]
-
-export default function Page() {
-  return (
-    <ScreenPlaceholder
-      screen={SCREEN}
-      intent="What it takes to build this for real. Scope, sequence, the people needed and the assumptions to close first."
-      sourceChecks={[
-        { key: "FABRIC.SILVER_PART_CONFORMED", label: "Mappings to verify", value: "45" },
-        { key: "SUP.APPROVED_LIST", label: "Highest risk assumption", value: "Approved supplier list" },
-        { key: "DUP.CAUSE_REVISION_ABUSE", label: "Root cause to confirm", value: "Revision abuse" },
-      ]}
-    />
-  )
+/**
+ * Screen 7. The architecture reads the same derived figures the fabric screen uses,
+ * so the closing diagram and the diagram the room has already seen cannot disagree.
+ */
+export default function EngagementPage() {
+  return <EngagementScreen figures={buildFabricFigures()} />
 }

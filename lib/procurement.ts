@@ -25,9 +25,8 @@ const AS_OF = Date.parse(meta.asOf)
 export const COST_MODEL = {
   orderPlacementCost: 120,
   annualHoldingRate: 0.22,
-  downtimeHoursByCriticality: { 1: 48, 2: 24, 3: 10, 4: 4 } as Record<number, number>,
-  downtimeCostPerHour: { 1: 6_200, 2: 3_400, 3: 1_500, 4: 600 } as Record<number, number>,
-  criticalityWeight: { 1: 1, 2: 0.8, 3: 0.55, 4: 0.35 } as Record<number, number>,
+  // Downtime hours and the hourly rate live with the signal, in lib/mro, so the
+  // maintenance screen and this one quote the same two inputs.
   expeditePremiumRate: 0.38,
   expediteFreight: 850,
 }
@@ -59,9 +58,12 @@ export type QuantityWorking = {
 export type ReasoningLine = { input: string; value: string; effect: string }
 
 export type CostOfInaction = {
+  /** Expected hours down waiting for the part. Set by criticality, where 1 is the most critical. */
   downtimeHours: number
+  /** Illustrative lost output per hour, set by asset class. */
+  downtimeCostPerHour: number
+  /** The two inputs above, multiplied. */
   downtimeCost: number
-  criticalityWeight: number
   expeditePremium: number
   total: number
 }
@@ -173,9 +175,12 @@ export function buildRecommendation(signalId: string): Recommendation | null {
   const asset = assetByNumber.get(signal.assetNumber)
 
   const criticality = signal.criticality
-  const downtimeHours = COST_MODEL.downtimeHoursByCriticality[criticality]
-  const weight = COST_MODEL.criticalityWeight[criticality]
-  const downtimeCost = Math.round(downtimeHours * COST_MODEL.downtimeCostPerHour[criticality] * weight)
+  // Derived on the signal from expected downtime hours and the hourly rate for the
+  // asset class. Nothing is sampled and nothing is re-weighted here, so the number a
+  // buyer reads on this screen is the number the maintenance screen showed them.
+  const downtimeHours = signal.downtimeHours
+  const downtimeCostPerHour = signal.downtimeRatePerHour
+  const downtimeCost = signal.downtimeExposure
   const expeditePremium = Math.round(lineValue * COST_MODEL.expeditePremiumRate + COST_MODEL.expediteFreight)
 
   const org = orgs.find((o) => o.orgId === part.orgId)!
@@ -237,8 +242,8 @@ export function buildRecommendation(signalId: string): Recommendation | null {
     },
     {
       input: "Asset criticality",
-      value: `${criticality}${asset ? ` · ${asset.description}` : ""}`,
-      effect: `downtime weighted at ${weight.toFixed(2)}`,
+      value: `${criticality} of 4${asset ? ` · ${asset.description}` : ""}`,
+      effect: `${downtimeHours} hours of expected downtime, at $${downtimeCostPerHour.toLocaleString("en-US")} an hour for ${signal.assetGroup.toLowerCase()}`,
     },
   ]
 
@@ -291,8 +296,8 @@ export function buildRecommendation(signalId: string): Recommendation | null {
     reasoning,
     costOfInaction: {
       downtimeHours,
+      downtimeCostPerHour,
       downtimeCost,
-      criticalityWeight: weight,
       expeditePremium,
       total: downtimeCost + expeditePremium,
     },

@@ -93,7 +93,7 @@ export function ProblemDetailPanel() {
 
       <div className="flex items-baseline justify-between gap-4">
         <p className="text-[13px] font-medium text-navy">
-          Three problems. Two source systems. Four percent of the application estate.
+          Three problems, two source systems, four percent of the application estate
         </p>
         <p className="text-[10px] text-navy-faint">All value estimates are illustrative.</p>
       </div>

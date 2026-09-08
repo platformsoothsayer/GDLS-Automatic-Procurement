@@ -61,7 +61,7 @@ const WRITEBACK_NOTE =
   "The choice between interface tables and the Integrated SOA Gateway depends on release and installed components. Both are carried here and neither is committed to."
 
 const MAINTENANCE_NOTE =
-  "The maintenance system of record is assumed to be Oracle Enterprise Asset Management and has not been confirmed with the manufacturer. Registered at object level only; no column is named for these objects."
+  "The maintenance system of record is assumed to be Oracle Enterprise Asset Management and has not been confirmed with the manufacturer. Registered at object level only. No column is named for these objects."
 
 const REGISTRY = {
   /* ------------------------------------------------------------------ *
@@ -123,7 +123,7 @@ const REGISTRY = {
       { name: "inventory_item_id", note: "Item the reference points at" },
     ],
     layer: "SILVER",
-    transform: "The supplier part number source for duplicate evidence. References are matched across items so one physical part bought under two supplier numbers can be recognised.",
+    transform: "The supplier part number source for duplicate evidence. References are matched across items so one physical part bought under two supplier numbers can be identified.",
     assumption: "Supplier cross references are maintained here rather than only on the purchase order.",
     verified: "NEEDS_SME_REVIEW",
   },
@@ -151,7 +151,7 @@ const REGISTRY = {
       { name: "unit_of_measure", note: "Readable unit name" },
     ],
     layer: "SILVER",
-    transform: "The primary unit held on the item is resolved to a name and normalised so quantities from different plants can be added together.",
+    transform: "The primary unit held on the item is resolved to a name and normalized so quantities from different plants can be added together.",
     verified: "NEEDS_SME_REVIEW",
   },
 
@@ -314,7 +314,7 @@ const REGISTRY = {
     ],
     layer: "SILVER",
     transform: "A proposed requisition line is assembled from the demand signal, the approved supplier for the part and the current agreed price, and is held for a buyer to release.",
-    assumption: "Nothing is released to a supplier without a person approving it. Automation stops at the proposal. Note that requisition line type and supplier site are not registered on this object; if the manufacturer keys them, they need adding here first.",
+    assumption: "Nothing is released to a supplier without a person approving it. Automation stops at the proposal. Requisition line type and supplier site are not registered on this object. If the manufacturer keys them, they need adding here first.",
     verified: "NEEDS_SME_REVIEW",
   },
 
@@ -480,7 +480,7 @@ const REGISTRY = {
     fields: [
       { name: "staged requisition line", note: "The proposed line, written to the interface" },
       { name: "staged distribution", note: "The charge account for that line" },
-      { name: "unapproved status", note: "What keeps a person in the loop" },
+      { name: "unapproved status", note: "The document is created unapproved and stays that way until approved" },
     ],
     layer: "SILVER",
     transform: "Staged rows are written to the requisition interface and processed by the Requisition Import concurrent program, which creates the document in an unapproved state. No commitment exists until a person approves it in the source system.",
@@ -682,7 +682,7 @@ const REGISTRY = {
       { name: "quantity per", note: "How many per parent" },
     ],
     layer: "SILVER",
-    transform: "The source of the same assembly evidence on the duplicate score. Structures are expanded so two parts sitting at different positions in one assembly can be recognised.",
+    transform: "The source of the same assembly evidence on the duplicate score. Structures are expanded so two parts sitting at different positions in one assembly can be identified.",
     assumption: "The appendix names the objects but not their properties, so none is asserted. Which structure is expanded, working or released, needs deciding.",
     verified: "NEEDS_SME_REVIEW",
   },
@@ -785,7 +785,7 @@ const REGISTRY = {
     layer: "GOLD",
     mart: MARTS.PART_ENTITY,
     transform: "Candidate members are grouped into a cluster when description, classified characteristics and supplier references agree closely enough to suggest one physical part. The score is a sum of evidence contributions, some of which subtract.",
-    assumption: "A cluster is a candidate for review, not a decision. Nothing is merged automatically.",
+    assumption: "A cluster is a candidate for review. Nothing is merged automatically.",
     verified: "NEEDS_SME_REVIEW",
   },
 
@@ -801,7 +801,7 @@ const REGISTRY = {
     layer: "GOLD",
     mart: MARTS.PART_ENTITY,
     transform: "Spend on every member of a cluster is added together and the price spread between members is shown as the exposure created by the duplication.",
-    assumption: "Price differences between members are treated as avoidable only where the members are genuinely the same part. Every figure is illustrative.",
+    assumption: "Price differences between members are treated as avoidable only where the members are the same part. Every figure is illustrative.",
     verified: "NEEDS_SME_REVIEW",
   },
 
@@ -911,7 +911,7 @@ export const LAYER_LABEL: Record<SourceRef["layer"], string> = {
 
 /** Shown when an entry is registered at object level rather than field level. */
 export const OBJECT_LEVEL_NOTE =
-  "Registered at object level. The object is named; the entries below describe what is needed, not what the source calls it."
+  "Registered at object level. The object is named. The entries below describe what is needed rather than what the source calls it."
 
 export const VERIFIED_LABEL: Record<SourceRef["verified"], string> = {
   VERIFIED: "Verified",

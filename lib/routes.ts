@@ -13,8 +13,8 @@ export type Screen = {
 export const SCREENS: Screen[] = [
   { step: 1, href: "/problems", label: "Problem selection", summary: "Choose the problem to walk through" },
   { step: 2, href: "/fabric", label: "Fabric skeleton", summary: "The shape of the fabric before it is loaded" },
-  { step: 3, href: "/parts", label: "Part master intelligence", summary: "What the part master really contains" },
-  { step: 4, href: "/mro", label: "MRO signals", summary: "What the assets are telling us" },
+  { step: 3, href: "/parts", label: "Part master intelligence", summary: "Duplicate clusters and field completeness" },
+  { step: 4, href: "/mro", label: "MRO signals", summary: "Asset condition and spare part cover" },
   { step: 5, href: "/procurement", label: "Automated procurement", summary: "From signal to a proposed requisition" },
   { step: 6, href: "/fabric/live", label: "Fabric populated", summary: "The fabric reflecting this session" },
   { step: 7, href: "/engagement", label: "What it takes", summary: "Scope, sequence and the work involved" },

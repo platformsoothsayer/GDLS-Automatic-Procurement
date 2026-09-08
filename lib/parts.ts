@@ -148,7 +148,7 @@ export function buildClusterRows(): ClusterRow[] {
 }
 
 /* ------------------------------------------------------------------ *
- * Completeness, organised by the process that needs the field
+ * Completeness, organized by the process that needs the field
  * ------------------------------------------------------------------ */
 
 export type FieldCompleteness = {
@@ -276,7 +276,7 @@ export function buildIntegrityFindings(): IntegrityFinding[] {
       id: "conflicts",
       label: "Conflicting values between the two systems for the same part",
       count: conflicting,
-      detail: "The description or the unit of measure held in engineering does not agree with the item master. Neither system is wrong on its own; they were never reconciled.",
+      detail: "The description or the unit of measure held in engineering does not agree with the item master. Neither system is wrong on its own. They were never reconciled.",
       sourceKey: "FABRIC.SILVER_PART_CONFORMED",
     },
     {
@@ -290,7 +290,7 @@ export function buildIntegrityFindings(): IntegrityFinding[] {
       id: "orphaned",
       label: "Orphaned records with no transactions and no assembly membership",
       count: orphaned,
-      detail: "Nothing has ever been bought against them and no structure uses them. Completing their fields would be wasted effort.",
+      detail: "Nothing has ever been bought against them and no structure uses them. Completing their fields would serve no process.",
       sourceKey: "PART.TC_BOM_USAGE",
     },
     {

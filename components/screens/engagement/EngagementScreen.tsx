@@ -127,7 +127,7 @@ export function EngagementScreen({ figures }: { figures: FabricFigures }) {
                   <p className="text-[9.5px] leading-[11px] text-navy-muted">{band.sourcesAdded}</p>
                 </div>
                 <div>
-                  <p className="text-[9px] font-semibold uppercase tracking-wide text-navy-faint">Problems unlocked</p>
+                  <p className="text-[9px] font-semibold uppercase tracking-wide text-navy-faint">Problems addressed</p>
                   <ul className="space-y-px">
                     {band.problemsUnlocked.map((item) => (
                       <li key={item} className="text-[9.5px] leading-[11px] text-navy-muted">

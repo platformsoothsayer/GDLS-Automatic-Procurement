@@ -41,7 +41,7 @@ export const DORMANT_SOURCES: DormantSource[] = [
   { id: "rest", label: "Plus thousands" },
 ]
 
-export const DORMANT_NOTE = "Joins when a problem needs it."
+export const DORMANT_NOTE = "Added when a problem requires it"
 
 export const LAYER_ONE_CAPTION =
   "Systems of record generate data. Intelligence is built above them."
@@ -70,7 +70,7 @@ export const PIPELINE: PipelineStage[] = [
   { id: "consume", name: "Consume", weight: 1 },
 ]
 
-export const RESOLVE_CAPTION = "One part. One supplier. One program. Across sources."
+export const RESOLVE_CAPTION = "One record per part, supplier and program across both sources"
 
 /** What the conform stage standardises. */
 export const CONFORMED = ["units of measure", "organization codes", "supplier identifiers", "date formats"]
@@ -90,7 +90,7 @@ export const RESIDENCY_OPTIONS: ResidencyOption[] = [
   {
     id: "on-prem",
     label: "On premise",
-    line: "Extract, land, conform, resolve and publish all execute inside the manufacturer's own data centre. Nothing leaves the estate.",
+    line: "Extract, land, conform, resolve and publish all execute inside the manufacturer's own data center. Nothing leaves the estate.",
   },
   {
     id: "azure-gov",
@@ -121,7 +121,7 @@ export const ACCRETION_STEPS: AccretionStep[] = [
   {
     id: "today",
     label: "Today",
-    summary: "Two sources. Three resolved entity types. Three problems live.",
+    summary: "Two sources, three resolved entity types, three problems live",
     caption: "Funded by the return on these three problems.",
     activates: [],
     entitiesGained: ["Part", "Supplier", "Asset"],
@@ -159,7 +159,7 @@ export const FEDERATION_OPTIONS: FederationOption[] = [
   {
     id: "products",
     title: "Off the shelf data layer products",
-    body: "Genuinely strong on operational technology and sensor data, and the better choice where that is the problem. Thinner across enterprise transactional systems, where these problems sit.",
+    body: "Strong on operational technology and sensor data, and the better choice where that is the problem. Thinner across enterprise transactional systems, where these problems sit.",
     verdict: "Partial fit",
     tone: "attention",
   },
@@ -184,4 +184,4 @@ export const FEDERATION_OPTIONS: FederationOption[] = [
 export const EMPTY_LINE = "Three problems build the first section of this."
 
 export const CLOSING_LINE =
-  "Data quality is not a prerequisite for the fabric. Entity resolution is the fabric."
+  "The fabric performs entity resolution continuously. Source data does not have to be clean before it starts."

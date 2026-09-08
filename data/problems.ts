@@ -1,5 +1,5 @@
 /**
- * Candidate problem catalogue for screen 1.
+ * Candidate problem catalog for screen 1.
  *
  * Curated presentation content, not seeded data. Positions on the scatter plot are
  * composed deliberately so the plot reads in the few seconds a presenter has, which
@@ -108,7 +108,7 @@ export const CANDIDATE_PROBLEMS: CandidateProblem[] = [
     labelLines: ["Automated procurement from", "signal to purchase order"],
     detail: {
       statement:
-        "A buyer retypes what the system already knows, and the order waits in a queue behind work that needed no judgement.",
+        "A buyer retypes what the system already knows, and the order waits in a queue behind work that needed no judgment.",
       valueSourceKey: "SUP.PRICE_VARIANCE",
       sources: [
         { label: "Approved list", key: "SUP.APPROVED_LIST" },
@@ -244,7 +244,7 @@ export const PLOT = {
   alignmentTicks: [1, 2, 3, 4, 5],
   /** Circle area in square pixels per unit of data readiness effort. */
   areaPerEffort: 10,
-  /** The start here band, as a centre line across the value axis and a half height. */
+  /** The start here band, as a center line across the value axis and a half height. */
   band: { startAlignment: 2.7, endAlignment: 5.0, halfHeight: 0.5 },
 }
 
@@ -259,7 +259,7 @@ export function valueFraction(annualValue: number): number {
   return (Math.log10(annualValue) - lo) / (hi - lo)
 }
 
-export function bandCentreAt(annualValue: number): number {
+export function bandCenterAt(annualValue: number): number {
   const { startAlignment, endAlignment } = PLOT.band
   return startAlignment + (endAlignment - startAlignment) * valueFraction(annualValue)
 }

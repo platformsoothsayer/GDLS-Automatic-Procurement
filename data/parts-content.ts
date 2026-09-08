@@ -60,7 +60,7 @@ export const REVISION_HISTORY_NOTE =
   "A revision marked * was created with no change notice delivering it."
 
 export const COMPLETENESS_CLOSING =
-  "Not cleaning the master. Completing the fields these three processes need."
+  "Only the fields these three processes require are in scope."
 
 export const INTEGRITY_TITLE = "Other integrity findings"
 

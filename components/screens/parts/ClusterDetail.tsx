@@ -228,9 +228,9 @@ export function ClusterDetail({ cluster }: { cluster: ClusterRow }) {
 
           <div className="border-t border-hairline px-3 py-1.5 text-[10.5px] text-navy-muted">
             Impact <span className="mono text-navy">{compactMoney(cluster.estimatedImpact)}</span> a year ·
-            carrying <span className="mono">{compactMoney(cluster.carryingCost)}</span> · leverage{" "}
+            carrying <span className="mono">{compactMoney(cluster.carryingCost)}</span> · volume leverage{" "}
             <span className="mono">{compactMoney(cluster.leverageLoss)}</span>
-            <span className="block text-[9.5px] text-navy-faint">Illustrative, on illustrative rates.</span>
+            <span className="block text-[9.5px] text-navy-faint">Illustrative figures on illustrative rates</span>
           </div>
         </div>
 

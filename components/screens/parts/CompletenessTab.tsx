@@ -1,7 +1,7 @@
 "use client"
 
 /**
- * Completeness organised by the process that needs the field, not as a score.
+ * Completeness organized by the process that needs the field, not as a score.
  *
  * A part with a missing lead time is not a low quality record in the abstract. It is
  * a part that cannot be bought automatically, and that is what the card says.

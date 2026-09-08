@@ -44,8 +44,8 @@ export function Stage2Recommendation({ recommendation }: { recommendation: Recom
           <dl className="mt-2 space-y-1 text-[10.5px]">
             {[
               ["Expected downtime", `${costOfInaction.downtimeHours} h`],
+              ["Lost output per hour", money(costOfInaction.downtimeCostPerHour)],
               ["Downtime cost", compactMoney(costOfInaction.downtimeCost)],
-              ["Criticality weighting", `×${costOfInaction.criticalityWeight.toFixed(2)}`],
               ["Expedite premium", compactMoney(costOfInaction.expeditePremium)],
             ].map(([label, value]) => (
               <div key={label} className="flex justify-between gap-2">
@@ -55,8 +55,10 @@ export function Stage2Recommendation({ recommendation }: { recommendation: Recom
             ))}
           </dl>
           <p className="mt-2 text-[9.5px] leading-snug text-attention/80">
-            Illustrative rates, to be set with the manufacturer's own downtime costing before
-            anyone relies on this number.
+            Downtime hours come from asset criticality {signal.criticality} of 4, where 1 is the
+            most critical. The hourly rate is the illustrative band for {signal.assetGroup.toLowerCase()}.
+            Both would be set with the manufacturer's own downtime costing before anyone relies
+            on this number.
           </p>
           <p className="mono mt-2 border-t border-attention/30 pt-1.5 text-[10px] text-attention/80">
             {signal.signalId}

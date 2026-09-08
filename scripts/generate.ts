@@ -38,16 +38,27 @@ const SEED = 0x5eed1f4b
 const OUT_DIR = join(process.cwd(), "data", "generated")
 
 const DAY = 86_400_000
-const PERIOD_START = Date.UTC(2024, 9, 1) // 2024-10-01
-const PERIOD_END = Date.UTC(2026, 8, 30) // 2026-09-30
-const AS_OF = Date.UTC(2026, 8, 1) // 2026-09-01
+
+// The dataset is anchored to the day it is generated rather than to a fixed date, so
+// a demonstration never opens on a need date that has already passed. Everything
+// downstream is expressed relative to this anchor: the twenty four month purchasing
+// window ends with the current month, and every predicted need date is an offset from
+// it. Two builds on the same day are byte identical.
+const BUILD_DAY = new Date()
+const AS_OF_YEAR = BUILD_DAY.getUTCFullYear()
+const AS_OF_MONTH = BUILD_DAY.getUTCMonth()
+const AS_OF = Date.UTC(AS_OF_YEAR, AS_OF_MONTH, BUILD_DAY.getUTCDate())
+/** First day of the month twenty three months back. */
+const PERIOD_START = Date.UTC(AS_OF_YEAR - 2, AS_OF_MONTH + 1, 1)
+/** Last day of the current month. */
+const PERIOD_END = Date.UTC(AS_OF_YEAR, AS_OF_MONTH + 1, 0)
 
 const iso = (ms: number) => new Date(ms).toISOString().slice(0, 10)
 const monthKey = (ms: number) => new Date(ms).toISOString().slice(0, 7)
 
 const MONTHS: string[] = (() => {
   const out: string[] = []
-  for (let i = 0; i < 24; i++) out.push(monthKey(Date.UTC(2024, 9 + i, 1)))
+  for (let i = 0; i < 24; i++) out.push(monthKey(Date.UTC(AS_OF_YEAR - 2, AS_OF_MONTH + 1 + i, 1)))
   return out
 })()
 
@@ -150,7 +161,7 @@ const OWNING_USERS = [
   "t.lindqvist", "j.aparicio", "d.okonkwo", "n.farrell",
 ]
 
-const ASSET_GROUPS = ["CNC MACHINING CENTRE", "HYDRAULIC PRESS", "OVERHEAD CRANE", "PAINT BOOTH",
+const ASSET_GROUPS = ["CNC MACHINING CENTER", "HYDRAULIC PRESS", "OVERHEAD CRANE", "PAINT BOOTH",
   "WELDING CELL", "HEAT TREAT FURNACE", "CONVEYOR LINE", "AIR COMPRESSOR", "TEST RIG",
   "MATERIAL HANDLER"]
 
@@ -519,7 +530,7 @@ const duplicateClusters: DuplicateCluster[] = []
       evidence.unshift({
         code: "DESCRIPTION_MATCH",
         label: "Description",
-        finding: `Description similarity ${similarity.toFixed(2)} after normalisation`,
+        finding: `Description similarity ${similarity.toFixed(2)} after normalization`,
         points: descPoints,
       })
 
@@ -695,6 +706,32 @@ const SHORT_LEAD_DAYS = 60
 const shortLeadSpares = sparePool.filter((p) => (p.leadTimeDays ?? 0) <= SHORT_LEAD_DAYS)
 const longLeadSpares = sparePool.filter((p) => (p.leadTimeDays ?? 0) > SHORT_LEAD_DAYS)
 
+// Assets that will carry a timing signal are chosen up front so the count is fixed
+// rather than emergent. Their spare has to carry a lead time long enough for the
+// need date to still sit in the future once the slack is taken out of it.
+const TIMING_SIGNAL_COUNT = 15
+const TIMING_MIN_LEAD_DAYS = 30
+const timingSpares = sparePool.filter((p) => (p.leadTimeDays ?? 0) >= TIMING_MIN_LEAD_DAYS)
+const timingAssetIndexes = new Set(
+  new Rng(SEED ^ 0x7a).sample([...Array(210).keys()], TIMING_SIGNAL_COUNT)
+)
+
+/**
+ * Slack is days until need minus supplier lead time. It is never sampled on its own,
+ * because the need date has to stay consistent with it. A slack is drawn here and the
+ * need date is then placed at lead time plus slack days from today, so the two always
+ * agree. The distribution leans shallow: half of the signals are within a week of the
+ * point where ordering is already too late.
+ */
+const SLACK_BANDS = [
+  { min: -7, max: -1, weight: 50 },
+  { min: -14, max: -8, weight: 30 },
+  { min: -21, max: -15, weight: 20 },
+]
+
+/** Days a need date must clear the lead time by if the asset is not to raise a timing signal. */
+const TIMING_CLEARANCE_DAYS = 22
+
 const assets: MaintainableAsset[] = []
 for (let i = 0; i < 210; i++) {
   const group = rng.pick(ASSET_GROUPS)
@@ -714,16 +751,36 @@ for (let i = 0; i < 210; i++) {
   const signalScore =
     Math.round(((100 - conditionScore) * 0.45 + Math.min(failures12m, 14) * 3.2 + critWeight * 22) * 10) / 10
 
+  const raisesTimingSignal = timingAssetIndexes.has(i)
   const longLead = rng.bool(0.14)
-  const primarySpare = rng.pick(longLead && longLeadSpares.length ? longLeadSpares : shortLeadSpares)
+  const primarySpare = raisesTimingSignal
+    ? rng.pick(timingSpares)
+    : rng.pick(longLead && longLeadSpares.length ? longLeadSpares : shortLeadSpares)
   const spares = [primarySpare, ...rng.sample(sparePool, rng.int(2, 7))]
+  const leadTimeDays = primarySpare.leadTimeDays ?? 45
 
   // Planned service comes from the interval. The predicted failure date comes from
   // condition: the worse the asset looks, the sooner it is expected to need a part.
-  const nextServiceMs = AS_OF + rng.int(15, 540) * DAY
+  const plannedServiceMs = AS_OF + rng.int(15, 540) * DAY
   const predictedFailureMs = AS_OF + Math.round(conditionScore * 4.4 + rng.int(-10, 60)) * DAY
-  const usePredicted = predictedFailureMs < nextServiceMs
-  const predictedNeedMs = usePredicted ? predictedFailureMs : nextServiceMs
+
+  const band = rng.weighted(SLACK_BANDS.map((b) => ({ value: b, weight: b.weight })))
+  const slackDays = rng.int(band.min, band.max)
+
+  const predictedNeedMs = raisesTimingSignal
+    ? // Placed so that days until need minus lead time lands on the drawn slack.
+      AS_OF + (leadTimeDays + slackDays) * DAY
+    : // Everything else has to sit clear of the lead time window, otherwise assets
+      // would trip the timing condition by accident and the count would drift.
+      Math.max(
+        Math.min(plannedServiceMs, predictedFailureMs),
+        AS_OF + (leadTimeDays + TIMING_CLEARANCE_DAYS) * DAY
+      )
+
+  // The planned service can never fall before the date the part is predicted to be
+  // needed, or the earlier of the two would be the real driver.
+  const nextServiceMs = Math.max(plannedServiceMs, predictedNeedMs)
+  const usePredicted = predictedNeedMs < nextServiceMs
 
   assets.push({
     assetNumber: `AST-${String(3000 + i * 3)}`,

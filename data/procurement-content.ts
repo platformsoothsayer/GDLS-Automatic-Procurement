@@ -34,12 +34,12 @@ export type SignalSource = {
 }
 
 export const SIGNAL_SOURCES: SignalSource[] = [
-  { id: "mro", label: "Maintenance and MRO", status: "LIVE", note: "Live. Carrying real signals." },
-  { id: "demand", label: "Demand plan", status: "PHASE_2", note: "Same loop, different trigger." },
-  { id: "price", label: "Price forecast", status: "PHASE_3", note: "Same loop, different trigger." },
+  { id: "mro", label: "Maintenance and MRO", status: "LIVE", note: "Live, carrying real signals" },
+  { id: "demand", label: "Demand plan", status: "PHASE_2", note: "Same sequence, different trigger" },
+  { id: "price", label: "Price forecast", status: "PHASE_3", note: "Same sequence, different trigger" },
 ]
 
-export const INTAKE_LINE = "One signal now. The loop is the same when the others are added."
+export const INTAKE_LINE = "One source is live. The same sequence runs when the other two are added."
 
 export type ModeSpec = {
   id: "advisory" | "prepopulated"
@@ -119,7 +119,7 @@ export const RFQ_ROUTES: { key: SourceKey; label: string; note: string }[] = [
 ]
 
 export const RFQ_ROUTE_NOTE =
-  "Both routes are carried in the registry. Which one applies is a question for your purchasing team, not a decision we should be making for you."
+  "Both routes are carried in the registry. Which one applies is a question for your purchasing team."
 
 /**
  * Two routes for the write back after an award, for the same reason.
@@ -131,7 +131,7 @@ export const WRITEBACK_ROUTE_NOTE =
 export const RANKING_WEIGHTS = { price: 50, delivery: 25, quality: 15, terms: 10 }
 
 export const RANKING_NOTE =
-  "Feasibility is a gate, not a weighting. A quotation that cannot arrive before the need date is not eligible to win on price."
+  "Feasibility is checked before price. A quotation that cannot arrive before the need date is excluded from the ranking."
 
 export const AWARD_JUSTIFICATION_PROMPT =
   "This is not the top ranked response. A justification is required before the award can be recorded."

@@ -20,7 +20,7 @@ import {
   YAxis,
 } from "recharts"
 import {
-  bandCentreAt,
+  bandCenterAt,
   CANDIDATE_PROBLEMS,
   PLOT,
   radiusFor,
@@ -67,20 +67,20 @@ function StartHereBand(props: ChartInternals) {
         (i / steps) * (Math.log10(PLOT.valueMax) - Math.log10(PLOT.valueMin))
     )
     const px = xAxis.scale(value)
-    const centre = bandCentreAt(value)
-    upper.push(`${px},${yAxis.scale(clamp(centre + halfHeight))}`)
-    lower.push(`${px},${yAxis.scale(clamp(centre - halfHeight))}`)
+    const center = bandCenterAt(value)
+    upper.push(`${px},${yAxis.scale(clamp(center + halfHeight))}`)
+    lower.push(`${px},${yAxis.scale(clamp(center - halfHeight))}`)
   }
 
   // Anchor the label inside the band near its lower left end, rotated to match it.
   const labelValue = 260_000
   const lx = xAxis.scale(labelValue)
-  const ly = yAxis.scale(bandCentreAt(labelValue))
+  const ly = yAxis.scale(bandCenterAt(labelValue))
   const x0 = xAxis.scale(PLOT.valueMin)
   const x1 = xAxis.scale(PLOT.valueMax)
   const angle =
     (Math.atan2(
-      yAxis.scale(bandCentreAt(PLOT.valueMax)) - yAxis.scale(bandCentreAt(PLOT.valueMin)),
+      yAxis.scale(bandCenterAt(PLOT.valueMax)) - yAxis.scale(bandCenterAt(PLOT.valueMin)),
       x1 - x0
     ) *
       180) /

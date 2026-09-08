@@ -1767,13 +1767,13 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-836683"
       }
     ],
     "bomUsageCount": 2,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "3750826-571"
   },
   {
@@ -4992,7 +4992,7 @@
     "assemblies": [
       "ASM-102335"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "7541975-771"
   },
   {
@@ -9102,19 +9102,19 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-906992"
       },
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-380876"
       }
     ],
     "bomUsageCount": 0,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "6522205-360"
   },
   {
@@ -9197,13 +9197,13 @@
       {
         "revisionId": "C",
         "description": "Revision C of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-679214"
       },
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-646345"
       }
     ],
@@ -9212,7 +9212,7 @@
       "ASM-642156",
       "ASM-994703"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "7010361-046"
   },
   {
@@ -9461,7 +9461,7 @@
     ],
     "bomUsageCount": 1,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "9962975-826"
   },
   {
@@ -11809,7 +11809,7 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-529636"
       }
     ],
@@ -11819,7 +11819,7 @@
       "ASM-174962",
       "ASM-265016"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "1333248-500"
   },
   {
@@ -12905,19 +12905,19 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-747660"
       },
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-872101"
       }
     ],
     "bomUsageCount": 3,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "2106101-810"
   },
   {
@@ -13567,7 +13567,7 @@
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-788858"
       }
     ],
@@ -13576,7 +13576,7 @@
       "ASM-666972",
       "ASM-501144"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "1814827-098"
   },
   {
@@ -14732,13 +14732,13 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-173554"
       }
     ],
     "bomUsageCount": 5,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "1634892-482"
   },
   {
@@ -16350,7 +16350,7 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-934918"
       }
     ],
@@ -16359,7 +16359,7 @@
       "ASM-529683",
       "ASM-651663"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "6083705-364"
   },
   {
@@ -17340,13 +17340,13 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-567040"
       },
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-764183"
       }
     ],
@@ -17355,7 +17355,7 @@
       "ASM-351634",
       "ASM-770366"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "4431809-384"
   },
   {
@@ -19071,13 +19071,13 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-05",
         "changeNoticeId": "CN-299199"
       },
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
@@ -19085,7 +19085,7 @@
     "assemblies": [
       "ASM-827562"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "5594103-189"
   },
   {
@@ -19392,13 +19392,13 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       },
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
@@ -19408,7 +19408,7 @@
       "ASM-428381",
       "ASM-223304"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "8005881-433"
   },
   {
@@ -19716,7 +19716,7 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-356798"
       }
     ],
@@ -19724,7 +19724,7 @@
     "assemblies": [
       "ASM-614127"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "3361403-513"
   },
   {
@@ -22720,19 +22720,19 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       },
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-189251"
       },
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
@@ -22742,7 +22742,7 @@
       "ASM-840089",
       "ASM-160218"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "2389756-982"
   },
   {
@@ -23840,7 +23840,7 @@
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
@@ -23849,7 +23849,7 @@
       "ASM-889188",
       "ASM-393553"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "9119400-079"
   },
   {
@@ -24057,13 +24057,13 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-766907"
       },
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
@@ -24072,7 +24072,7 @@
       "ASM-524582",
       "ASM-430243"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "2639361-216"
   },
   {
@@ -26132,13 +26132,13 @@
       {
         "revisionId": "C",
         "description": "Revision C of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-453907"
       },
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
@@ -26148,7 +26148,7 @@
       "ASM-904893",
       "ASM-509435"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "4737539-773"
   },
   {
@@ -26749,7 +26749,7 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
@@ -26759,7 +26759,7 @@
       "ASM-314246",
       "ASM-560980"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "6832448-143"
   },
   {
@@ -27169,7 +27169,7 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-632599"
       }
     ],
@@ -27178,7 +27178,7 @@
       "ASM-616934",
       "ASM-199935"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "6215021-699"
   },
   {
@@ -27494,7 +27494,7 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-442727"
       }
     ],
@@ -27503,7 +27503,7 @@
       "ASM-882226",
       "ASM-687018"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "1131445-581"
   },
   {
@@ -28669,19 +28669,19 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-764279"
       },
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-630563"
       }
     ],
     "bomUsageCount": 38,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "9448762-043"
   },
   {
@@ -28716,7 +28716,7 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-130745"
       }
     ],
@@ -28725,7 +28725,7 @@
       "ASM-646427",
       "ASM-348333"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "8612062-254"
   },
   {
@@ -30716,13 +30716,13 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-669446"
       }
     ],
     "bomUsageCount": 3,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "3152495-414"
   },
   {
@@ -31180,7 +31180,7 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-227451"
       }
     ],
@@ -31188,7 +31188,7 @@
     "assemblies": [
       "ASM-590304"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "1293193-455"
   },
   {
@@ -31235,7 +31235,7 @@
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-960448"
       }
     ],
@@ -31245,7 +31245,7 @@
       "ASM-439039",
       "ASM-310378"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "2920205-153"
   },
   {
@@ -31934,13 +31934,13 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-817883"
       },
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-828845"
       }
     ],
@@ -31950,7 +31950,7 @@
       "ASM-340101",
       "ASM-483620"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "7846138-943"
   },
   {
@@ -33848,19 +33848,19 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-185799"
       },
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-324697"
       }
     ],
     "bomUsageCount": 3,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "8139905-474"
   },
   {
@@ -40356,7 +40356,7 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-506400"
       }
     ],
@@ -40364,7 +40364,7 @@
     "assemblies": [
       "ASM-115640"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "8511033-116"
   },
   {
@@ -42255,7 +42255,7 @@
     "assemblies": [
       "ASM-535808"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-02",
     "oraclePartNumber": "2916893-068"
   },
   {
@@ -42739,13 +42739,13 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       },
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-735127"
       }
     ],
@@ -42755,7 +42755,7 @@
       "ASM-222143",
       "ASM-484396"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "2019554-072"
   },
   {
@@ -43240,7 +43240,7 @@
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
@@ -43249,7 +43249,7 @@
       "ASM-127985",
       "ASM-601777"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "3425887-479"
   },
   {
@@ -43337,7 +43337,7 @@
       {
         "revisionId": "C",
         "description": "Revision C of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-362991"
       }
     ],
@@ -43346,7 +43346,7 @@
       "ASM-836695",
       "ASM-715416"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "4860498-148"
   },
   {
@@ -43891,13 +43891,13 @@
       {
         "revisionId": "C",
         "description": "Revision C of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-647208"
       },
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-799981"
       }
     ],
@@ -43905,7 +43905,7 @@
     "assemblies": [
       "ASM-532310"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "6512231-118"
   },
   {
@@ -45874,13 +45874,13 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       }
     ],
     "bomUsageCount": 6,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "9230818-826"
   },
   {
@@ -46086,7 +46086,7 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-219188"
       }
     ],
@@ -46094,7 +46094,7 @@
     "assemblies": [
       "ASM-332204"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "1458187-009"
   },
   {
@@ -48798,13 +48798,13 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": null
       },
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-400557"
       }
     ],
@@ -48812,7 +48812,7 @@
     "assemblies": [
       "ASM-538897"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "3449380-812"
   },
   {
@@ -49372,7 +49372,7 @@
       "ASM-900050",
       "ASM-612508"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "5226747-035"
   },
   {
@@ -51058,13 +51058,13 @@
       {
         "revisionId": "C",
         "description": "Revision C of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-642608"
       },
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-136744"
       }
     ],
@@ -51074,7 +51074,7 @@
       "ASM-773831",
       "ASM-144702"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "5808735-236"
   },
   {
@@ -54190,7 +54190,7 @@
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-626484"
       }
     ],
@@ -54200,7 +54200,7 @@
       "ASM-153910",
       "ASM-695463"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "2713743-522"
   },
   {
@@ -56026,13 +56026,13 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-606656"
       }
     ],
     "bomUsageCount": 1,
     "assemblies": [],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "6967982-794"
   },
   {
@@ -59483,7 +59483,7 @@
       {
         "revisionId": "E",
         "description": "Revision E of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-661366"
       }
     ],
@@ -59493,7 +59493,7 @@
       "ASM-429185",
       "ASM-536394"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "7507755-445"
   },
   {
@@ -59906,7 +59906,7 @@
       {
         "revisionId": "C",
         "description": "Revision C of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-522055"
       }
     ],
@@ -59914,7 +59914,7 @@
     "assemblies": [
       "ASM-322895"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "4760814-440"
   },
   {
@@ -60055,7 +60055,7 @@
       {
         "revisionId": "D",
         "description": "Revision D of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-08",
         "changeNoticeId": "CN-855721"
       }
     ],
@@ -60063,7 +60063,7 @@
     "assemblies": [
       "ASM-843647"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-08",
     "oraclePartNumber": "2298577-391"
   },
   {
@@ -61356,7 +61356,7 @@
       {
         "revisionId": "F",
         "description": "Revision F of the released definition",
-        "releasedOn": "2026-09-01",
+        "releasedOn": "2026-09-03",
         "changeNoticeId": "CN-935799"
       }
     ],
@@ -61366,7 +61366,7 @@
       "ASM-987863",
       "ASM-657144"
     ],
-    "lastModifiedOn": "2026-09-01",
+    "lastModifiedOn": "2026-09-03",
     "oraclePartNumber": "7459912-008"
   },
   {

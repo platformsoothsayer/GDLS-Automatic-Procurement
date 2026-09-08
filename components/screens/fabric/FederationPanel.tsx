@@ -3,7 +3,7 @@
 /**
  * Three ways to get a fabric, with a verdict on each.
  *
- * The first row has to be fair. Off the shelf products are genuinely better where
+ * The first row has to be fair. Off the shelf products are better where
  * the problem is operational technology and sensor data, and saying so is what makes
  * the second row credible.
  */

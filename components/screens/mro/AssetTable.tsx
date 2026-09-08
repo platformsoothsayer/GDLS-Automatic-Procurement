@@ -34,8 +34,9 @@ export function AssetTable({
           Maintainable assets
         </span>
         <span className="text-[10px] text-navy-faint">
-          <span className="mono text-navy-muted">{int(rows.filter((r) => r.signalId).length)}</span> producing a
-          signal of <span className="mono text-navy-muted">{int(rows.length)}</span>
+          <span className="mono text-navy-muted">{int(rows.filter((r) => r.signalId).length)}</span> of{" "}
+          <span className="mono text-navy-muted">{int(rows.length)}</span> producing a signal ·
+          criticality 1 is the most critical
         </span>
       </header>
 
@@ -46,7 +47,9 @@ export function AssetTable({
               <th className={TH}>Asset</th>
               <th className={TH}>Description</th>
               <th className={TH}>Loc</th>
-              <th className={`${TH} text-center`}>Crit</th>
+              <th className={`${TH} text-center`} title="Criticality 1 to 4. 1 is the most critical">
+                Crit
+              </th>
               <th className={TH}>Cond</th>
               <th className={TH}>Last svc</th>
               <th className={TH}>Next svc</th>

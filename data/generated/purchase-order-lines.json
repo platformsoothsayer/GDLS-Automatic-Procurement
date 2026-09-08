@@ -527,9 +527,9 @@
     "orderedOn": "2026-07-04",
     "needByOn": "2026-08-31",
     "promisedOn": "2026-09-09",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-04",
+    "daysLate": -5,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-000029",
@@ -2389,9 +2389,9 @@
     "orderedOn": "2026-05-28",
     "needByOn": "2026-09-14",
     "promisedOn": "2026-09-09",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": -1,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-000127",
@@ -3947,9 +3947,9 @@
     "orderedOn": "2026-06-28",
     "needByOn": "2026-09-03",
     "promisedOn": "2026-09-10",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": -5,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-000209",
@@ -4232,9 +4232,9 @@
     "orderedOn": "2026-06-14",
     "needByOn": "2026-08-10",
     "promisedOn": "2026-08-07",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-06",
+    "daysLate": 30,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-000224",
@@ -5657,9 +5657,9 @@
     "orderedOn": "2026-07-15",
     "needByOn": "2026-08-22",
     "promisedOn": "2026-08-17",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": 19,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-000299",
@@ -5828,9 +5828,9 @@
     "orderedOn": "2026-04-14",
     "needByOn": "2026-09-11",
     "promisedOn": "2026-09-09",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": -1,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-000308",
@@ -7804,9 +7804,9 @@
     "orderedOn": "2026-08-05",
     "needByOn": "2026-09-01",
     "promisedOn": "2026-08-31",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-02",
+    "daysLate": 2,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-000412",
@@ -8830,9 +8830,9 @@
     "orderedOn": "2026-03-27",
     "needByOn": "2026-09-01",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-07",
+    "daysLate": -1,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-000466",
@@ -9343,9 +9343,9 @@
     "orderedOn": "2026-05-28",
     "needByOn": "2026-09-15",
     "promisedOn": "2026-09-10",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-07",
+    "daysLate": -3,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-000493",
@@ -9894,9 +9894,9 @@
     "orderedOn": "2026-07-27",
     "needByOn": "2026-09-05",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-06",
+    "daysLate": -2,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-000522",
@@ -17513,9 +17513,9 @@
     "orderedOn": "2026-07-21",
     "needByOn": "2026-09-02",
     "promisedOn": "2026-09-10",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": -5,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-000923",
@@ -21294,9 +21294,9 @@
     "orderedOn": "2026-06-01",
     "needByOn": "2026-09-18",
     "promisedOn": "2026-09-12",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "CANCELLED"
+    "receivedOn": "2026-09-07",
+    "daysLate": -5,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-001122",
@@ -21370,9 +21370,9 @@
     "orderedOn": "2026-04-05",
     "needByOn": "2026-08-26",
     "promisedOn": "2026-08-22",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": 17,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-001126",
@@ -21921,9 +21921,9 @@
     "orderedOn": "2026-06-27",
     "needByOn": "2026-08-25",
     "promisedOn": "2026-09-03",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-03",
+    "daysLate": 0,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-001155",
@@ -21997,9 +21997,9 @@
     "orderedOn": "2026-07-14",
     "needByOn": "2026-08-18",
     "promisedOn": "2026-08-18",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": 18,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-001159",
@@ -22890,9 +22890,9 @@
     "orderedOn": "2026-02-14",
     "needByOn": "2026-09-01",
     "promisedOn": "2026-09-10",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": -5,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-001206",
@@ -26006,9 +26006,9 @@
     "orderedOn": "2026-07-03",
     "needByOn": "2026-08-29",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-04",
+    "daysLate": -4,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-001370",
@@ -32200,9 +32200,9 @@
     "orderedOn": "2026-06-27",
     "needByOn": "2026-09-03",
     "promisedOn": "2026-09-07",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-02",
+    "daysLate": -5,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-001696",
@@ -37121,9 +37121,9 @@
     "orderedOn": "2026-08-14",
     "needByOn": "2026-09-13",
     "promisedOn": "2026-09-07",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-07",
+    "daysLate": 0,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-001955",
@@ -43847,9 +43847,9 @@
     "orderedOn": "2026-03-24",
     "needByOn": "2026-09-16",
     "promisedOn": "2026-09-12",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": -4,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-002309",
@@ -45462,9 +45462,9 @@
     "orderedOn": "2026-01-03",
     "needByOn": "2026-08-09",
     "promisedOn": "2026-08-07",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-03",
+    "daysLate": 27,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-002394",
@@ -45652,9 +45652,9 @@
     "orderedOn": "2026-06-28",
     "needByOn": "2026-09-03",
     "promisedOn": "2026-09-04",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-03",
+    "daysLate": -1,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-002404",
@@ -46203,9 +46203,9 @@
     "orderedOn": "2026-07-19",
     "needByOn": "2026-09-12",
     "promisedOn": "2026-09-07",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-07",
+    "daysLate": 0,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-002433",
@@ -46222,9 +46222,9 @@
     "orderedOn": "2026-07-19",
     "needByOn": "2026-09-12",
     "promisedOn": "2026-09-06",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "CANCELLED"
+    "receivedOn": "2026-09-06",
+    "daysLate": 0,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-002434",
@@ -46925,9 +46925,9 @@
     "orderedOn": "2026-05-26",
     "needByOn": "2026-08-26",
     "promisedOn": "2026-09-03",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-03",
+    "daysLate": 0,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-002471",
@@ -47856,9 +47856,9 @@
     "orderedOn": "2026-03-05",
     "needByOn": "2026-08-29",
     "promisedOn": "2026-09-06",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "CANCELLED"
+    "receivedOn": "2026-09-06",
+    "daysLate": 0,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-002520",
@@ -50858,9 +50858,9 @@
     "orderedOn": "2026-07-12",
     "needByOn": "2026-08-30",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": 0,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-002678",
@@ -53195,9 +53195,9 @@
     "orderedOn": "2026-07-17",
     "needByOn": "2026-08-30",
     "promisedOn": "2026-09-06",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": -1,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-002801",
@@ -57603,9 +57603,9 @@
     "orderedOn": "2026-02-12",
     "needByOn": "2026-09-01",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "CANCELLED"
+    "receivedOn": "2026-09-07",
+    "daysLate": -1,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-003033",
@@ -57812,9 +57812,9 @@
     "orderedOn": "2026-04-15",
     "needByOn": "2026-08-30",
     "promisedOn": "2026-09-04",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-04",
+    "daysLate": 0,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-003044",
@@ -60852,9 +60852,9 @@
     "orderedOn": "2026-08-05",
     "needByOn": "2026-09-09",
     "promisedOn": "2026-09-06",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-06",
+    "daysLate": 0,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-003204",
@@ -60890,9 +60890,9 @@
     "orderedOn": "2026-08-05",
     "needByOn": "2026-09-14",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": 0,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-003206",
@@ -62676,9 +62676,9 @@
     "orderedOn": "2026-05-26",
     "needByOn": "2026-09-01",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "CANCELLED"
+    "receivedOn": "2026-09-04",
+    "daysLate": -4,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-003300",
@@ -66799,9 +66799,9 @@
     "orderedOn": "2026-05-08",
     "needByOn": "2026-08-24",
     "promisedOn": "2026-09-03",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-02",
+    "daysLate": -1,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-003517",
@@ -67236,9 +67236,9 @@
     "orderedOn": "2026-07-23",
     "needByOn": "2026-09-06",
     "promisedOn": "2026-09-06",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": -1,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-003540",
@@ -69744,9 +69744,9 @@
     "orderedOn": "2026-04-11",
     "needByOn": "2026-09-12",
     "promisedOn": "2026-09-09",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": -4,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-003672",
@@ -70960,9 +70960,9 @@
     "orderedOn": "2026-04-23",
     "needByOn": "2026-09-07",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": 0,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-003736",
@@ -71397,9 +71397,9 @@
     "orderedOn": "2026-05-11",
     "needByOn": "2026-08-31",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": 0,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-003759",
@@ -75577,9 +75577,9 @@
     "orderedOn": "2026-04-24",
     "needByOn": "2026-08-24",
     "promisedOn": "2026-09-03",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-03",
+    "daysLate": 0,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-003979",
@@ -83595,9 +83595,9 @@
     "orderedOn": "2026-05-01",
     "needByOn": "2026-09-08",
     "promisedOn": "2026-09-13",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": -5,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004401",
@@ -83804,9 +83804,9 @@
     "orderedOn": "2026-06-19",
     "needByOn": "2026-09-02",
     "promisedOn": "2026-09-09",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-04",
+    "daysLate": -5,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004412",
@@ -85191,9 +85191,9 @@
     "orderedOn": "2026-07-18",
     "needByOn": "2026-09-01",
     "promisedOn": "2026-09-05",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "CANCELLED"
+    "receivedOn": "2026-09-02",
+    "daysLate": -3,
+    "status": "RECEIVED"
   },
   {
     "poLineKey": "POL-004485",
@@ -87186,9 +87186,9 @@
     "orderedOn": "2026-06-17",
     "needByOn": "2026-08-30",
     "promisedOn": "2026-08-27",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-02",
+    "daysLate": 6,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004590",
@@ -88364,9 +88364,9 @@
     "orderedOn": "2026-06-25",
     "needByOn": "2026-08-08",
     "promisedOn": "2026-08-07",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": 32,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004652",
@@ -89257,9 +89257,9 @@
     "orderedOn": "2026-05-20",
     "needByOn": "2026-09-13",
     "promisedOn": "2026-09-10",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-07",
+    "daysLate": -3,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004699",
@@ -92411,9 +92411,9 @@
     "orderedOn": "2026-08-16",
     "needByOn": "2026-09-13",
     "promisedOn": "2026-09-11",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-07",
+    "daysLate": -4,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004865",
@@ -92601,9 +92601,9 @@
     "orderedOn": "2026-09-06",
     "needByOn": "2026-09-15",
     "promisedOn": "2026-09-09",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-06",
+    "daysLate": -3,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004875",
@@ -92696,9 +92696,9 @@
     "orderedOn": "2026-09-08",
     "needByOn": "2026-09-16",
     "promisedOn": "2026-09-10",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": -2,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004880",
@@ -92734,9 +92734,9 @@
     "orderedOn": "2026-06-25",
     "needByOn": "2026-08-27",
     "promisedOn": "2026-09-05",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-04",
+    "daysLate": -1,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-004882",
@@ -95261,9 +95261,9 @@
     "orderedOn": "2026-08-04",
     "needByOn": "2026-09-04",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-08",
+    "daysLate": 0,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-005015",
@@ -97655,9 +97655,9 @@
     "orderedOn": "2026-08-12",
     "needByOn": "2026-09-13",
     "promisedOn": "2026-09-08",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-04",
+    "daysLate": -4,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-005141",
@@ -98814,9 +98814,9 @@
     "orderedOn": "2026-07-06",
     "needByOn": "2026-09-05",
     "promisedOn": "2026-09-10",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-05",
+    "daysLate": -5,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-005202",
@@ -100961,9 +100961,9 @@
     "orderedOn": "2026-08-22",
     "needByOn": "2026-09-12",
     "promisedOn": "2026-09-07",
-    "receivedOn": null,
-    "daysLate": null,
-    "status": "OPEN"
+    "receivedOn": "2026-09-06",
+    "daysLate": -1,
+    "status": "CLOSED"
   },
   {
     "poLineKey": "POL-005315",

@@ -23,6 +23,71 @@ const orgById = new Map(orgs.map((o) => [o.orgId, o]))
 const DAY = 86_400_000
 const AS_OF = Date.parse(meta.asOf)
 
+/* ------------------------------------------------------------------ *
+ * Downtime exposure
+ *
+ * The figure is derived, never sampled. Two inputs only, both shown on the signal
+ * so a maintenance engineer can argue with either one:
+ *
+ *   Expected downtime hours   set by criticality, where 1 is the most critical.
+ *   Lost output per hour      set by asset class.
+ *
+ * The hour steps are wider than the spread of the hourly rates, so the exposure of
+ * the least valuable asset at a given criticality still exceeds that of the most
+ * valuable asset one level below it. Criticality therefore orders the figures with
+ * no crossover. Every rate is illustrative and would be set with the manufacturer.
+ * ------------------------------------------------------------------ */
+
+/** Hours the asset is expected to sit waiting for the part. Criticality 1 is the most critical. */
+export const DOWNTIME_HOURS_BY_CRITICALITY: Record<1 | 2 | 3 | 4, number> = {
+  1: 108,
+  2: 36,
+  3: 12,
+  4: 4,
+}
+
+/** Illustrative lost output per hour, in dollars, by asset class. */
+export const DOWNTIME_RATE_BY_ASSET_CLASS: Record<string, number> = {
+  "HEAT TREAT FURNACE": 9_800,
+  "HYDRAULIC PRESS": 9_100,
+  "CNC MACHINING CENTER": 8_400,
+  "WELDING CELL": 7_200,
+  "PAINT BOOTH": 6_300,
+  "TEST RIG": 5_400,
+  "CONVEYOR LINE": 4_900,
+  "OVERHEAD CRANE": 4_400,
+  "MATERIAL HANDLER": 4_100,
+  "AIR COMPRESSOR": 3_800,
+}
+
+// Every asset class in the register has to carry a band. A missing one would fall
+// back to some default and quietly break the ordering, so the build stops instead.
+{
+  const missing = [...new Set(assets.map((a) => a.assetGroup))]
+    .filter((g) => !(g in DOWNTIME_RATE_BY_ASSET_CLASS))
+    .sort()
+  if (missing.length) {
+    throw new Error(`No downtime rate band for asset class: ${missing.join(", ")}`)
+  }
+}
+
+export function downtimeRateFor(assetGroup: string): number {
+  return DOWNTIME_RATE_BY_ASSET_CLASS[assetGroup]
+}
+
+export function downtimeExposureFor(asset: MaintainableAsset): {
+  hours: number
+  ratePerHour: number
+  exposure: number
+} {
+  const hours = DOWNTIME_HOURS_BY_CRITICALITY[asset.criticality]
+  const ratePerHour = downtimeRateFor(asset.assetGroup)
+  return { hours, ratePerHour, exposure: hours * ratePerHour }
+}
+
+/** The criticality scale, stated wherever a criticality number is shown. */
+export const CRITICALITY_SCALE_NOTE = "Criticality runs 1 to 4. 1 is the most critical."
+
 export type AssetRow = {
   assetNumber: string
   description: string
@@ -47,6 +112,13 @@ export type Signal = {
   assetDescription: string
   location: string
   criticality: 1 | 2 | 3 | 4
+  assetGroup: string
+  /** Hours the asset is expected to sit waiting, set by criticality. */
+  downtimeHours: number
+  /** Illustrative lost output per hour, set by asset class. */
+  downtimeRatePerHour: number
+  /** Hours multiplied by the hourly rate. Derived from the two fields above. */
+  downtimeExposure: number
   sparePartKey: string
   sparePartNumber: string
   sparePartDescription: string
@@ -139,6 +211,7 @@ export function buildSignals(): Signal[] {
     const e = evaluate(asset, spare)
     if (!e.stockCondition && !e.timingCondition) continue
 
+    const downtime = downtimeExposureFor(asset)
     const supplier = spare.primarySupplierId ? supplierById.get(spare.primarySupplierId) : undefined
     const orderQty = Math.max(
       spare.orderMultiple ?? 1,
@@ -151,6 +224,10 @@ export function buildSignals(): Signal[] {
       assetDescription: asset.description,
       location: orgById.get(asset.orgId)!.orgCode,
       criticality: asset.criticality,
+      assetGroup: asset.assetGroup,
+      downtimeHours: downtime.hours,
+      downtimeRatePerHour: downtime.ratePerHour,
+      downtimeExposure: downtime.exposure,
       sparePartKey: spare.partKey,
       sparePartNumber: spare.partNumber,
       sparePartDescription: spare.description,

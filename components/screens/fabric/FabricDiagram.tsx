@@ -305,7 +305,6 @@ export function FabricDiagram({
               </div>
             ))}
           </div>
-          <span className="sr-only">{`Pipeline weight total ${totalWeight}`}</span>
 
           {/* Governance bar */}
           <div className="mt-2 [@media(max-height:860px)]:mt-1 flex items-center gap-3 rounded border border-hairline bg-canvas px-3 py-1">

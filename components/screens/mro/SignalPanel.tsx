@@ -13,7 +13,7 @@ import type { Signal } from "@/lib/mro"
 import { LeadTimeTimeline } from "@/components/screens/mro/LeadTimeTimeline"
 import { Traced } from "@/components/lineage/Traced"
 import { useSession } from "@/context/SessionContext"
-import { compactMoney, int } from "@/lib/format"
+import { compactMoney, int, money } from "@/lib/format"
 
 function Fact({ label, value, tone }: { label: string; value: string; tone?: "attention" }) {
   return (
@@ -63,7 +63,7 @@ function SignalCard({
                 : "border-hairline bg-surface text-navy-muted"
             }`}
           >
-            crit {signal.criticality}
+            crit {signal.criticality} of 4
           </span>
           <span
             className={`rounded border px-1 py-px text-[9px] font-semibold uppercase tracking-wide ${
@@ -93,6 +93,14 @@ function SignalCard({
 
         <p className="mt-1.5 truncate text-[10px] text-navy-faint">
           {signal.location} · <span className="text-navy-muted">{signal.supplierName}</span>
+        </p>
+
+        <p className="mt-1.5 text-[10px] leading-snug text-navy-faint">
+          Downtime exposure{" "}
+          <span className="mono font-medium text-navy">{compactMoney(signal.downtimeExposure)}</span>{" "}
+          from <span className="mono text-navy-muted">{signal.downtimeHours} h</span> at{" "}
+          <span className="mono text-navy-muted">{money(signal.downtimeRatePerHour)}</span> an hour
+          for {signal.assetGroup.toLowerCase()}
         </p>
 
         <Traced sourceKey="GOLD.REPLENISHMENT_SIGNAL" label={`${signal.signalId} reason`} tag="inline" detail="layer" className="mt-1.5 block">
@@ -160,8 +168,8 @@ export function SignalPanel({
         </span>
         <span className="text-[10px] text-navy-faint">
           <span className="mono text-blocked">{timingCount}</span> timing ·{" "}
-          <span className="mono text-navy-muted">{signals.length - timingCount}</span> stock · values
-          illustrative
+          <span className="mono text-navy-muted">{signals.length - timingCount}</span> stock ·
+          criticality 1 is the most critical · values illustrative
         </span>
       </header>
 

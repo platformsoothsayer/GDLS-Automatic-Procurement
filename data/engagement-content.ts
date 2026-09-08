@@ -23,7 +23,7 @@ export const DEPLOYMENT_COLUMNS: DeploymentColumn[] = [
   {
     id: "on-prem",
     label: "Fully on premise",
-    computeRuns: "Inside the manufacturer's own data centre, on hardware they already run.",
+    computeRuns: "Inside the manufacturer's own data center, on hardware they already run.",
     dataRests: "Never leaves the estate. No copy exists outside it at any stage.",
     approvalPath: "Entirely internal. The existing change process covers it.",
     residency: "Single site. No cross border question arises.",
@@ -61,7 +61,7 @@ export const DEPLOYMENT_ROWS: { id: keyof DeploymentColumn; label: string }[] = 
 ]
 
 export const DEPLOYMENT_NOTE =
-  "We are not recommending one of these. The constraint that decides it is yours, not ours."
+  "No recommendation between these three. The deciding constraint is yours."
 
 export type Ask = { title: string; detail: string }
 
@@ -72,7 +72,7 @@ export const WHAT_WE_NEED: Ask[] = [
   },
   {
     title: "One subject matter expert per source system",
-    detail: "Named, roughly four hours a week. They review the mapping registry and settle what a field actually means.",
+    detail: "Named, roughly four hours a week. They review the mapping registry and settle what a field means.",
   },
   {
     title: "A landing environment",
@@ -118,11 +118,11 @@ export const ROADMAP: RoadmapBand[] = [
   {
     accretionId: "plus6",
     label: "Month six to month eighteen",
-    duration: "Shaped once the first three are running, not before",
+    duration: "Shaped once the first three are running",
     sourcesAdded: "Manufacturing execution",
     problemsUnlocked: [
       "Manufacturing bill of materials, work order status and as built configuration become resolvable entities",
-      "Which problems that unlocks depends on what the first six months teaches us",
+      "Which problems that supports depends on what the first six months shows",
     ],
     decisionPoint: "Whether the return from the first three funds the next source, on the evidence rather than on a forecast.",
     confidence: "PROVISIONAL",
@@ -135,13 +135,13 @@ export const ROADMAP: RoadmapBand[] = [
     problemsUnlocked: [
       "Contract requirement extraction to a draft schedule and bill of materials becomes possible",
     ],
-    decisionPoint: "Not a decision we should be asking you to make now.",
+    decisionPoint: "No decision required at this stage.",
     confidence: "PROVISIONAL",
   },
 ]
 
 export const ROADMAP_NOTE =
-  "The later bands are thinner on purpose. Committing to detail we cannot defend is worse than saying the shape is still provisional."
+  "The later bands carry less detail because the shape is still provisional."
 
 export type Role = { role: string; commitment: string; does: string }
 
@@ -163,10 +163,10 @@ export const STAFFING: Role[] = [
   },
   {
     role: "Your team",
-    commitment: "Alongside, not replaced",
+    commitment: "Works alongside",
     does: "Subject matter experts and the decision owner. They stay on the work after we leave.",
   },
 ]
 
 export const STAFFING_NOTE =
-  "The model is our people working alongside your team, not instead of it. If nobody on your side can run this when we stop, we have built the wrong thing."
+  "Our people work alongside your team throughout. If nobody on your side can run this when we stop, we have built the wrong thing."

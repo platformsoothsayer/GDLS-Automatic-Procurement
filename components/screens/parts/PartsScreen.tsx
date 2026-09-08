@@ -5,7 +5,7 @@
  *
  * The frame is a work queue for a small team, not an autonomous cleaner. The top
  * strip is about the team's throughput; every decision is taken by a person and
- * recorded in the session so screen 6 can show what this session actually did.
+ * recorded in the session so screen 6 can show what this session did.
  */
 
 import { useMemo, useState } from "react"

@@ -112,7 +112,7 @@ export function Stage1Intake({
                   </span>
                 </td>
                 <td className="px-2.5 py-1 text-right">
-                  <Traced sourceKey="MRO.CONDITION_SIGNAL" label={`${signal.signalId} slack`} tag="inline" detail="layer">
+                  <Traced sourceKey="GOLD.REPLENISHMENT_SIGNAL" label={`${signal.signalId} slack`} tag="inline" detail="layer">
                     <span
                       className={`mono ${
                         signal.slackDays < 0 ? "font-semibold text-blocked" : "text-navy-muted"

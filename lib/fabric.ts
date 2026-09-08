@@ -101,9 +101,9 @@ export function buildFabricFigures(): FabricFigures {
       suppliers: suppliers.length,
     },
     marts: [
-      mart("FABRIC.GOLD_PART_MASTER", partsOut),
-      mart("FABRIC.GOLD_PROCUREMENT", purchaseOrderLines.length),
-      mart("FABRIC.GOLD_MRO", assets.length),
+      mart("GOLD.PART_ENTITY", partsOut),
+      mart("GOLD.SUPPLIER_PERFORMANCE", suppliers.length),
+      mart("GOLD.REPLENISHMENT_SIGNAL", assets.length),
     ],
   }
 }

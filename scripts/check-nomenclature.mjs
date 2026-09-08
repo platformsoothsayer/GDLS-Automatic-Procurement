@@ -35,8 +35,19 @@ const RULES = [
     pattern: /\b(?:ItemRevision|ItemMasterForm|BOMLine|ChangeNoticeRevision|ChangeRequestRevision|ReleaseStatus|MEProcess)\b/g,
   },
   {
+    what: "Oracle EBS column name",
+    // The appendix writes columns in lower snake case, so the upper case table
+    // pattern above does not catch them. Only distinctive identifiers are listed;
+    // bare words like "quantity" would be nothing but false positives.
+    pattern: /\b(?:inventory_item_id|organization_id|organization_code|segment1|primary_uom_code|purchasing_item_flag|planner_code|buyer_id|full_lead_time|preprocessing_lead_time|processing_lead_time|postprocessing_lead_time|fixed_lot_multiplier|minimum_order_quantity|effectivity_date|implementation_date|cross_reference_type|cross_reference|category_set_id|uom_code|unit_of_measure|primary_transaction_quantity|vendor_id|vendor_name|vendor_site_id|vendor_site_code|org_id|asl_id|asl_status_id|min_order_qty|fixed_lot_multiple|requisition_header_id|requisition_line_id|authorization_status|unit_meas_lookup_code|need_by_date|suggested_vendor_id|unit_price|destination_organization_id|deliver_to_location_id|code_combination_id|po_header_id|po_line_id|type_lookup_code|promised_date|quantity_received|distribution_id|auction_header_id|close_bidding_date|bid_number|trading_partner_id|bid_status|bid_currency_unit_price)\b/g,
+  },
+  {
+    what: "Teamcenter direct database access, which the appendix forbids outright",
+    pattern: /\b(?:PPOM_[A-Za-z]|POM_[A-Za-z]|infodba\.|TCENG\.|plmxml_pom)/g,
+  },
+  {
     what: "Teamcenter property name",
-    pattern: /\b(?:item_id|item_revision_id|object_name|object_desc|object_type|release_status_list|date_released|last_mod_date|items_tag|IMAN_master_form|bl_line_object|bl_quantity|bl_indented_title|bl_occ_type|ref_list|class_id|ico_id|attribute_values|CMHasSolutionItem|CMHasImpactedItem)\b/g,
+    pattern: /\b(?:item_id|item_revision_id|object_name|object_desc|object_type|release_status_list|date_released|last_mod_date|items_tag|IMAN_master_form|bl_line_object|bl_quantity|bl_indented_title|bl_occ_type|ref_list|class_id|ico_id|attribute_values|owning_user|CMHasSolutionItem|CMHasImpactedItem)\b/g,
   },
 ]
 

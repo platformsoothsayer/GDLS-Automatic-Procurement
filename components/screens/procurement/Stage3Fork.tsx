@@ -15,6 +15,7 @@ import {
   MODES,
   MODE_ASSURANCE,
   NEGOTIATE_LABEL,
+  WRITEBACK_ROUTE_NOTE,
   type ModeSpec,
 } from "@/data/procurement-content"
 import type { Recommendation } from "@/lib/procurement"
@@ -40,7 +41,7 @@ function FieldForm({
       )}
       <dl className="divide-y divide-hairline/70">
         {recommendation.requisitionFields.map((field) => (
-          <div key={field.name} className="grid grid-cols-[128px_1fr] gap-1.5 px-2 py-[2px]">
+          <div key={field.name} className="grid grid-cols-[128px_1fr] gap-1.5 px-2 py-px">
             <dt className="mono truncate text-[9px] leading-[13px] text-navy-faint">{field.name}</dt>
             <dd className="mono truncate text-[10px] leading-[13px] text-navy">{field.value}</dd>
           </div>
@@ -80,7 +81,7 @@ function ModePanel({
     setCopied(true)
     window.setTimeout(() => setCopied(false), 2200)
   }
-  const integration = mode.integrationKey ? getSource(mode.integrationKey) : null
+  const integrations = (mode.integrationKeys ?? []).map((key) => ({ key, source: getSource(key) }))
   const routes = APPROVAL_HIERARCHY.filter(
     (level) => level.threshold === null || recommendation.lineValue <= level.threshold
   )
@@ -93,21 +94,28 @@ function ModePanel({
       }`}
     >
       <p className="text-[9.5px] font-semibold uppercase tracking-wide text-navy-faint">{mode.name}</p>
-      <h3 className="mt-0.5 text-[12.5px] font-semibold leading-snug text-navy">{mode.headline}</h3>
-      <p className="mt-1 text-[10.5px] leading-snug text-navy-muted">{mode.body}</p>
+      <h3 className="mt-0.5 text-[12px] font-semibold leading-tight text-navy">{mode.headline}</h3>
+      <p className="mt-0.5 text-[9.5px] leading-[12px] text-navy-muted">{mode.body}</p>
 
       <div className="mt-1.5 min-h-0 flex-1 overflow-y-auto">
         <FieldForm recommendation={recommendation} staged={staged} />
 
-        {integration && (
-          <p className="mt-1.5 text-[10px] leading-snug text-navy-muted">
-            Integration mechanism{" "}
-            <Traced sourceKey={mode.integrationKey!} label="Integration mechanism" tag="inline" detail="layer">
-              <span className="mono text-navy">{integration.object}</span>
-            </Traced>{" "}
-            in {SYSTEM_LABEL[integration.system]}. The document is created in an unapproved state and no
-            commitment exists until a person approves it.
-          </p>
+        {integrations.length > 0 && (
+          <div className="mt-1 rounded border border-hairline bg-canvas px-2 py-1">
+            <p className="text-[9px] font-semibold uppercase tracking-wide text-navy-faint">
+              Integration · two routes, neither committed to
+            </p>
+            <ul className="mt-0.5 space-y-0.5">
+              {integrations.map(({ key, source }) => (
+                <li key={key}>
+                  <Traced sourceKey={key} label="Integration mechanism" tag="inline" detail="layer">
+                    <span className="mono block text-[9px] leading-[11px] text-navy">{source.object}</span>
+                  </Traced>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-1 text-[9px] leading-[12px] text-navy-muted">{WRITEBACK_ROUTE_NOTE}</p>
+          </div>
         )}
 
         {!staged && (
@@ -128,21 +136,21 @@ function ModePanel({
         )}
 
         {staged && (
-          <div className="mt-1.5 rounded border border-hairline bg-canvas px-2 py-1.5">
-            <p className="text-[9.5px] font-semibold uppercase tracking-wide text-navy-faint">
+          <div className="mt-1 rounded border border-hairline bg-canvas px-2 py-1">
+            <p className="text-[9px] font-semibold uppercase tracking-wide text-navy-faint">
               Approval hierarchy it would route through
             </p>
-            <ol className="mt-1 space-y-0.5">
+            <p className="mt-0.5 text-[9.5px] leading-[12px] text-navy-muted">
               {routes.map((level, i) => (
-                <li key={level.role} className="flex items-baseline gap-1.5 text-[9.5px] leading-[13px] text-navy-muted">
-                  <span className="mono text-navy-faint">{i + 1}</span>
+                <span key={level.role}>
+                  {i > 0 && <span className="text-navy-faint"> › </span>}
                   <span className="text-navy">{level.role}</span>
                   {level.threshold !== null && (
-                    <span className="mono text-navy-faint">to {money(level.threshold)}</span>
+                    <span className="mono text-navy-faint"> to {money(level.threshold)}</span>
                   )}
-                </li>
+                </span>
               ))}
-            </ol>
+            </p>
           </div>
         )}
 
@@ -154,14 +162,14 @@ function ModePanel({
           {mode.requires.map((item) => (
             <li
               key={item}
-              className="rounded border border-hairline bg-canvas px-1.5 py-px text-[9.5px] text-navy-muted"
+              className="rounded border border-hairline bg-canvas px-1 py-px text-[9px] text-navy-muted"
             >
               {item}
             </li>
           ))}
         </ul>
-        <p className="mt-1.5 text-[10px] leading-snug text-navy">{mode.endsAt}</p>
-        {mode.footnote && <p className="mt-0.5 text-[9.5px] italic text-navy-faint">{mode.footnote}</p>}
+        <p className="mt-1 text-[9.5px] leading-[12px] text-navy">{mode.endsAt}</p>
+        {mode.footnote && <p className="mt-0.5 text-[9px] italic leading-[11px] text-navy-faint">{mode.footnote}</p>}
 
         <button
           type="button"
@@ -169,7 +177,7 @@ function ModePanel({
             e.stopPropagation()
             onAct()
           }}
-          className={`mt-1.5 w-full rounded px-2 py-1 text-[11px] font-medium transition-colors ${
+          className={`mt-1 w-full rounded px-2 py-[3px] text-[10.5px] font-medium transition-colors ${
             acted
               ? "border border-healthy/40 bg-healthy-soft text-healthy"
               : "bg-navy text-white hover:bg-[#163a5e]"

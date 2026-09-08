@@ -242,23 +242,39 @@ export function buildRecommendation(signalId: string): Recommendation | null {
     },
   ]
 
-  const requisitionValues: Record<string, string> = {
-    LINE_TYPE_ID: "Goods",
-    ITEM_ID: part.partNumber,
-    QUANTITY: `${quantity.roundedQty}`,
-    UNIT_MEAS_LOOKUP_CODE: part.unitOfMeasure ?? "not set",
-    NEED_BY_DATE: signal.predictedNeedOn,
-    SUGGESTED_VENDOR_ID: primary ? primary.supplierName : "no approved supplier",
-    SUGGESTED_VENDOR_SITE_ID: primary ? `${primary.supplierId}-01` : "not set",
-    UNIT_PRICE: effectivePrice.toFixed(2),
-    CHARGE_ACCOUNT_ID: `${org.orgCode}-MRO-5210`,
-    DELIVER_TO_LOCATION_ID: `${org.orgCode}-STORES`,
+  // The form the buyer would key, assembled from the two registered objects. The
+  // appendix puts the charge account on the distribution, not on the line, so a
+  // proposed requisition has to carry both.
+  //
+  // The values are positional against the registry rather than keyed by column name,
+  // because a column name written here would be a source name outside the registry.
+  // If the registry changes shape this throws during the build rather than quietly
+  // pairing the wrong value with the wrong field.
+  const lineValues = [
+    part.partNumber,
+    `${quantity.roundedQty}`,
+    part.unitOfMeasure ?? "not set",
+    signal.predictedNeedOn,
+    primary ? primary.supplierName : "no approved supplier",
+    effectivePrice.toFixed(2),
+    org.orgCode,
+    `${org.orgCode}-STORES`,
+    "assigned on creation",
+  ]
+  const distributionValues = [`${org.orgCode}-MRO-5210`]
+
+  const lineFields = getSource("REQ.LINE").fields
+  const distributionFields = getSource("REQ.DISTRIBUTION").fields
+  if (lineFields.length !== lineValues.length || distributionFields.length !== distributionValues.length) {
+    throw new Error(
+      "The requisition form is positional against the registry. A field was added or removed in REQ.LINE or REQ.DISTRIBUTION and the values in lib/procurement.ts have to move with it."
+    )
   }
 
-  const requisitionFields = getSource("REQ.LINE").fields.map((field) => ({
-    name: field.name,
-    value: requisitionValues[field.name] ?? "not set",
-  }))
+  const requisitionFields = [
+    ...lineFields.map((field, i) => ({ name: field.name, value: lineValues[i] })),
+    ...distributionFields.map((field, i) => ({ name: field.name, value: distributionValues[i] })),
+  ]
 
   return {
     signal,

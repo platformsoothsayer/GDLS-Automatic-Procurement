@@ -50,8 +50,8 @@ export const TEAMCENTER_ATTRIBUTES: AttributeSpec[] = [
   { id: "engineeringItemId", label: "Part identifier", sourceKey: "PART.TC_ITEM_IDENTITY" },
   { id: "revision", label: "Revision", sourceKey: "PART.TC_REVISION" },
   { id: "revisionHistory", label: "Revision history", sourceKey: "PART.TC_CHANGE_NOTICE" },
-  { id: "releaseState", label: "Release status", sourceKey: "PART.TC_RELEASE_STATUS" },
-  { id: "owningGroup", label: "Owning group", sourceKey: "PART.TC_ITEM_IDENTITY" },
+  { id: "releaseState", label: "Release status", sourceKey: "PART.TC_REVISION" },
+  { id: "owningUser", label: "Owning user", sourceKey: "PART.TC_REVISION" },
   { id: "classification", label: "Classification", sourceKey: "PART.TC_CLASSIFICATION" },
   { id: "assemblies", label: "Assemblies the part appears in", sourceKey: "PART.TC_BOM_USAGE" },
 ]

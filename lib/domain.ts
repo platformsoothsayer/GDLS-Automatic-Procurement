@@ -92,7 +92,7 @@ export type EngineeringPart = {
   currentRevisionId: string
   released: boolean
   releaseState: "RELEASED" | "IN_WORK" | "SUPERSEDED"
-  owningGroup: string
+  owningUser: string
   unitOfMeasure: string | null
   revisions: EngineeringRevision[]
   bomUsageCount: number

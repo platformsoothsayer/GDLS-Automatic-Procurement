@@ -85,7 +85,7 @@ export const CANDIDATE_PROBLEMS: CandidateProblem[] = [
     detail: {
       statement:
         "The maintenance record already shows which assets are degrading, but nobody turns that into a replenishment instruction before the part is needed.",
-      valueSourceKey: "MRO.CONDITION_SIGNAL",
+      valueSourceKey: "GOLD.REPLENISHMENT_SIGNAL",
       sources: [
         { label: "Asset register", key: "MRO.ASSET_REGISTER" },
         { label: "Criticality", key: "MRO.ASSET_CRITICALITY" },

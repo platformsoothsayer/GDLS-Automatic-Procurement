@@ -20,10 +20,10 @@ export type StageSpec = {
 }
 
 export const STAGES: StageSpec[] = [
-  { id: "intake", n: 1, label: "Signal intake", short: "Intake", martKey: "MRO.CONDITION_SIGNAL" },
-  { id: "recommendation", n: 2, label: "Recommendation", short: "Recommend", martKey: "REQ.LINE" },
-  { id: "fork", n: 3, label: "The fork", short: "Fork", martKey: "FABRIC.GOLD_PROCUREMENT" },
-  { id: "rfq", n: 4, label: "RFQ branch", short: "RFQ", martKey: "RFQ.QUOTATION" },
+  { id: "intake", n: 1, label: "Signal intake", short: "Intake", martKey: "GOLD.REPLENISHMENT_SIGNAL" },
+  { id: "recommendation", n: 2, label: "Recommendation", short: "Recommend", martKey: "GOLD.PART_ENTITY" },
+  { id: "fork", n: 3, label: "The fork", short: "Fork", martKey: "GOLD.PART_ENTITY" },
+  { id: "rfq", n: 4, label: "RFQ branch", short: "RFQ", martKey: "GOLD.SUPPLIER_PERFORMANCE" },
 ]
 
 export type SignalSource = {
@@ -47,8 +47,8 @@ export type ModeSpec = {
   headline: string
   body: string
   requires: string[]
-  /** Only the pre-populated mode names an integration mechanism. */
-  integrationKey?: SourceKey
+  /** Only the pre-populated mode names integration mechanisms. Both, never one. */
+  integrationKeys?: SourceKey[]
   endsAt: string
   actionLabel: string
   footnote?: string
@@ -69,9 +69,9 @@ export const MODES: ModeSpec[] = [
     id: "prepopulated",
     name: "Mode B · Pre-populated",
     headline: "The system stages the document, your buyer approves.",
-    body: "The same values are written to the interface and the standard import creates the requisition in an unapproved state. It sits in the buyer's queue as a draft.",
+    body: "The same values are staged and the requisition is created in an unapproved state. It sits in the buyer's queue as a draft.",
     requires: ["Interface access", "Approval hierarchy mapping", "An audit trail on every staged row"],
-    integrationKey: "REQ.IMPORT_INTERFACE",
+    integrationKeys: ["WRITEBACK.REQ_INTERFACE", "WRITEBACK.SOA_GATEWAY"],
     endsAt: "The document exists but is unapproved. No commitment exists until a person approves it.",
     actionLabel: "Stage for approval",
   },
@@ -100,6 +100,32 @@ export const RFQ_STEPS = [
 ]
 
 export const RFQ_CHANNEL = "the supplier portal"
+
+/**
+ * Two routes for the request itself. Whether Oracle Sourcing is licensed and in use
+ * is unconfirmed, so both are carried and neither is committed to.
+ */
+export const RFQ_ROUTES: { key: SourceKey; label: string; note: string }[] = [
+  {
+    key: "RFQ.SOURCING_AUCTION",
+    label: "Sourcing route",
+    note: "If Oracle Sourcing is licensed and in use, the request is raised as a sourcing event.",
+  },
+  {
+    key: "RFQ.CORE_DOCUMENT",
+    label: "Core purchasing route",
+    note: "If it is not, the same request runs through core purchasing request and quotation documents.",
+  },
+]
+
+export const RFQ_ROUTE_NOTE =
+  "Both routes are carried in the registry. Which one applies is a question for your purchasing team, not a decision we should be making for you."
+
+/**
+ * Two routes for the write back after an award, for the same reason.
+ */
+export const WRITEBACK_ROUTE_NOTE =
+  "Which one applies depends on release and installed components, and is your call."
 
 /** How a quotation is scored once it has passed the feasibility gate. */
 export const RANKING_WEIGHTS = { price: 50, delivery: 25, quality: 15, terms: 10 }

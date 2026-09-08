@@ -91,7 +91,11 @@ shown two different orders.
 
 `data/nomenclature.ts` is the **only** file permitted to contain an Oracle EBS table
 name, an Oracle EBS column name, a Teamcenter business object name, a Teamcenter SOA
-service name or a Teamcenter property name. Every screen imports by key:
+service name or a Teamcenter property name. It is seeded from the supplied appendix.
+Two rules come with it: all Teamcenter extraction is through SOA services and direct
+queries against the persistent object model appear nowhere in the build; and where
+the appendix names an object but not its columns, the entry is registered at object
+level and no field name is asserted. Every screen imports by key:
 
 ```tsx
 <Traced sourceKey="PART.ORACLE_DESCRIPTION" label="Description">
@@ -334,11 +338,16 @@ horizontal scroll at 1280px.
 
 ## Open items for the client
 
-- **The nomenclature appendix was not supplied with the brief.** The registry has
-  been populated from standard Oracle EBS and Teamcenter naming as a working draft.
-  When the appendix arrives, replacing `data/nomenclature.ts` is the whole change —
-  no screen touches a source name directly. Everything is flagged
-  `NEEDS_SME_REVIEW` in the meantime.
+- **The registry is seeded from the supplied nomenclature appendix.** Every one of
+  the 51 entries reads `NEEDS_SME_REVIEW`. Nothing goes in front of the client until
+  someone who has worked with these systems has checked it.
+- Four things in the registry are carried as **two options with no recommendation**,
+  because the appendix says to present both: the supplier tables on newer versus
+  older releases, the request for quotation route through Oracle Sourcing versus core
+  purchasing, and the write back through interface tables versus the Integrated SOA
+  Gateway. Screen 5 shows both of the last two on screen.
+- The maintenance objects are registered at **object level only**. The maintenance
+  system of record is assumed to be Oracle Enterprise Asset Management and is not
+  confirmed, so no column is named for them.
 - The riskiest assumption in the registry is that the approved supplier list is
-  maintained well enough to be the guard rail for automated procurement. Worth
-  testing before screen 5 is designed.
+  maintained well enough to be the guard rail for automated procurement.

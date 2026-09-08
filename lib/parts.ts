@@ -100,7 +100,7 @@ function memberOf(part: PartRecord, survivorKey: string): ClusterMember {
               .join(" → "),
           },
           releaseState: { text: engineering.releaseState.replace("_", " ").toLowerCase() },
-          owningGroup: dash(engineering.owningGroup),
+          owningUser: dash(engineering.owningUser),
           classification: dash(engineering.classificationClass),
           assemblies: engineering.assemblies.length
             ? { text: engineering.assemblies.join("  ·  ") }
@@ -111,7 +111,7 @@ function memberOf(part: PartRecord, survivorKey: string): ClusterMember {
           revision: { text: "—", missing: true },
           revisionHistory: { text: "—", missing: true },
           releaseState: { text: "—", missing: true },
-          owningGroup: { text: "—", missing: true },
+          owningUser: { text: "—", missing: true },
           classification: { text: "—", missing: true },
           assemblies: { text: "—", missing: true },
         },
@@ -284,7 +284,7 @@ export function buildIntegrityFindings(): IntegrityFinding[] {
       label: "Records untouched in over 36 months",
       count: stale,
       detail: "No purchasing activity and no change since creation. Candidates for retirement rather than remediation.",
-      sourceKey: "PART.ORACLE_MATERIAL_TXN",
+      sourceKey: "PO.LINE",
     },
     {
       id: "orphaned",

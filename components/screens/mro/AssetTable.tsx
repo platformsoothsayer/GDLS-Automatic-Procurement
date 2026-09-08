@@ -86,7 +86,7 @@ export function AssetTable({
                     </Traced>
                   </td>
                   <td className="px-1.5 py-1">
-                    <Traced sourceKey="MRO.CONDITION_SIGNAL" label={`${row.assetNumber} condition`} tag="inline" detail="layer">
+                    <Traced sourceKey="GOLD.REPLENISHMENT_SIGNAL" label={`${row.assetNumber} condition`} tag="inline" detail="layer">
                       <span className="flex items-center gap-1.5">
                         <ConditionDot score={row.conditionScore} />
                         <span className="mono text-navy-muted">{row.conditionScore.toFixed(0)}</span>

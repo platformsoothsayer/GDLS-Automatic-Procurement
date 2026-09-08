@@ -58,7 +58,7 @@ const Arrow = () => (
 
 export function ArchitectureDiagram({ figures }: { figures: FabricFigures }) {
   const [oracle, teamcenter] = figures.sources
-  const interfaceObject = getSource("REQ.IMPORT_INTERFACE").object
+  const interfaceObject = getSource("WRITEBACK.REQ_INTERFACE").object
 
   return (
     <div className="space-y-1">
@@ -142,7 +142,7 @@ export function ArchitectureDiagram({ figures }: { figures: FabricFigures }) {
         </span>
         <div className="min-w-0 flex-1 rounded border border-hairline bg-surface px-2 py-1">
           <p className="text-[10px] font-semibold leading-tight text-navy">Interface mechanism</p>
-          <Traced sourceKey="REQ.IMPORT_INTERFACE" label="Interface mechanism" tag="inline" detail="layer">
+          <Traced sourceKey="WRITEBACK.REQ_INTERFACE" label="Interface mechanism" tag="inline" detail="layer">
             <span className="mono block text-[9px] leading-[11px] text-navy-muted">
               {interfaceObject}
             </span>

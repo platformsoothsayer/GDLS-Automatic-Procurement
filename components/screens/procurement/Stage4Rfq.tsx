@@ -14,6 +14,8 @@ import {
   AWARD_JUSTIFICATION_PROMPT,
   RANKING_NOTE,
   RFQ_CHANNEL,
+  RFQ_ROUTES,
+  RFQ_ROUTE_NOTE,
   RANKING_WEIGHTS,
   RFQ_STEPS,
 } from "@/data/procurement-content"
@@ -101,11 +103,29 @@ export function Stage4Rfq({
               <Row label="Response deadline" value={shortDate(set.responseDeadline)} />
               <Row label="Estimated value" value={compactMoney(recommendation.lineValue)} />
             </div>
-            <p className="self-start rounded border border-hairline bg-canvas px-2.5 py-2 text-[10.5px] leading-snug text-navy-muted">
-              The request carries the same numbers the requisition would have carried. Both
-              paths start from one recommendation, so a negotiation never means starting the
-              analysis again.
-            </p>
+            <div className="self-start space-y-2">
+              <p className="rounded border border-hairline bg-canvas px-2.5 py-2 text-[10.5px] leading-snug text-navy-muted">
+                The request carries the same numbers the requisition would have carried. Both
+                paths start from one recommendation, so a negotiation never means starting the
+                analysis again.
+              </p>
+              <div className="rounded border border-attention/40 bg-attention-soft px-2.5 py-2">
+                <p className="text-[9.5px] font-semibold uppercase tracking-wide text-attention">
+                  Two routes, neither committed to
+                </p>
+                <ul className="mt-1 space-y-1">
+                  {RFQ_ROUTES.map((route) => (
+                    <li key={route.key} className="text-[10px] leading-snug text-navy">
+                      <Traced sourceKey={route.key} label={route.label} tag="inline" detail="layer">
+                        <span className="font-medium">{route.label}</span>
+                      </Traced>
+                      <span className="block text-navy-muted">{route.note}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-1 text-[9.5px] leading-snug text-attention">{RFQ_ROUTE_NOTE}</p>
+              </div>
+            </div>
           </div>
         )}
 
@@ -368,7 +388,7 @@ export function Stage4Rfq({
 
       <p className="text-[10px] text-navy-faint">
         Quotation data is illustrative and seeded.{" "}
-        <Traced sourceKey="RFQ.QUOTATION" label="Quotation ranking" tag="inline" detail="layer">
+        <Traced sourceKey="GOLD.SUPPLIER_PERFORMANCE" label="Quotation ranking" tag="inline" detail="layer">
           <span>Ranking reads the supplier performance mart.</span>
         </Traced>
       </p>

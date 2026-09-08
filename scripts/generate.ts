@@ -145,9 +145,9 @@ const UOM_DEFINED = ["EA", "LT", "KG", "M", "SET"]
 const UOM_ROGUE = ["BX", "PK", "DZN", "FT2", "ROL"]
 const PLANNERS = Array.from({ length: 14 }, (_, i) => `PLN-${String(101 + i * 3)}`)
 const BUYERS = Array.from({ length: 11 }, (_, i) => `BUY-${String(40 + i * 2)}`)
-const OWNING_GROUPS = [
-  "Chassis Engineering", "Powertrain Engineering", "Electrical Engineering",
-  "Structures", "Hydraulics", "Standards and Materials",
+const OWNING_USERS = [
+  "a.whitfield", "m.oduya", "r.castellano", "s.brennan",
+  "t.lindqvist", "j.aparicio", "d.okonkwo", "n.farrell",
 ]
 
 const ASSET_GROUPS = ["CNC MACHINING CENTRE", "HYDRAULIC PRESS", "OVERHEAD CRANE", "PAINT BOOTH",
@@ -335,7 +335,7 @@ const engineeringParts: EngineeringPart[] = []
       releaseState: current.releasedOn !== null
         ? revisions.length > 1 && rng.bool(0.12) ? "SUPERSEDED" : "RELEASED"
         : "IN_WORK",
-      owningGroup: rng.pick(OWNING_GROUPS),
+      owningUser: rng.pick(OWNING_USERS),
       unitOfMeasure: rng.bool(0.05) ? rng.pick(UOM_DEFINED) : p.unitOfMeasure,
       revisions,
       bomUsageCount: rng.weighted([

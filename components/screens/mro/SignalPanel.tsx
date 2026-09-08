@@ -95,7 +95,7 @@ function SignalCard({
           {signal.location} · <span className="text-navy-muted">{signal.supplierName}</span>
         </p>
 
-        <Traced sourceKey="MRO.CONDITION_SIGNAL" label={`${signal.signalId} reason`} tag="inline" detail="layer" className="mt-1.5 block">
+        <Traced sourceKey="GOLD.REPLENISHMENT_SIGNAL" label={`${signal.signalId} reason`} tag="inline" detail="layer" className="mt-1.5 block">
           <p className={`text-[10.5px] leading-snug ${timing ? "text-blocked" : "text-navy-muted"}`}>
             {signal.reason}
           </p>

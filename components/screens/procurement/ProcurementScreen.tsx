@@ -178,12 +178,17 @@ export function ProcurementScreen({
                 <p className={`text-[10px] font-medium leading-tight ${active ? "text-navy" : "text-navy-faint"}`}>
                   <span className="mono">{spec.n}</span> {spec.short}
                 </p>
-                <p
-                  className={`mono break-all text-[8.5px] leading-[11px] ${
-                    active ? "text-cyan" : "text-navy-faint"
-                  }`}
-                >
-                  {source.mart ?? source.object}
+                <p className={`mono text-[8px] leading-[10px] ${active ? "text-cyan" : "text-navy-faint"}`}>
+                  {(source.mart ?? source.object).split("_").map((part, i, all) => (
+                    <span key={`${part}-${i}`}>
+                      {part}
+                      {i < all.length - 1 && (
+                        <>
+                          _<wbr />
+                        </>
+                      )}
+                    </span>
+                  ))}
                 </p>
               </li>
             )

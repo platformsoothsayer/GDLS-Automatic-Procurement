@@ -34,23 +34,41 @@ export type Supplier = {
   spend24m: number
 }
 
+/**
+ * Nullable fields are the ones the completeness tab measures. A gap is a real null
+ * rather than a flag beside a value, so completeness and the attribute comparison
+ * can never disagree with each other.
+ */
 export type PartRecord = {
   partKey: string
   partNumber: string
   orgId: OrgId
   description: string
+  /** Grouping key, always present, used by filters. */
   commodity: string
+  /** The code as maintained on the item. Absent on some records. */
+  commodityCode: string | null
   itemType: "PURCHASED" | "MANUFACTURED" | "PHANTOM"
   makeBuy: "MAKE" | "BUY"
-  unitOfMeasure: string
+  unitOfMeasure: string | null
+  /** True when the unit of measure is outside the defined set. */
+  uomOutsideSet: boolean
   lifecycleStatus: "ACTIVE" | "RESTRICTED" | "OBSOLETE"
-  leadTimeDays: number
-  reorderPoint: number
-  reorderUpTo: number
+  leadTimeDays: number | null
+  planner: string | null
+  buyer: string | null
+  minOrderQty: number | null
+  orderMultiple: number | null
+  reorderPoint: number | null
+  reorderUpTo: number | null
   onHandQty: number
+  onHandByOrg: { orgCode: string; qty: number }[]
   unitCost: number
   spend24m: number
+  purchaseQty24m: number
+  poLineCount: number
   createdOn: string
+  lastActivityOn: string
   supplierPartRef: string | null
   primarySupplierId: string | null
   engineeringItemId: string | null
@@ -68,11 +86,16 @@ export type EngineeringPart = {
   engineeringItemId: string
   objectName: string
   objectType: "DesignPart" | "StandardPart" | "PurchasedPart"
-  classificationClass: string
+  classificationClass: string | null
   currentRevisionId: string
   released: boolean
+  releaseState: "RELEASED" | "IN_WORK" | "SUPERSEDED"
+  owningGroup: string
+  unitOfMeasure: string | null
   revisions: EngineeringRevision[]
   bomUsageCount: number
+  /** Assemblies the part appears in, by assembly number. */
+  assemblies: string[]
   lastModifiedOn: string
   oraclePartNumber: string | null
 }
@@ -83,17 +106,48 @@ export type DuplicateCause =
   | "SUPPLIER_PART_NUMBER"
   | "ORG_REGISTRATION_SPLIT"
 
+export type EvidenceCode =
+  | "DESCRIPTION_MATCH"
+  | "SHARED_SUPPLIER_PART"
+  | "CROSS_ORG"
+  | "REVISION_ANOMALY"
+  | "CLASSIFICATION_MATCH"
+  | "UOM_MATCH"
+  | "PLANNER_BUYER_MATCH"
+  | "SAME_ASSEMBLY"
+
+/**
+ * One line of the score. What was compared, what was found, and what it contributed.
+ * Contributions can be negative: a model that only adds points is not credible.
+ */
+export type ClusterEvidence = {
+  code: EvidenceCode
+  label: string
+  finding: string
+  points: number
+}
+
+export type ClusterStatus = "OPEN" | "MERGED" | "KEPT_SEPARATE" | "ROUTED_TO_ENGINEERING"
+
 export type DuplicateCluster = {
   clusterId: string
   cause: DuplicateCause
   memberPartKeys: string[]
   memberCount: number
+  /** Sum of the evidence contributions, clamped to 0 and 100. */
+  confidence: number
   similarityScore: number
+  evidence: ClusterEvidence[]
+  revisionAnomaly: boolean
   combinedSpend24m: number
   priceSpreadPct: number
+  /** Duplicate inventory carrying cost plus lost volume leverage. */
+  estimatedImpact: number
+  carryingCost: number
+  leverageLoss: number
   recommendedSurvivorPartKey: string
   orgSpread: OrgId[]
-  reviewState: "UNREVIEWED"
+  status: ClusterStatus
 }
 
 export type PurchaseOrderLine = {

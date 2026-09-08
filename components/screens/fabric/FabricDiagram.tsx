@@ -235,7 +235,9 @@ export function FabricDiagram({
                   {populated && (
                     <span className="shrink-0 text-right">
                       <span className="mono text-[15px] font-medium leading-none text-cyan">{count}</span>
-                      <span className="mt-0.5 block text-[9px] leading-none text-navy-faint">{sys.unit}</span>
+                      <span className="mt-0.5 block text-[9px] leading-none text-navy-faint">
+                        {count === 1 ? sys.unit.replace(/s$/, "") : sys.unit}
+                      </span>
                     </span>
                   )}
                 </div>

@@ -14,10 +14,12 @@ import { writeFileSync, mkdirSync } from "node:fs"
 import { join } from "node:path"
 import { Rng } from "../lib/prng"
 import type {
+  ClusterEvidence,
   CommodityGroup,
   DatasetMeta,
   DuplicateCause,
   DuplicateCluster,
+  EvidenceCode,
   EngineeringPart,
   EngineeringRevision,
   InventoryOrg,
@@ -137,6 +139,15 @@ const SUPPLIER_MID = ["Forge", "Machine", "Precision", "Industrial", "Metalworks
   "Systems", "Alloys", "Sealing"]
 const SUPPLIER_SUFFIX = ["Co.", "Group", "Works", "Industries", "Partners", "Holdings"]
 
+const UOM_DEFINED = ["EA", "LT", "KG", "M", "SET"]
+const UOM_ROGUE = ["BX", "PK", "DZN", "FT2", "ROL"]
+const PLANNERS = Array.from({ length: 14 }, (_, i) => `PLN-${String(101 + i * 3)}`)
+const BUYERS = Array.from({ length: 11 }, (_, i) => `BUY-${String(40 + i * 2)}`)
+const OWNING_GROUPS = [
+  "Chassis Engineering", "Powertrain Engineering", "Electrical Engineering",
+  "Structures", "Hydraulics", "Standards and Materials",
+]
+
 const ASSET_GROUPS = ["CNC MACHINING CENTRE", "HYDRAULIC PRESS", "OVERHEAD CRANE", "PAINT BOOTH",
   "WELDING CELL", "HEAT TREAT FURNACE", "CONVEYOR LINE", "AIR COMPRESSOR", "TEST RIG",
   "MATERIAL HANDLER"]
@@ -201,6 +212,11 @@ for (let i = 0; i < 2400; i++) {
   ])
   const unitCost = Math.round(commodity.baseUnitCost * rng.float(0.45, 2.6, 3) * 100) / 100
 
+  // Gaps are seeded as real nulls, so the completeness tab and the attribute
+  // comparison are reading the same thing.
+  const uomOutsideSet = rng.bool(0.015)
+  const unitOfMeasure = rng.bool(0.02) ? null : uomOutsideSet ? rng.pick(UOM_ROGUE) : commodity.uom
+
   parts.push({
     partKey: `P-${String(i + 1).padStart(6, "0")}`,
     partNumber,
@@ -212,21 +228,31 @@ for (let i = 0; i < 2400; i++) {
     ]),
     description: describe(commodity, rng),
     commodity: commodity.code,
+    commodityCode: rng.bool(0.07) ? null : `${commodity.code}-${String(rng.int(10, 99))}`,
     itemType: makeBuy === "BUY" ? "PURCHASED" : rng.bool(0.9) ? "MANUFACTURED" : "PHANTOM",
     makeBuy,
-    unitOfMeasure: commodity.uom,
+    unitOfMeasure,
+    uomOutsideSet: uomOutsideSet && unitOfMeasure !== null,
     lifecycleStatus: rng.weighted([
       { value: "ACTIVE" as const, weight: 78 },
       { value: "RESTRICTED" as const, weight: 12 },
       { value: "OBSOLETE" as const, weight: 10 },
     ]),
-    leadTimeDays: rng.int(5, 210),
-    reorderPoint: rng.int(0, 240),
-    reorderUpTo: 0,
-    onHandQty: rng.int(0, 1800),
+    leadTimeDays: rng.bool(0.09) ? null : rng.int(5, 210),
+    planner: rng.bool(0.11) ? null : rng.pick(PLANNERS),
+    buyer: rng.bool(0.14) ? null : rng.pick(BUYERS),
+    minOrderQty: rng.bool(0.22) ? null : rng.pick([1, 5, 10, 25, 50, 100, 250]),
+    orderMultiple: rng.bool(0.26) ? null : rng.pick([1, 5, 10, 25, 50]),
+    reorderPoint: rng.bool(0.18) ? null : rng.int(0, 240),
+    reorderUpTo: null,
+    onHandQty: 0,
+    onHandByOrg: [],
     unitCost,
     spend24m: 0,
+    purchaseQty24m: 0,
+    poLineCount: 0,
     createdOn: iso(Date.UTC(2009, 0, 1) + rng.int(0, 6100) * DAY),
+    lastActivityOn: "",
     supplierPartRef: null,
     primarySupplierId: null,
     engineeringItemId: null,
@@ -235,11 +261,22 @@ for (let i = 0; i < 2400; i++) {
 }
 
 for (const p of parts) {
-  p.reorderUpTo = p.reorderPoint + rng.int(20, 500)
+  p.reorderUpTo = p.reorderPoint === null ? null : p.reorderPoint + rng.int(20, 500)
+
+  // On hand is held in the home organization and sometimes at the depot too, so
+  // "on hand across organizations" is a real breakdown rather than one number.
+  const home = ORGS.find((o) => o.orgId === p.orgId)!
+  const byOrg = [{ orgCode: home.orgCode, qty: rng.int(0, 1400) }]
+  if (rng.bool(0.28) && p.orgId !== 104) byOrg.push({ orgCode: "DEP-M04", qty: rng.int(0, 320) })
+  p.onHandByOrg = byOrg
+  p.onHandQty = byOrg.reduce((sum, b) => sum + b.qty, 0)
+
   if (p.makeBuy === "BUY") {
     const candidates = suppliers.filter((s) => s.primaryCommodity === p.commodity && s.active)
     const s = candidates.length ? candidates[rng.int(0, candidates.length - 1)] : rng.pick(suppliers)
-    p.primarySupplierId = s.supplierId
+    // A share of bought parts carry no approved supplier at all, which is one of the
+    // things that blocks a part from automated procurement.
+    p.primarySupplierId = rng.bool(0.06) ? null : s.supplierId
     p.supplierPartRef = rng.bool(0.62)
       ? `${String.fromCharCode(65 + rng.int(0, 25))}${String.fromCharCode(65 + rng.int(0, 25))}-${rng.int(10_000, 99_999)}`
       : null
@@ -273,18 +310,29 @@ const engineeringParts: EngineeringPart[] = []
     const current = revisions[revisions.length - 1]
     const engineeringItemId = `E${p.partNumber.replace("-", "")}`
     p.engineeringItemId = engineeringItemId
+    // Engineering and the item master disagree on some records. That disagreement is
+    // one of the integrity findings, so it has to exist in the data.
+    const nameDiverges = rng.bool(0.08)
     engineeringParts.push({
       engineeringItemId,
-      objectName: p.description,
+      objectName: nameDiverges ? `${p.description} ENG` : p.description,
       objectType: p.makeBuy === "BUY" ? "PurchasedPart" : rng.bool(0.7) ? "DesignPart" : "StandardPart",
-      classificationClass: `CLS-${p.commodity}-${String(rng.int(1, 40)).padStart(3, "0")}`,
+      classificationClass: rng.bool(0.19)
+        ? null
+        : `CLS-${p.commodity}-${String(rng.int(1, 40)).padStart(3, "0")}`,
       currentRevisionId: current.revisionId,
       released: current.releasedOn !== null,
+      releaseState: current.releasedOn !== null
+        ? revisions.length > 1 && rng.bool(0.12) ? "SUPERSEDED" : "RELEASED"
+        : "IN_WORK",
+      owningGroup: rng.pick(OWNING_GROUPS),
+      unitOfMeasure: rng.bool(0.05) ? rng.pick(UOM_DEFINED) : p.unitOfMeasure,
       revisions,
       bomUsageCount: rng.weighted([
         { value: 0, weight: 14 }, { value: rng.int(1, 3), weight: 42 },
         { value: rng.int(4, 12), weight: 32 }, { value: rng.int(13, 60), weight: 12 },
       ]),
+      assemblies: Array.from({ length: rng.int(0, 3) }, () => `ASM-${rng.int(100_000, 999_999)}`),
       lastModifiedOn: iso(Math.min(cursor, AS_OF)),
       oraclePartNumber: p.partNumber,
     })
@@ -320,6 +368,10 @@ function vary(desc: string, r: Rng): string {
   return out
 }
 
+/** The description term is the continuous one. Everything else is discrete. */
+const DESC_POINTS_MIN = 8
+const DESC_POINTS_MAX = 34
+
 const CAUSE_PLAN: { cause: DuplicateCause; count: number }[] = [
   { cause: "COPY_PASTE_VARIATION", count: 56 },
   { cause: "REVISION_ABUSE", count: 35 },
@@ -344,6 +396,11 @@ const duplicateClusters: DuplicateCluster[] = []
       const seedPart = take()
       const members = [seedPart]
 
+      // Evidence beyond the cause. A duplicate created by copying can also span
+      // plants, or share a supplier number, and the matcher sees all of it.
+      const spansOrgs = plan.cause === "ORG_REGISTRATION_SPLIT" || rng.bool(0.36)
+      const sharesSupplierRef = plan.cause === "SUPPLIER_PART_NUMBER" || rng.bool(0.32)
+
       for (let m = 1; m < size; m++) {
         const sib = take()
         sib.commodity = seedPart.commodity
@@ -353,11 +410,13 @@ const duplicateClusters: DuplicateCluster[] = []
         switch (plan.cause) {
           case "COPY_PASTE_VARIATION":
             sib.description = vary(seedPart.description, rng)
-            sib.orgId = seedPart.orgId
+            // A copied record sometimes ends up in another plant as well. The cause is
+            // still copying; the cross organization split is extra evidence on top.
+            if (!spansOrgs) sib.orgId = seedPart.orgId
             break
           case "REVISION_ABUSE":
             sib.description = `${vary(seedPart.description, rng)} REV ${REV_LETTERS[m]}`
-            sib.orgId = seedPart.orgId
+            if (!spansOrgs) sib.orgId = seedPart.orgId
             sib.engineeringItemId = seedPart.engineeringItemId
             break
           case "SUPPLIER_PART_NUMBER":
@@ -370,39 +429,116 @@ const duplicateClusters: DuplicateCluster[] = []
             break
           case "ORG_REGISTRATION_SPLIT": {
             sib.description = seedPart.description
-            const others = ORGS.filter((o) => !members.some((mm) => mm.orgId === o.orgId))
-            sib.orgId = (others.length ? rng.pick(others) : rng.pick(ORGS)).orgId
             break
           }
+        }
+
+        if (spansOrgs) {
+          const others = ORGS.filter((o) => !members.some((mm) => mm.orgId === o.orgId))
+          sib.orgId = (others.length ? rng.pick(others) : rng.pick(ORGS)).orgId
+        }
+        if (sharesSupplierRef && plan.cause !== "SUPPLIER_PART_NUMBER") {
+          seedPart.supplierPartRef =
+            seedPart.supplierPartRef ??
+            `${String.fromCharCode(65 + rng.int(0, 25))}${String.fromCharCode(65 + rng.int(0, 25))}-${rng.int(10_000, 99_999)}`
+          sib.supplierPartRef = seedPart.supplierPartRef
         }
         members.push(sib)
       }
 
       for (const m of members) m.duplicateClusterId = clusterId
 
-      const similarity =
-        plan.cause === "ORG_REGISTRATION_SPLIT" ? rng.float(0.93, 0.995, 3)
-        : plan.cause === "SUPPLIER_PART_NUMBER" ? rng.float(0.78, 0.93, 3)
-        : plan.cause === "REVISION_ABUSE" ? rng.float(0.71, 0.9, 3)
-        : rng.float(0.84, 0.98, 3)
+      const orgSpread = Array.from(new Set(members.map((m) => m.orgId))).sort((a, b) => a - b) as OrgId[]
+      const orgCodes = orgSpread.map((id) => ORGS.find((o) => o.orgId === id)!.orgCode)
+      const withRef = members.filter((m) => m.supplierPartRef === seedPart.supplierPartRef).length
+      const revisionAnomaly = plan.cause === "REVISION_ABUSE"
+
+      // Discrete evidence first. The description term is continuous and settles the
+      // total, which is how a scorer of this kind actually behaves.
+      const fixed: ClusterEvidence[] = []
+      const add = (code: EvidenceCode, label: string, finding: string, points: number) =>
+        fixed.push({ code, label, finding, points })
+
+      if (sharesSupplierRef && seedPart.supplierPartRef) {
+        add("SHARED_SUPPLIER_PART", "Supplier part number",
+          `Same supplier part number ${seedPart.supplierPartRef} found on ${withRef} of ${members.length} members`, 25)
+      }
+      if (orgSpread.length > 1) {
+        add("CROSS_ORG", "Registration",
+          `Members registered separately in ${orgCodes.join(" and ")}`, 20)
+      }
+      if (revisionAnomaly) {
+        add("REVISION_ANOMALY", "Revision history",
+          `Revision ${REV_LETTERS[members.length - 1]} changes the part substantially with no change notice delivering it`, 18)
+      }
+      // Reported as a negative contribution. Two parts sitting at different positions
+      // in one assembly are unlikely to be interchangeable, whatever else matches.
+      const sameAssembly = rng.bool(0.22)
+      if (sameAssembly) {
+        add("SAME_ASSEMBLY", "Assembly usage",
+          "Both parts appear in the same assembly at different positions, so interchangeability is unlikely", -15)
+      }
+
+      const optional: ClusterEvidence[] = [
+        { code: "CLASSIFICATION_MATCH", label: "Classification",
+          finding: `All members classified under CLS-${seedPart.commodity}-${String(rng.int(1, 40)).padStart(3, "0")}`, points: 12 },
+        { code: "UOM_MATCH", label: "Unit of measure",
+          finding: "Primary unit of measure agrees across every member", points: 8 },
+        { code: "PLANNER_BUYER_MATCH", label: "Planner and buyer",
+          finding: "Same planner and buyer assigned on every member", points: 6 },
+      ]
+
+      // Anchors the confidence column clusters around.
+      const anchor = rng.weighted([
+        { value: 100, weight: 11 }, { value: 99, weight: 10 }, { value: 92, weight: 22 },
+        { value: 78, weight: 28 }, { value: 51, weight: 29 },
+      ])
+      const target = anchor === 100 ? 100 : anchor - rng.int(0, 3)
+
+      const evidence = fixed.slice()
+      let points = evidence.reduce((sum, e) => sum + e.points, 0)
+      for (const candidate of optional) {
+        if (target - (points + candidate.points) >= DESC_POINTS_MIN) {
+          evidence.push(candidate)
+          points += candidate.points
+        }
+      }
+
+      const descPoints = Math.max(DESC_POINTS_MIN, Math.min(DESC_POINTS_MAX, target - points))
+      const similarity = Math.round((0.6 + (0.4 * descPoints) / DESC_POINTS_MAX) * 100) / 100
+      evidence.unshift({
+        code: "DESCRIPTION_MATCH",
+        label: "Description",
+        finding: `Description similarity ${similarity.toFixed(2)} after normalisation`,
+        points: descPoints,
+      })
+
+      const confidence = Math.max(5, Math.min(100, points + descPoints))
 
       const costs = members.map((m) => m.unitCost)
       const low = Math.min(...costs)
       const high = Math.max(...costs)
+      const survivor = members
+        .slice()
+        .sort((a, b) => a.createdOn.localeCompare(b.createdOn) || a.partKey.localeCompare(b.partKey))[0]
 
       duplicateClusters.push({
         clusterId,
         cause: plan.cause,
         memberPartKeys: members.map((m) => m.partKey),
         memberCount: members.length,
+        confidence,
         similarityScore: similarity,
+        evidence: evidence.sort((a, b) => Math.abs(b.points) - Math.abs(a.points)),
+        revisionAnomaly,
         combinedSpend24m: 0,
         priceSpreadPct: Math.round(((high - low) / low) * 1000) / 10,
-        recommendedSurvivorPartKey: members
-          .slice()
-          .sort((a, b) => a.createdOn.localeCompare(b.createdOn) || a.partKey.localeCompare(b.partKey))[0].partKey,
-        orgSpread: Array.from(new Set(members.map((m) => m.orgId))).sort((a, b) => a - b) as OrgId[],
-        reviewState: "UNREVIEWED",
+        estimatedImpact: 0,
+        carryingCost: 0,
+        leverageLoss: 0,
+        recommendedSurvivorPartKey: survivor.partKey,
+        orgSpread,
+        status: "OPEN",
       })
     }
   }
@@ -449,7 +585,8 @@ const purchaseOrderLines: PurchaseOrderLine[] = []
         { value: rng.int(11, 120), weight: 42 },
         { value: rng.int(121, 900), weight: 18 },
       ])
-      const leadDays = rng.int(Math.max(5, part.leadTimeDays - 20), part.leadTimeDays + 25)
+      const nominalLead = part.leadTimeDays ?? 45
+      const leadDays = rng.int(Math.max(5, nominalLead - 20), nominalLead + 25)
       const needByMs = orderedMs + leadDays * DAY
       const promisedMs = needByMs + rng.int(-6, 10) * DAY
       const onTime = rng.unit() * 100 < supplier.onTimeDeliveryPct
@@ -483,13 +620,38 @@ const purchaseOrderLines: PurchaseOrderLine[] = []
 for (const line of purchaseOrderLines) {
   if (line.status === "CANCELLED") continue
   const p = partByKey.get(line.partKey)
-  if (p) p.spend24m = Math.round((p.spend24m + line.lineValue) * 100) / 100
+  if (p) {
+    p.spend24m = Math.round((p.spend24m + line.lineValue) * 100) / 100
+    p.purchaseQty24m += line.quantity
+    p.poLineCount += 1
+    if (line.orderedOn > p.lastActivityOn) p.lastActivityOn = line.orderedOn
+  }
   const s = supplierById.get(line.supplierId)
   if (s) s.spend24m = Math.round((s.spend24m + line.lineValue) * 100) / 100
 }
+
+// A part with no purchasing history has not been touched since it was created.
+for (const p of parts) if (!p.lastActivityOn) p.lastActivityOn = p.createdOn
+
+/** Annual cost of holding a dollar of inventory. Illustrative. */
+const CARRYING_RATE = 0.22
+
 for (const cluster of duplicateClusters) {
-  cluster.combinedSpend24m =
-    Math.round(cluster.memberPartKeys.reduce((sum, k) => sum + (partByKey.get(k)?.spend24m ?? 0), 0) * 100) / 100
+  const members = cluster.memberPartKeys.map((k) => partByKey.get(k)!).filter(Boolean)
+  cluster.combinedSpend24m = Math.round(members.reduce((sum, m) => sum + m.spend24m, 0) * 100) / 100
+
+  // Impact is the carrying cost of the stock held against the records that would not
+  // survive a merge, plus the volume leverage lost by splitting one part's spend
+  // across several records at different prices.
+  const duplicates = members.filter((m) => m.partKey !== cluster.recommendedSurvivorPartKey)
+  cluster.carryingCost =
+    Math.round(duplicates.reduce((sum, m) => sum + m.onHandQty * m.unitCost, 0) * CARRYING_RATE)
+  // Annualised spend, the share of the price spread a single record would recover,
+  // and then only part of the volume moves. Deliberately conservative.
+  cluster.leverageLoss = Math.round(
+    ((cluster.combinedSpend24m / 2) * Math.min(cluster.priceSpreadPct, 45)) / 100 / 6
+  )
+  cluster.estimatedImpact = cluster.carryingCost + cluster.leverageLoss
 }
 
 // --- price history ---------------------------------------------------
@@ -617,6 +779,7 @@ const meta: DatasetMeta = {
     engineeringParts: engineeringParts.length,
     duplicateClusters: duplicateClusters.length,
     duplicateMembers: duplicateClusters.reduce((s, c) => s + c.memberCount, 0),
+    revisionAnomalyClusters: duplicateClusters.filter((c) => c.revisionAnomaly).length,
     purchaseOrderLines: purchaseOrderLines.length,
     requisitions: requisitions.length,
     maintainableAssets: assets.length,
@@ -644,10 +807,17 @@ write("assets.json", assets)
 write("price-history.json", pricePoints)
 
 const causeTally = CAUSE_PLAN.map((p) => `${p.cause}=${p.count}`).join(" ")
+const bands = [100, 99, 92, 78, 51].map((anchor) => {
+  const n = duplicateClusters.filter((c) => c.confidence > anchor - 4 && c.confidence <= anchor).length
+  return `~${anchor}:${n}`
+})
+const negatives = duplicateClusters.filter((c) => c.evidence.some((e) => e.points < 0)).length
 console.log(
   [
     `seed ${SEED}`,
     ...Object.entries(meta.counts).map(([k, v]) => `${k} ${v}`),
     `causes ${causeTally}`,
+    `confidence bands ${bands.join(" ")}`,
+    `clusters with a negative contribution ${negatives}`,
   ].join("\n")
 )

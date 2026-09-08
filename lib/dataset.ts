@@ -33,16 +33,21 @@ import type {
   Supplier,
 } from "./domain"
 
+/**
+ * The JSON loses the string literal unions on the way through the file, so each
+ * collection is asserted back to its domain type. The generator is typed against the
+ * same types, so the shapes cannot drift apart without a compile error there.
+ */
 export const DATASET = {
   meta: meta as DatasetMeta,
-  orgs: orgs as InventoryOrg[],
-  commodities: commodities as CommodityGroup[],
-  suppliers: suppliers as Supplier[],
-  parts: parts as PartRecord[],
-  engineeringParts: engineeringParts as EngineeringPart[],
-  duplicateClusters: duplicateClusters as DuplicateCluster[],
-  purchaseOrderLines: purchaseOrderLines as PurchaseOrderLine[],
-  requisitions: requisitions as Requisition[],
-  assets: assets as MaintainableAsset[],
-  priceHistory: priceHistory as PricePoint[],
+  orgs: orgs as unknown as InventoryOrg[],
+  commodities: commodities as unknown as CommodityGroup[],
+  suppliers: suppliers as unknown as Supplier[],
+  parts: parts as unknown as PartRecord[],
+  engineeringParts: engineeringParts as unknown as EngineeringPart[],
+  duplicateClusters: duplicateClusters as unknown as DuplicateCluster[],
+  purchaseOrderLines: purchaseOrderLines as unknown as PurchaseOrderLine[],
+  requisitions: requisitions as unknown as Requisition[],
+  assets: assets as unknown as MaintainableAsset[],
+  priceHistory: priceHistory as unknown as PricePoint[],
 }

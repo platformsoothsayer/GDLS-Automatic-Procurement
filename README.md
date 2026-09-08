@@ -14,7 +14,7 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 
 | Built | Not built |
 | --- | --- |
-| Navigation, routing and the walkthrough order | Screens 3, 4, 5 and 7 |
+| Navigation, routing and the walkthrough order | Screens 4, 5 and 7 |
 | Design system and layout frame | — |
 | Nomenclature registry | — |
 | Deterministic data generation | — |
@@ -22,6 +22,7 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 | Cross module session state | — |
 | Screen 1, problem selection | — |
 | Screens 2 and 6, the fabric | — |
+| Screen 3, part master intelligence | — |
 
 The remaining screens render a scaffold that names the screen, states its intent and
 exercises the overlay. Those scaffolds are deleted one at a time as real screens land.
@@ -145,6 +146,28 @@ changes one line of text and nothing else, which is the point of it.
 Copy lives in `data/fabric-content.ts` so the argument can be edited without touching
 the diagram.
 
+### Screen 3 · Part master intelligence
+
+Three tabs over one work queue: duplicate clusters, cluster detail, completeness.
+The frame is a queue for a small team rather than an autonomous cleaner. Every
+decision is taken by a person, and the top strip is about the team's throughput.
+
+The confidence score is a real model. Discrete evidence contributes fixed points and
+description similarity is the continuous term that settles the total. Contributions
+can subtract: a pair of parts sitting at different positions in the same assembly
+loses fifteen points, because interchangeability is unlikely whatever else matches.
+Twenty five of the 140 clusters carry a negative contribution, and the detail tab
+opens on one of them.
+
+Merge, keep separate and route to engineering each open a confirmation naming what
+would change and in which system. The surviving item number is proposed rather than
+chosen, the write back is a staged update held for approval, and the wording says
+so. Nothing on the screen implies a write to a production system.
+
+Completeness is organised by the process that needs the field, not as a score. A
+missing lead time is not a low quality record in the abstract, it is a part that
+cannot be bought automatically, and the card says which parts and how many.
+
 ## Cross module session state
 
 `context/SessionContext.tsx` holds the selected problem, the selected part, the
@@ -156,11 +179,12 @@ The context is mounted above the router, so it survives navigation between scree
 and is cleared by a page reload. Verified in a browser, along with the fact that the
 build touches no browser storage at all.
 
-Screens 3, 4 and 5 are the ones that emit `CLUSTER_MERGED`,
-`CLUSTER_ROUTED_TO_ENGINEERING`, `SIGNAL_SELECTED` and the requisition actions. Until
-they are built, the populated fabric reads those counts as zero, correctly. The
-derived figures beside them, which come from the dataset rather than the session, are
-populated already.
+Screen 3 emits `CLUSTER_MERGED`, `CLUSTER_KEPT_SEPARATE` and
+`CLUSTER_ROUTED_TO_ENGINEERING`, and the populated fabric reads them: merging a
+cluster on screen 3 and walking to screen 6 shows it in the resolve stage and in the
+engineering review queue. Verified in a browser. `SIGNAL_SELECTED` and the
+requisition actions arrive with screens 4 and 5; until then the populated fabric
+reads those two counts as zero, correctly.
 
 ## Generated dataset
 

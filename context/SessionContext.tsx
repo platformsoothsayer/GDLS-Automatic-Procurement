@@ -20,6 +20,7 @@ export const ACTION_KINDS = [
   "PART_SELECTED",
   "SIGNAL_SELECTED",
   "CLUSTER_MERGED",
+  "CLUSTER_KEPT_SEPARATE",
   "CLUSTER_ROUTED_TO_ENGINEERING",
   "SUPPLIER_RESOLVED",
   "REQUISITION_PROPOSED",
@@ -40,6 +41,15 @@ export type SessionAction = {
 
 export type Selection = { key: string; label: string } | null
 
+/** What the presenter decided about a duplicate cluster. */
+export type ClusterDecision = "MERGED" | "KEPT_SEPARATE" | "ROUTED_TO_ENGINEERING"
+
+const DECISION_ACTION: Record<ClusterDecision, ActionKind> = {
+  MERGED: "CLUSTER_MERGED",
+  KEPT_SEPARATE: "CLUSTER_KEPT_SEPARATE",
+  ROUTED_TO_ENGINEERING: "CLUSTER_ROUTED_TO_ENGINEERING",
+}
+
 type SessionValue = {
   selectedProblemId: string | null
   selectProblem: (id: string, label: string) => void
@@ -49,6 +59,11 @@ type SessionValue = {
 
   selectedSignal: Selection
   selectSignal: (key: string, label: string) => void
+
+  /** Decisions taken on duplicate clusters, keyed by cluster id. */
+  clusterDecisions: Record<string, ClusterDecision>
+  decideCluster: (clusterId: string, decision: ClusterDecision, label: string) => void
+  decidedClusterCount: number
 
   actions: SessionAction[]
   logAction: (action: Omit<SessionAction, "id">) => void
@@ -67,6 +82,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const [selectedPart, setSelectedPart] = useState<Selection>(null)
   const [selectedSignal, setSelectedSignal] = useState<Selection>(null)
   const [actions, setActions] = useState<SessionAction[]>([])
+  const [clusterDecisions, setClusterDecisions] = useState<Record<string, ClusterDecision>>({})
 
   const logAction = useCallback((action: Omit<SessionAction, "id">) => {
     setActions((current) => [...current, { ...action, id: current.length + 1 }])
@@ -107,7 +123,21 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     [counts]
   )
 
+  const decideCluster = useCallback(
+    (clusterId: string, decision: ClusterDecision, label: string) => {
+      setClusterDecisions((current) => ({ ...current, [clusterId]: decision }))
+      logAction({
+        kind: DECISION_ACTION[decision],
+        screen: "Part master intelligence",
+        label,
+        detail: clusterId,
+      })
+    },
+    [logAction]
+  )
+
   const resetSession = useCallback(() => {
+    setClusterDecisions({})
     setSelectedProblemId(null)
     setSelectedPart(null)
     setSelectedSignal(null)
@@ -122,6 +152,9 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       selectPart,
       selectedSignal,
       selectSignal,
+      clusterDecisions,
+      decideCluster,
+      decidedClusterCount: Object.keys(clusterDecisions).length,
       actions,
       logAction,
       actionCount: actions.length,
@@ -136,6 +169,8 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       selectPart,
       selectedSignal,
       selectSignal,
+      clusterDecisions,
+      decideCluster,
       actions,
       logAction,
       counts,

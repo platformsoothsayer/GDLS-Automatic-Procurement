@@ -14,7 +14,7 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 
 | Built | Not built |
 | --- | --- |
-| Navigation, routing and the walkthrough order | Screens 5 and 7 |
+| Navigation, routing and the walkthrough order | Screen 7 |
 | Design system and layout frame | — |
 | Nomenclature registry | — |
 | Deterministic data generation | — |
@@ -24,6 +24,7 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 | Screens 2 and 6, the fabric | — |
 | Screen 3, part master intelligence | — |
 | Screen 4, MRO signals | — |
+| Screen 5, automated procurement | — |
 
 The remaining screens render a scaffold that names the screen, states its intent and
 exercises the overlay. Those scaffolds are deleted one at a time as real screens land.
@@ -195,6 +196,32 @@ level chip, changes the heading to "data elements needed", and states that the f
 names describe what is needed rather than what the source calls it. Every assumption
 now renders in amber rather than as a footnote.
 
+### Screen 5 · Automated procurement
+
+The largest screen. Four stages left to right, the active one expanded and the rest
+collapsed to summary tiles. A rail on the right names the gold mart each stage reads
+from and stays visible in Business view, so the presenter can point at it without
+toggling.
+
+Stage 1 has three signal sources and only one is live. The other two are outlined and
+labelled phase 2 and phase 3, which is the staged build rather than an all at once
+promise. Stage 2 derives the recommendation: economic order quantity against the
+minimum order quantity and the order multiple, the order by date from lead time and
+need date, the approved supplier list with delivery and quality records, contract
+price where one exists and last paid where one does not, and the reasoning as a list
+of input, value and effect rather than a paragraph.
+
+Stage 3 is the change management answer. Both modes are the same size, carry the same
+field values, and each says plainly where it stops. Advisory needs no integration at
+all and is positioned as where most organizations start. Pre-populated names its
+integration mechanism from the registry and states that the document is created
+unapproved. Neither shows a document being approved automatically.
+
+Stage 4 is the RFQ branch, reached from a control at stage 3 and treated as a first
+class path. Ranking gates on feasibility before it looks at price, so the cheapest
+response loses when it cannot arrive before the need date, and the row says why. An
+award that is not the top ranked response cannot be recorded without a justification.
+
 ## Cross module session state
 
 `context/SessionContext.tsx` holds the selected problem, the selected part, the
@@ -209,9 +236,9 @@ build touches no browser storage at all.
 Screen 3 emits `CLUSTER_MERGED`, `CLUSTER_KEPT_SEPARATE` and
 `CLUSTER_ROUTED_TO_ENGINEERING`, and the populated fabric reads them: merging a
 cluster on screen 3 and walking to screen 6 shows it in the resolve stage and in the
-engineering review queue. Verified in a browser. `SIGNAL_SELECTED` and the
-requisition actions arrive with screens 4 and 5; until then the populated fabric
-reads those two counts as zero, correctly.
+engineering review queue. Verified in a browser. Screen 4 emits `SIGNAL_SELECTED` and
+screen 5 emits `REQUISITION_PROPOSED` and `REQUISITION_RELEASED`, so all three tiles
+on the populated fabric now fill from the walkthrough itself.
 
 ## Generated dataset
 

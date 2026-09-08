@@ -3,2016 +3,2016 @@
     "commodity": "FSTN",
     "month": "2024-10",
     "index": 100,
-    "weightedAvgUnitPrice": 5.46,
-    "volume": 730
+    "weightedAvgUnitPrice": 4.72,
+    "volume": 2546
   },
   {
     "commodity": "FSTN",
     "month": "2024-11",
-    "index": 83.7,
-    "weightedAvgUnitPrice": 4.57,
-    "volume": 1097
+    "index": 67.5,
+    "weightedAvgUnitPrice": 3.19,
+    "volume": 3740
   },
   {
     "commodity": "FSTN",
     "month": "2024-12",
-    "index": 75.4,
-    "weightedAvgUnitPrice": 4.12,
-    "volume": 954
+    "index": 106.3,
+    "weightedAvgUnitPrice": 5.02,
+    "volume": 6298
   },
   {
     "commodity": "FSTN",
     "month": "2025-01",
-    "index": 67,
-    "weightedAvgUnitPrice": 3.66,
-    "volume": 4668
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-02",
-    "index": 63,
-    "weightedAvgUnitPrice": 3.44,
-    "volume": 3080
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-03",
-    "index": 53.2,
-    "weightedAvgUnitPrice": 2.91,
-    "volume": 1191
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-04",
-    "index": 92.3,
-    "weightedAvgUnitPrice": 5.04,
-    "volume": 1187
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-05",
-    "index": 79.2,
-    "weightedAvgUnitPrice": 4.32,
-    "volume": 3960
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-06",
-    "index": 84,
-    "weightedAvgUnitPrice": 4.58,
-    "volume": 3144
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-07",
-    "index": 64.9,
-    "weightedAvgUnitPrice": 3.55,
-    "volume": 2639
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-08",
-    "index": 77.6,
-    "weightedAvgUnitPrice": 4.23,
-    "volume": 5447
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-09",
-    "index": 70.2,
-    "weightedAvgUnitPrice": 3.83,
-    "volume": 3383
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-10",
-    "index": 72.2,
-    "weightedAvgUnitPrice": 3.94,
-    "volume": 1976
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-11",
-    "index": 82.8,
-    "weightedAvgUnitPrice": 4.52,
-    "volume": 532
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2025-12",
-    "index": 80.8,
-    "weightedAvgUnitPrice": 4.41,
-    "volume": 2319
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-01",
-    "index": 66.7,
-    "weightedAvgUnitPrice": 3.64,
-    "volume": 2482
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-02",
-    "index": 86.7,
-    "weightedAvgUnitPrice": 4.73,
-    "volume": 3413
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-03",
-    "index": 96.9,
-    "weightedAvgUnitPrice": 5.29,
-    "volume": 4195
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-04",
-    "index": 96.9,
-    "weightedAvgUnitPrice": 5.29,
-    "volume": 3162
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-05",
-    "index": 72.8,
-    "weightedAvgUnitPrice": 3.97,
-    "volume": 777
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-06",
-    "index": 75.2,
-    "weightedAvgUnitPrice": 4.1,
-    "volume": 1767
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-07",
-    "index": 94.7,
-    "weightedAvgUnitPrice": 5.17,
-    "volume": 1115
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-08",
-    "index": 75.3,
-    "weightedAvgUnitPrice": 4.11,
-    "volume": 399
-  },
-  {
-    "commodity": "FSTN",
-    "month": "2026-09",
-    "index": 53.1,
-    "weightedAvgUnitPrice": 2.9,
-    "volume": 1342
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 128,
-    "volume": 3008
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2024-11",
-    "index": 74.2,
-    "weightedAvgUnitPrice": 95.03,
-    "volume": 3503
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2024-12",
-    "index": 84.2,
-    "weightedAvgUnitPrice": 107.82,
-    "volume": 1803
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-01",
-    "index": 66.7,
-    "weightedAvgUnitPrice": 85.42,
-    "volume": 3351
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-02",
-    "index": 91.9,
-    "weightedAvgUnitPrice": 117.68,
-    "volume": 1250
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-03",
-    "index": 101.8,
-    "weightedAvgUnitPrice": 130.35,
-    "volume": 1489
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-04",
-    "index": 79.5,
-    "weightedAvgUnitPrice": 101.77,
-    "volume": 2214
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-05",
-    "index": 88,
-    "weightedAvgUnitPrice": 112.67,
-    "volume": 2999
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-06",
-    "index": 64.8,
-    "weightedAvgUnitPrice": 82.93,
-    "volume": 59
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-07",
-    "index": 89.8,
-    "weightedAvgUnitPrice": 114.9,
-    "volume": 3870
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-08",
-    "index": 60.7,
-    "weightedAvgUnitPrice": 77.72,
-    "volume": 1482
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-09",
-    "index": 122.7,
-    "weightedAvgUnitPrice": 156.99,
-    "volume": 736
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-10",
-    "index": 70.7,
-    "weightedAvgUnitPrice": 90.51,
-    "volume": 4727
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-11",
-    "index": 83.9,
-    "weightedAvgUnitPrice": 107.38,
-    "volume": 389
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2025-12",
-    "index": 73.2,
-    "weightedAvgUnitPrice": 93.65,
-    "volume": 4380
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-01",
-    "index": 86.4,
-    "weightedAvgUnitPrice": 110.6,
-    "volume": 3505
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-02",
-    "index": 99.4,
-    "weightedAvgUnitPrice": 127.24,
-    "volume": 1164
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-03",
-    "index": 117.8,
-    "weightedAvgUnitPrice": 150.73,
-    "volume": 2136
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-04",
-    "index": 82,
-    "weightedAvgUnitPrice": 104.93,
-    "volume": 3429
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-05",
-    "index": 77.9,
-    "weightedAvgUnitPrice": 99.66,
-    "volume": 643
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-06",
-    "index": 90.3,
-    "weightedAvgUnitPrice": 115.57,
-    "volume": 2719
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-07",
-    "index": 74.4,
-    "weightedAvgUnitPrice": 95.17,
-    "volume": 3522
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-08",
-    "index": 89.9,
-    "weightedAvgUnitPrice": 115.05,
-    "volume": 2222
-  },
-  {
-    "commodity": "BRNG",
-    "month": "2026-09",
-    "index": 97.8,
-    "weightedAvgUnitPrice": 125.14,
-    "volume": 2007
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 315.41,
-    "volume": 593
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2024-11",
-    "index": 72.4,
-    "weightedAvgUnitPrice": 228.2,
-    "volume": 2836
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2024-12",
-    "index": 61.4,
-    "weightedAvgUnitPrice": 193.64,
-    "volume": 1262
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-01",
-    "index": 74.2,
-    "weightedAvgUnitPrice": 233.94,
-    "volume": 2561
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-02",
-    "index": 82.4,
-    "weightedAvgUnitPrice": 259.76,
-    "volume": 3906
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-03",
-    "index": 105.5,
-    "weightedAvgUnitPrice": 332.68,
-    "volume": 2746
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-04",
-    "index": 49.8,
-    "weightedAvgUnitPrice": 156.97,
-    "volume": 1301
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-05",
-    "index": 51.7,
-    "weightedAvgUnitPrice": 163.04,
-    "volume": 1043
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-06",
-    "index": 91.9,
-    "weightedAvgUnitPrice": 289.82,
-    "volume": 5240
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-07",
-    "index": 74.3,
-    "weightedAvgUnitPrice": 234.35,
-    "volume": 1995
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-08",
-    "index": 66.5,
-    "weightedAvgUnitPrice": 209.86,
-    "volume": 1063
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-09",
-    "index": 94.9,
-    "weightedAvgUnitPrice": 299.24,
-    "volume": 2381
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-10",
-    "index": 65,
-    "weightedAvgUnitPrice": 205.08,
-    "volume": 4256
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-11",
-    "index": 91.7,
-    "weightedAvgUnitPrice": 289.32,
-    "volume": 3196
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2025-12",
-    "index": 83.1,
-    "weightedAvgUnitPrice": 262.1,
-    "volume": 4348
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-01",
-    "index": 65.2,
-    "weightedAvgUnitPrice": 205.63,
-    "volume": 1734
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-02",
-    "index": 79.2,
-    "weightedAvgUnitPrice": 249.72,
-    "volume": 3008
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-03",
-    "index": 61.4,
-    "weightedAvgUnitPrice": 193.67,
-    "volume": 2736
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-04",
-    "index": 137.4,
-    "weightedAvgUnitPrice": 433.5,
-    "volume": 1979
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-05",
-    "index": 96.7,
-    "weightedAvgUnitPrice": 305.13,
-    "volume": 2482
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-06",
-    "index": 79.2,
-    "weightedAvgUnitPrice": 249.86,
-    "volume": 3090
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-07",
-    "index": 97.3,
-    "weightedAvgUnitPrice": 306.8,
-    "volume": 3786
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-08",
-    "index": 51.6,
-    "weightedAvgUnitPrice": 162.75,
-    "volume": 2659
-  },
-  {
-    "commodity": "HYDR",
-    "month": "2026-09",
-    "index": 100.8,
-    "weightedAvgUnitPrice": 318.06,
-    "volume": 2080
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 112.59,
-    "volume": 3786
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2024-11",
-    "index": 121.8,
-    "weightedAvgUnitPrice": 137.08,
-    "volume": 1247
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2024-12",
-    "index": 102.5,
-    "weightedAvgUnitPrice": 115.45,
-    "volume": 1778
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-01",
-    "index": 126.4,
-    "weightedAvgUnitPrice": 142.36,
-    "volume": 3026
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-02",
-    "index": 123,
-    "weightedAvgUnitPrice": 138.47,
-    "volume": 2761
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-03",
-    "index": 115,
-    "weightedAvgUnitPrice": 129.52,
-    "volume": 1121
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-04",
-    "index": 133.8,
-    "weightedAvgUnitPrice": 150.68,
-    "volume": 1266
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-05",
-    "index": 177.5,
-    "weightedAvgUnitPrice": 199.8,
-    "volume": 1129
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-06",
-    "index": 149.8,
-    "weightedAvgUnitPrice": 168.67,
-    "volume": 2692
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-07",
-    "index": 100.4,
-    "weightedAvgUnitPrice": 113.08,
-    "volume": 2212
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-08",
-    "index": 75,
-    "weightedAvgUnitPrice": 84.39,
-    "volume": 2131
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-09",
-    "index": 100.8,
-    "weightedAvgUnitPrice": 113.53,
-    "volume": 1034
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-10",
-    "index": 87.3,
-    "weightedAvgUnitPrice": 98.24,
-    "volume": 1244
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-11",
-    "index": 103.7,
-    "weightedAvgUnitPrice": 116.76,
-    "volume": 1414
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2025-12",
-    "index": 123,
-    "weightedAvgUnitPrice": 138.49,
-    "volume": 761
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-01",
-    "index": 112.5,
-    "weightedAvgUnitPrice": 126.7,
-    "volume": 2994
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-02",
-    "index": 112.1,
-    "weightedAvgUnitPrice": 126.21,
-    "volume": 1117
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-03",
-    "index": 156.6,
-    "weightedAvgUnitPrice": 176.26,
-    "volume": 3076
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-04",
-    "index": 127.3,
-    "weightedAvgUnitPrice": 143.33,
-    "volume": 1248
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-05",
-    "index": 150.4,
-    "weightedAvgUnitPrice": 169.29,
-    "volume": 1258
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-06",
-    "index": 170.8,
-    "weightedAvgUnitPrice": 192.35,
-    "volume": 5258
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-07",
-    "index": 136.9,
-    "weightedAvgUnitPrice": 154.1,
-    "volume": 3052
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-08",
-    "index": 111.1,
-    "weightedAvgUnitPrice": 125.06,
-    "volume": 1363
-  },
-  {
-    "commodity": "PNEU",
-    "month": "2026-09",
-    "index": 86.9,
-    "weightedAvgUnitPrice": 97.83,
-    "volume": 682
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 77.7,
-    "volume": 5370
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2024-11",
-    "index": 92.7,
-    "weightedAvgUnitPrice": 71.99,
-    "volume": 541
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2024-12",
-    "index": 110.5,
-    "weightedAvgUnitPrice": 85.82,
-    "volume": 4116
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-01",
-    "index": 120.8,
-    "weightedAvgUnitPrice": 93.86,
-    "volume": 4352
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-02",
-    "index": 84.4,
-    "weightedAvgUnitPrice": 65.6,
-    "volume": 1180
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-03",
-    "index": 120.7,
-    "weightedAvgUnitPrice": 93.78,
-    "volume": 753
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-04",
-    "index": 80.4,
-    "weightedAvgUnitPrice": 62.5,
-    "volume": 336
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-05",
-    "index": 110.3,
-    "weightedAvgUnitPrice": 85.67,
-    "volume": 1299
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-06",
-    "index": 67.7,
-    "weightedAvgUnitPrice": 52.6,
-    "volume": 3244
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-07",
-    "index": 108.5,
-    "weightedAvgUnitPrice": 84.29,
-    "volume": 2749
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-08",
-    "index": 98.8,
-    "weightedAvgUnitPrice": 76.76,
-    "volume": 4237
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-09",
-    "index": 92.6,
-    "weightedAvgUnitPrice": 71.94,
-    "volume": 2503
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-10",
-    "index": 91.5,
-    "weightedAvgUnitPrice": 71.07,
-    "volume": 1133
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-11",
-    "index": 71.3,
-    "weightedAvgUnitPrice": 55.42,
-    "volume": 1947
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2025-12",
-    "index": 75,
-    "weightedAvgUnitPrice": 58.31,
-    "volume": 1302
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-01",
-    "index": 51.1,
-    "weightedAvgUnitPrice": 39.73,
-    "volume": 1126
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-02",
-    "index": 90,
-    "weightedAvgUnitPrice": 69.96,
-    "volume": 3279
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-03",
-    "index": 119.2,
-    "weightedAvgUnitPrice": 92.64,
-    "volume": 6831
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-04",
-    "index": 139,
-    "weightedAvgUnitPrice": 107.99,
-    "volume": 2528
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-05",
-    "index": 75.8,
-    "weightedAvgUnitPrice": 58.86,
-    "volume": 232
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-06",
-    "index": 127.1,
-    "weightedAvgUnitPrice": 98.75,
-    "volume": 2563
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-07",
-    "index": 104.3,
-    "weightedAvgUnitPrice": 81.07,
-    "volume": 1763
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-08",
-    "index": 92,
-    "weightedAvgUnitPrice": 71.46,
-    "volume": 2234
-  },
-  {
-    "commodity": "ELEC",
-    "month": "2026-09",
-    "index": 118.9,
-    "weightedAvgUnitPrice": 92.38,
-    "volume": 2730
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 634.5,
-    "volume": 3154
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2024-11",
-    "index": 56.4,
-    "weightedAvgUnitPrice": 357.93,
-    "volume": 610
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2024-12",
-    "index": 112.7,
-    "weightedAvgUnitPrice": 715.11,
-    "volume": 4311
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-01",
-    "index": 77.5,
-    "weightedAvgUnitPrice": 491.87,
-    "volume": 4402
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-02",
-    "index": 82.7,
-    "weightedAvgUnitPrice": 524.62,
-    "volume": 1524
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-03",
-    "index": 45.8,
-    "weightedAvgUnitPrice": 290.66,
-    "volume": 1674
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-04",
-    "index": 114.3,
-    "weightedAvgUnitPrice": 725.15,
-    "volume": 1958
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-05",
-    "index": 104.8,
-    "weightedAvgUnitPrice": 664.96,
-    "volume": 3000
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-06",
-    "index": 81,
-    "weightedAvgUnitPrice": 514.25,
-    "volume": 2750
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-07",
-    "index": 59.5,
-    "weightedAvgUnitPrice": 377.65,
-    "volume": 943
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-08",
-    "index": 97.9,
-    "weightedAvgUnitPrice": 621.31,
-    "volume": 1400
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-09",
-    "index": 97.6,
-    "weightedAvgUnitPrice": 619.01,
-    "volume": 4095
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-10",
-    "index": 61.7,
-    "weightedAvgUnitPrice": 391.62,
-    "volume": 2356
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-11",
-    "index": 71.1,
-    "weightedAvgUnitPrice": 451.34,
-    "volume": 1972
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2025-12",
-    "index": 89.4,
-    "weightedAvgUnitPrice": 567.19,
-    "volume": 2350
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2026-01",
-    "index": 76.7,
-    "weightedAvgUnitPrice": 486.81,
-    "volume": 1565
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2026-02",
     "index": 85.9,
-    "weightedAvgUnitPrice": 545.03,
-    "volume": 2420
+    "weightedAvgUnitPrice": 4.06,
+    "volume": 3734
   },
   {
-    "commodity": "HRNS",
-    "month": "2026-03",
-    "index": 108.5,
-    "weightedAvgUnitPrice": 688.69,
-    "volume": 4316
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2026-04",
-    "index": 57.2,
-    "weightedAvgUnitPrice": 362.91,
-    "volume": 1489
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2026-05",
-    "index": 86.3,
-    "weightedAvgUnitPrice": 547.44,
-    "volume": 5139
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2026-06",
-    "index": 89.5,
-    "weightedAvgUnitPrice": 568.1,
-    "volume": 2475
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2026-07",
-    "index": 115.3,
-    "weightedAvgUnitPrice": 731.8,
-    "volume": 2310
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2026-08",
-    "index": 136.3,
-    "weightedAvgUnitPrice": 865.05,
-    "volume": 2630
-  },
-  {
-    "commodity": "HRNS",
-    "month": "2026-09",
-    "index": 87.6,
-    "weightedAvgUnitPrice": 556.08,
-    "volume": 1977
-  },
-  {
-    "commodity": "CAST",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 732.24,
-    "volume": 850
-  },
-  {
-    "commodity": "CAST",
-    "month": "2024-11",
-    "index": 82.2,
-    "weightedAvgUnitPrice": 601.7,
-    "volume": 4293
-  },
-  {
-    "commodity": "CAST",
-    "month": "2024-12",
-    "index": 110.8,
-    "weightedAvgUnitPrice": 811.51,
-    "volume": 690
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-01",
-    "index": 92.3,
-    "weightedAvgUnitPrice": 675.86,
-    "volume": 3688
-  },
-  {
-    "commodity": "CAST",
+    "commodity": "FSTN",
     "month": "2025-02",
-    "index": 79.9,
-    "weightedAvgUnitPrice": 585.38,
-    "volume": 1429
+    "index": 85.8,
+    "weightedAvgUnitPrice": 4.05,
+    "volume": 1086
   },
   {
-    "commodity": "CAST",
+    "commodity": "FSTN",
     "month": "2025-03",
-    "index": 101.4,
-    "weightedAvgUnitPrice": 742.57,
-    "volume": 3419
+    "index": 79.6,
+    "weightedAvgUnitPrice": 3.76,
+    "volume": 2423
   },
   {
-    "commodity": "CAST",
+    "commodity": "FSTN",
     "month": "2025-04",
-    "index": 88.6,
-    "weightedAvgUnitPrice": 648.59,
-    "volume": 1551
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-05",
-    "index": 93.8,
-    "weightedAvgUnitPrice": 686.98,
-    "volume": 1608
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-06",
-    "index": 71.8,
-    "weightedAvgUnitPrice": 525.58,
-    "volume": 1247
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-07",
-    "index": 101.2,
-    "weightedAvgUnitPrice": 741.07,
-    "volume": 563
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-08",
-    "index": 65.3,
-    "weightedAvgUnitPrice": 478.43,
-    "volume": 1502
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-09",
-    "index": 64.7,
-    "weightedAvgUnitPrice": 473.8,
-    "volume": 401
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-10",
-    "index": 88.4,
-    "weightedAvgUnitPrice": 647.45,
-    "volume": 258
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-11",
-    "index": 109.8,
-    "weightedAvgUnitPrice": 803.81,
-    "volume": 80
-  },
-  {
-    "commodity": "CAST",
-    "month": "2025-12",
-    "index": 107.1,
-    "weightedAvgUnitPrice": 784.53,
-    "volume": 2820
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-01",
-    "index": 86.3,
-    "weightedAvgUnitPrice": 631.69,
-    "volume": 952
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-02",
-    "index": 85,
-    "weightedAvgUnitPrice": 622.62,
-    "volume": 1586
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-03",
-    "index": 77.7,
-    "weightedAvgUnitPrice": 568.73,
-    "volume": 470
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-04",
-    "index": 100.4,
-    "weightedAvgUnitPrice": 735.39,
-    "volume": 3563
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-05",
-    "index": 84.1,
-    "weightedAvgUnitPrice": 615.63,
-    "volume": 293
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-06",
-    "index": 71,
-    "weightedAvgUnitPrice": 519.82,
-    "volume": 1777
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-07",
-    "index": 99,
-    "weightedAvgUnitPrice": 725.2,
-    "volume": 1694
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-08",
-    "index": 85.1,
-    "weightedAvgUnitPrice": 623.24,
-    "volume": 905
-  },
-  {
-    "commodity": "CAST",
-    "month": "2026-09",
-    "index": 83.5,
-    "weightedAvgUnitPrice": 611.35,
-    "volume": 4622
-  },
-  {
-    "commodity": "FORG",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 764.42,
-    "volume": 2282
-  },
-  {
-    "commodity": "FORG",
-    "month": "2024-11",
-    "index": 105.4,
-    "weightedAvgUnitPrice": 806.01,
-    "volume": 4109
-  },
-  {
-    "commodity": "FORG",
-    "month": "2024-12",
-    "index": 159.9,
-    "weightedAvgUnitPrice": 1221.98,
-    "volume": 6097
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-01",
-    "index": 133.2,
-    "weightedAvgUnitPrice": 1018.42,
-    "volume": 1681
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-02",
-    "index": 116.1,
-    "weightedAvgUnitPrice": 887.71,
-    "volume": 2457
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-03",
-    "index": 122.7,
-    "weightedAvgUnitPrice": 938.19,
-    "volume": 2824
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-04",
-    "index": 64,
-    "weightedAvgUnitPrice": 489.2,
-    "volume": 1592
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-05",
-    "index": 143.3,
-    "weightedAvgUnitPrice": 1095.54,
-    "volume": 3769
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-06",
-    "index": 161.2,
-    "weightedAvgUnitPrice": 1232.47,
-    "volume": 1561
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-07",
-    "index": 141.4,
-    "weightedAvgUnitPrice": 1080.69,
-    "volume": 720
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-08",
-    "index": 98.1,
-    "weightedAvgUnitPrice": 749.69,
-    "volume": 2072
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-09",
-    "index": 137.9,
-    "weightedAvgUnitPrice": 1054.44,
-    "volume": 2438
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-10",
-    "index": 149.3,
-    "weightedAvgUnitPrice": 1141.04,
-    "volume": 4757
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-11",
-    "index": 164.9,
-    "weightedAvgUnitPrice": 1260.79,
-    "volume": 5479
-  },
-  {
-    "commodity": "FORG",
-    "month": "2025-12",
-    "index": 150.2,
-    "weightedAvgUnitPrice": 1148.28,
-    "volume": 3062
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-01",
-    "index": 174.1,
-    "weightedAvgUnitPrice": 1331.11,
-    "volume": 3049
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-02",
-    "index": 166,
-    "weightedAvgUnitPrice": 1269.29,
-    "volume": 1494
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-03",
-    "index": 169.2,
-    "weightedAvgUnitPrice": 1293.42,
-    "volume": 984
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-04",
-    "index": 148.7,
-    "weightedAvgUnitPrice": 1136.63,
-    "volume": 4252
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-05",
-    "index": 159.2,
-    "weightedAvgUnitPrice": 1217.16,
-    "volume": 2716
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-06",
-    "index": 187.2,
-    "weightedAvgUnitPrice": 1430.7,
-    "volume": 4113
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-07",
-    "index": 176.4,
-    "weightedAvgUnitPrice": 1348.52,
-    "volume": 2675
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-08",
-    "index": 162.3,
-    "weightedAvgUnitPrice": 1240.92,
-    "volume": 2057
-  },
-  {
-    "commodity": "FORG",
-    "month": "2026-09",
-    "index": 116.8,
-    "weightedAvgUnitPrice": 892.95,
-    "volume": 1535
-  },
-  {
-    "commodity": "MACH",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 502.11,
-    "volume": 3204
-  },
-  {
-    "commodity": "MACH",
-    "month": "2024-11",
-    "index": 91.4,
-    "weightedAvgUnitPrice": 458.76,
-    "volume": 2786
-  },
-  {
-    "commodity": "MACH",
-    "month": "2024-12",
-    "index": 76.3,
-    "weightedAvgUnitPrice": 383.18,
-    "volume": 3972
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-01",
-    "index": 120.5,
-    "weightedAvgUnitPrice": 604.96,
-    "volume": 524
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-02",
-    "index": 89.7,
-    "weightedAvgUnitPrice": 450.16,
-    "volume": 1047
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-03",
-    "index": 71.5,
-    "weightedAvgUnitPrice": 358.92,
-    "volume": 1212
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-04",
-    "index": 54.2,
-    "weightedAvgUnitPrice": 272.1,
-    "volume": 1070
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-05",
-    "index": 125.8,
-    "weightedAvgUnitPrice": 631.59,
-    "volume": 1439
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-06",
-    "index": 107.8,
-    "weightedAvgUnitPrice": 541.28,
-    "volume": 3519
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-07",
-    "index": 88.4,
-    "weightedAvgUnitPrice": 444.06,
-    "volume": 2549
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-08",
-    "index": 97.5,
-    "weightedAvgUnitPrice": 489.61,
-    "volume": 4492
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-09",
-    "index": 102.3,
-    "weightedAvgUnitPrice": 513.67,
-    "volume": 2312
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-10",
-    "index": 79.5,
-    "weightedAvgUnitPrice": 398.96,
-    "volume": 977
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-11",
-    "index": 124.3,
-    "weightedAvgUnitPrice": 624.06,
-    "volume": 1553
-  },
-  {
-    "commodity": "MACH",
-    "month": "2025-12",
-    "index": 99.6,
-    "weightedAvgUnitPrice": 500.04,
-    "volume": 2068
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-01",
-    "index": 129.5,
-    "weightedAvgUnitPrice": 650.44,
-    "volume": 2723
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-02",
-    "index": 111.3,
-    "weightedAvgUnitPrice": 558.83,
-    "volume": 2502
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-03",
-    "index": 98.5,
-    "weightedAvgUnitPrice": 494.49,
-    "volume": 2453
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-04",
-    "index": 96.8,
-    "weightedAvgUnitPrice": 485.94,
-    "volume": 3088
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-05",
-    "index": 85.6,
-    "weightedAvgUnitPrice": 429.84,
-    "volume": 2964
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-06",
-    "index": 102.8,
-    "weightedAvgUnitPrice": 516.09,
-    "volume": 1524
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-07",
-    "index": 128.9,
-    "weightedAvgUnitPrice": 647.31,
-    "volume": 4816
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-08",
-    "index": 89.2,
-    "weightedAvgUnitPrice": 447.86,
-    "volume": 2256
-  },
-  {
-    "commodity": "MACH",
-    "month": "2026-09",
-    "index": 152,
-    "weightedAvgUnitPrice": 763.34,
-    "volume": 1218
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 35.84,
-    "volume": 3174
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2024-11",
-    "index": 76.3,
-    "weightedAvgUnitPrice": 27.36,
-    "volume": 2193
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2024-12",
-    "index": 77.7,
-    "weightedAvgUnitPrice": 27.85,
-    "volume": 5509
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-01",
-    "index": 81.3,
-    "weightedAvgUnitPrice": 29.15,
-    "volume": 2272
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-02",
-    "index": 72,
-    "weightedAvgUnitPrice": 25.8,
-    "volume": 1946
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-03",
-    "index": 94,
-    "weightedAvgUnitPrice": 33.7,
-    "volume": 2459
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-04",
-    "index": 71.3,
-    "weightedAvgUnitPrice": 25.55,
-    "volume": 3567
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-05",
-    "index": 67.6,
-    "weightedAvgUnitPrice": 24.23,
-    "volume": 1219
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-06",
-    "index": 112.4,
-    "weightedAvgUnitPrice": 40.28,
-    "volume": 1275
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-07",
-    "index": 69.5,
-    "weightedAvgUnitPrice": 24.93,
-    "volume": 1879
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-08",
-    "index": 77.5,
-    "weightedAvgUnitPrice": 27.77,
-    "volume": 1483
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-09",
-    "index": 76.2,
-    "weightedAvgUnitPrice": 27.29,
-    "volume": 1790
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-10",
-    "index": 152.6,
-    "weightedAvgUnitPrice": 54.68,
-    "volume": 1215
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-11",
-    "index": 53.9,
-    "weightedAvgUnitPrice": 19.3,
-    "volume": 1150
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2025-12",
-    "index": 89.1,
-    "weightedAvgUnitPrice": 31.93,
-    "volume": 4240
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-01",
-    "index": 67,
-    "weightedAvgUnitPrice": 23.99,
-    "volume": 3207
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-02",
-    "index": 82.5,
-    "weightedAvgUnitPrice": 29.58,
-    "volume": 2182
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-03",
-    "index": 107.1,
-    "weightedAvgUnitPrice": 38.39,
-    "volume": 2032
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-04",
-    "index": 91,
-    "weightedAvgUnitPrice": 32.61,
-    "volume": 2710
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-05",
-    "index": 120.9,
-    "weightedAvgUnitPrice": 43.33,
-    "volume": 505
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-06",
-    "index": 99.1,
-    "weightedAvgUnitPrice": 35.52,
-    "volume": 3241
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-07",
-    "index": 117.4,
-    "weightedAvgUnitPrice": 42.08,
-    "volume": 1699
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-08",
-    "index": 114.6,
-    "weightedAvgUnitPrice": 41.07,
-    "volume": 544
-  },
-  {
-    "commodity": "SEAL",
-    "month": "2026-09",
-    "index": 98.7,
-    "weightedAvgUnitPrice": 35.37,
-    "volume": 823
-  },
-  {
-    "commodity": "STRC",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 1586.14,
-    "volume": 1666
-  },
-  {
-    "commodity": "STRC",
-    "month": "2024-11",
-    "index": 95.8,
-    "weightedAvgUnitPrice": 1519.93,
-    "volume": 154
-  },
-  {
-    "commodity": "STRC",
-    "month": "2024-12",
-    "index": 70.6,
-    "weightedAvgUnitPrice": 1119.99,
-    "volume": 1748
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-01",
-    "index": 93.7,
-    "weightedAvgUnitPrice": 1486.62,
-    "volume": 2793
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-02",
-    "index": 78.5,
-    "weightedAvgUnitPrice": 1244.66,
-    "volume": 4334
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-03",
-    "index": 59.3,
-    "weightedAvgUnitPrice": 940.82,
-    "volume": 1294
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-04",
-    "index": 70.1,
-    "weightedAvgUnitPrice": 1112.42,
-    "volume": 423
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-05",
-    "index": 82.9,
-    "weightedAvgUnitPrice": 1314.39,
-    "volume": 1858
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-06",
-    "index": 103.2,
-    "weightedAvgUnitPrice": 1637.53,
-    "volume": 2187
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-07",
-    "index": 67.1,
-    "weightedAvgUnitPrice": 1064.41,
-    "volume": 2603
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-08",
-    "index": 63.8,
-    "weightedAvgUnitPrice": 1012.36,
-    "volume": 1909
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-09",
-    "index": 101.5,
-    "weightedAvgUnitPrice": 1609.53,
-    "volume": 940
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-10",
     "index": 73.6,
-    "weightedAvgUnitPrice": 1166.66,
-    "volume": 2933
+    "weightedAvgUnitPrice": 3.47,
+    "volume": 1813
   },
   {
-    "commodity": "STRC",
-    "month": "2025-11",
-    "index": 62.5,
-    "weightedAvgUnitPrice": 991.75,
-    "volume": 139
-  },
-  {
-    "commodity": "STRC",
-    "month": "2025-12",
-    "index": 70.4,
-    "weightedAvgUnitPrice": 1116.23,
-    "volume": 2750
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-01",
-    "index": 61.1,
-    "weightedAvgUnitPrice": 969.29,
-    "volume": 1110
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-02",
-    "index": 81,
-    "weightedAvgUnitPrice": 1284.26,
-    "volume": 4387
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-03",
-    "index": 75.7,
-    "weightedAvgUnitPrice": 1200.09,
-    "volume": 2203
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-04",
-    "index": 100.6,
-    "weightedAvgUnitPrice": 1595.67,
-    "volume": 1012
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-05",
-    "index": 50.7,
-    "weightedAvgUnitPrice": 804.17,
-    "volume": 1972
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-06",
-    "index": 79.4,
-    "weightedAvgUnitPrice": 1259.85,
-    "volume": 327
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-07",
-    "index": 53.9,
-    "weightedAvgUnitPrice": 855.44,
-    "volume": 800
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-08",
-    "index": 87,
-    "weightedAvgUnitPrice": 1379.9,
-    "volume": 2319
-  },
-  {
-    "commodity": "STRC",
-    "month": "2026-09",
-    "index": 95.2,
-    "weightedAvgUnitPrice": 1509.21,
-    "volume": 1273
-  },
-  {
-    "commodity": "COAT",
-    "month": "2024-10",
-    "index": 100,
-    "weightedAvgUnitPrice": 156.26,
-    "volume": 4923
-  },
-  {
-    "commodity": "COAT",
-    "month": "2024-11",
-    "index": 97.9,
-    "weightedAvgUnitPrice": 152.96,
-    "volume": 4685
-  },
-  {
-    "commodity": "COAT",
-    "month": "2024-12",
-    "index": 63.1,
-    "weightedAvgUnitPrice": 98.63,
-    "volume": 3131
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-01",
-    "index": 126.9,
-    "weightedAvgUnitPrice": 198.25,
-    "volume": 1027
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-02",
-    "index": 79.7,
-    "weightedAvgUnitPrice": 124.53,
-    "volume": 2655
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-03",
-    "index": 103.3,
-    "weightedAvgUnitPrice": 161.4,
-    "volume": 3285
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-04",
-    "index": 99,
-    "weightedAvgUnitPrice": 154.72,
-    "volume": 8280
-  },
-  {
-    "commodity": "COAT",
+    "commodity": "FSTN",
     "month": "2025-05",
-    "index": 117.9,
-    "weightedAvgUnitPrice": 184.19,
-    "volume": 465
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-06",
-    "index": 96,
-    "weightedAvgUnitPrice": 150.05,
-    "volume": 2877
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-07",
-    "index": 76.2,
-    "weightedAvgUnitPrice": 118.99,
-    "volume": 1528
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-08",
-    "index": 117.5,
-    "weightedAvgUnitPrice": 183.6,
-    "volume": 4546
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-09",
-    "index": 120.7,
-    "weightedAvgUnitPrice": 188.59,
-    "volume": 1884
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-10",
-    "index": 101.2,
-    "weightedAvgUnitPrice": 158.09,
-    "volume": 1923
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-11",
-    "index": 79,
-    "weightedAvgUnitPrice": 123.48,
-    "volume": 3112
-  },
-  {
-    "commodity": "COAT",
-    "month": "2025-12",
-    "index": 113.3,
-    "weightedAvgUnitPrice": 177.11,
+    "index": 75.9,
+    "weightedAvgUnitPrice": 3.58,
     "volume": 1609
   },
   {
-    "commodity": "COAT",
+    "commodity": "FSTN",
+    "month": "2025-06",
+    "index": 89.2,
+    "weightedAvgUnitPrice": 4.21,
+    "volume": 3241
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2025-07",
+    "index": 68.2,
+    "weightedAvgUnitPrice": 3.22,
+    "volume": 3740
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2025-08",
+    "index": 87.7,
+    "weightedAvgUnitPrice": 4.14,
+    "volume": 1503
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2025-09",
+    "index": 89.5,
+    "weightedAvgUnitPrice": 4.23,
+    "volume": 728
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2025-10",
+    "index": 123.8,
+    "weightedAvgUnitPrice": 5.85,
+    "volume": 1481
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2025-11",
+    "index": 75.3,
+    "weightedAvgUnitPrice": 3.55,
+    "volume": 3203
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2025-12",
+    "index": 110.6,
+    "weightedAvgUnitPrice": 5.22,
+    "volume": 4891
+  },
+  {
+    "commodity": "FSTN",
     "month": "2026-01",
-    "index": 112.6,
-    "weightedAvgUnitPrice": 175.99,
+    "index": 100.2,
+    "weightedAvgUnitPrice": 4.73,
+    "volume": 1417
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2026-02",
+    "index": 114.4,
+    "weightedAvgUnitPrice": 5.4,
+    "volume": 1154
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2026-03",
+    "index": 82,
+    "weightedAvgUnitPrice": 3.87,
+    "volume": 1550
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2026-04",
+    "index": 103,
+    "weightedAvgUnitPrice": 4.86,
+    "volume": 504
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2026-05",
+    "index": 68.6,
+    "weightedAvgUnitPrice": 3.24,
+    "volume": 3093
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2026-06",
+    "index": 56.1,
+    "weightedAvgUnitPrice": 2.65,
+    "volume": 500
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2026-07",
+    "index": 90.4,
+    "weightedAvgUnitPrice": 4.27,
+    "volume": 2994
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2026-08",
+    "index": 123.4,
+    "weightedAvgUnitPrice": 5.83,
+    "volume": 1071
+  },
+  {
+    "commodity": "FSTN",
+    "month": "2026-09",
+    "index": 119,
+    "weightedAvgUnitPrice": 5.62,
+    "volume": 1231
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 83.85,
+    "volume": 870
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2024-11",
+    "index": 84.2,
+    "weightedAvgUnitPrice": 70.61,
+    "volume": 3387
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2024-12",
+    "index": 166.4,
+    "weightedAvgUnitPrice": 139.53,
+    "volume": 3874
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-01",
+    "index": 86.2,
+    "weightedAvgUnitPrice": 72.32,
+    "volume": 2778
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-02",
+    "index": 127.5,
+    "weightedAvgUnitPrice": 106.9,
+    "volume": 2997
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-03",
+    "index": 128.4,
+    "weightedAvgUnitPrice": 107.69,
+    "volume": 1900
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-04",
+    "index": 129.2,
+    "weightedAvgUnitPrice": 108.31,
+    "volume": 4567
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-05",
+    "index": 111.2,
+    "weightedAvgUnitPrice": 93.24,
+    "volume": 2129
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-06",
+    "index": 155.4,
+    "weightedAvgUnitPrice": 130.31,
+    "volume": 1670
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-07",
+    "index": 171.7,
+    "weightedAvgUnitPrice": 143.98,
+    "volume": 1956
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-08",
+    "index": 142.6,
+    "weightedAvgUnitPrice": 119.59,
+    "volume": 3620
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-09",
+    "index": 152,
+    "weightedAvgUnitPrice": 127.49,
+    "volume": 1188
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-10",
+    "index": 139.5,
+    "weightedAvgUnitPrice": 116.95,
+    "volume": 3680
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-11",
+    "index": 178.5,
+    "weightedAvgUnitPrice": 149.69,
+    "volume": 813
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2025-12",
+    "index": 118,
+    "weightedAvgUnitPrice": 98.98,
+    "volume": 2944
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-01",
+    "index": 139.5,
+    "weightedAvgUnitPrice": 116.97,
+    "volume": 1293
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-02",
+    "index": 169.7,
+    "weightedAvgUnitPrice": 142.26,
+    "volume": 2442
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-03",
+    "index": 165.1,
+    "weightedAvgUnitPrice": 138.42,
+    "volume": 3597
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-04",
+    "index": 167.3,
+    "weightedAvgUnitPrice": 140.28,
+    "volume": 4148
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-05",
+    "index": 175.7,
+    "weightedAvgUnitPrice": 147.35,
+    "volume": 2116
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-06",
+    "index": 143.2,
+    "weightedAvgUnitPrice": 120.09,
+    "volume": 4947
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-07",
+    "index": 155.8,
+    "weightedAvgUnitPrice": 130.61,
+    "volume": 3045
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-08",
+    "index": 158.9,
+    "weightedAvgUnitPrice": 133.23,
+    "volume": 1831
+  },
+  {
+    "commodity": "BRNG",
+    "month": "2026-09",
+    "index": 146.4,
+    "weightedAvgUnitPrice": 122.75,
+    "volume": 2017
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 444.98,
+    "volume": 501
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2024-11",
+    "index": 63.4,
+    "weightedAvgUnitPrice": 282.32,
+    "volume": 1785
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2024-12",
+    "index": 54.6,
+    "weightedAvgUnitPrice": 242.78,
+    "volume": 3179
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-01",
+    "index": 73.2,
+    "weightedAvgUnitPrice": 325.64,
+    "volume": 4621
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-02",
+    "index": 42.4,
+    "weightedAvgUnitPrice": 188.66,
+    "volume": 1390
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-03",
+    "index": 77,
+    "weightedAvgUnitPrice": 342.52,
+    "volume": 2051
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-04",
+    "index": 78.1,
+    "weightedAvgUnitPrice": 347.42,
+    "volume": 1231
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-05",
+    "index": 45.7,
+    "weightedAvgUnitPrice": 203.27,
+    "volume": 1070
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-06",
+    "index": 44.5,
+    "weightedAvgUnitPrice": 198.04,
+    "volume": 3257
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-07",
+    "index": 51.4,
+    "weightedAvgUnitPrice": 228.67,
+    "volume": 1878
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-08",
+    "index": 87.2,
+    "weightedAvgUnitPrice": 387.86,
+    "volume": 1554
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-09",
+    "index": 73.2,
+    "weightedAvgUnitPrice": 325.86,
+    "volume": 4015
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-10",
+    "index": 67.7,
+    "weightedAvgUnitPrice": 301.24,
+    "volume": 2383
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-11",
+    "index": 88.6,
+    "weightedAvgUnitPrice": 394.37,
+    "volume": 157
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2025-12",
+    "index": 92.3,
+    "weightedAvgUnitPrice": 410.64,
+    "volume": 2672
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-01",
+    "index": 83,
+    "weightedAvgUnitPrice": 369.4,
+    "volume": 2010
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-02",
+    "index": 94.6,
+    "weightedAvgUnitPrice": 421.07,
+    "volume": 3526
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-03",
+    "index": 65.1,
+    "weightedAvgUnitPrice": 289.86,
+    "volume": 3363
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-04",
+    "index": 79.2,
+    "weightedAvgUnitPrice": 352.6,
+    "volume": 1239
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-05",
+    "index": 73,
+    "weightedAvgUnitPrice": 325,
+    "volume": 1964
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-06",
+    "index": 70.6,
+    "weightedAvgUnitPrice": 313.97,
+    "volume": 3589
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-07",
+    "index": 119.4,
+    "weightedAvgUnitPrice": 531.4,
+    "volume": 1215
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-08",
+    "index": 115,
+    "weightedAvgUnitPrice": 511.79,
+    "volume": 1321
+  },
+  {
+    "commodity": "HYDR",
+    "month": "2026-09",
+    "index": 105.8,
+    "weightedAvgUnitPrice": 470.61,
+    "volume": 1494
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 104.62,
+    "volume": 4610
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2024-11",
+    "index": 135.5,
+    "weightedAvgUnitPrice": 141.75,
+    "volume": 2782
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2024-12",
+    "index": 133.1,
+    "weightedAvgUnitPrice": 139.22,
+    "volume": 4614
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-01",
+    "index": 88.7,
+    "weightedAvgUnitPrice": 92.84,
+    "volume": 1147
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-02",
+    "index": 146.9,
+    "weightedAvgUnitPrice": 153.67,
+    "volume": 4229
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-03",
+    "index": 111.9,
+    "weightedAvgUnitPrice": 117.1,
+    "volume": 1168
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-04",
+    "index": 156,
+    "weightedAvgUnitPrice": 163.17,
+    "volume": 3490
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-05",
+    "index": 96.6,
+    "weightedAvgUnitPrice": 101.1,
+    "volume": 4415
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-06",
+    "index": 125.5,
+    "weightedAvgUnitPrice": 131.27,
+    "volume": 5461
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-07",
+    "index": 69.9,
+    "weightedAvgUnitPrice": 73.17,
+    "volume": 488
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-08",
+    "index": 73.1,
+    "weightedAvgUnitPrice": 76.52,
+    "volume": 995
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-09",
+    "index": 91.7,
+    "weightedAvgUnitPrice": 95.9,
+    "volume": 1773
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-10",
+    "index": 144.4,
+    "weightedAvgUnitPrice": 151.11,
+    "volume": 1599
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-11",
+    "index": 125.9,
+    "weightedAvgUnitPrice": 131.71,
+    "volume": 2043
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2025-12",
+    "index": 124.1,
+    "weightedAvgUnitPrice": 129.81,
+    "volume": 419
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-01",
+    "index": 127.7,
+    "weightedAvgUnitPrice": 133.62,
+    "volume": 5669
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-02",
+    "index": 126.7,
+    "weightedAvgUnitPrice": 132.55,
+    "volume": 2099
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-03",
+    "index": 105.9,
+    "weightedAvgUnitPrice": 110.77,
+    "volume": 4196
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-04",
+    "index": 148.6,
+    "weightedAvgUnitPrice": 155.45,
+    "volume": 3046
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-05",
+    "index": 158.6,
+    "weightedAvgUnitPrice": 165.94,
+    "volume": 2536
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-06",
+    "index": 116.5,
+    "weightedAvgUnitPrice": 121.87,
+    "volume": 5078
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-07",
+    "index": 78.4,
+    "weightedAvgUnitPrice": 82.06,
+    "volume": 1519
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-08",
+    "index": 128,
+    "weightedAvgUnitPrice": 133.89,
+    "volume": 586
+  },
+  {
+    "commodity": "PNEU",
+    "month": "2026-09",
+    "index": 127.9,
+    "weightedAvgUnitPrice": 133.85,
+    "volume": 2562
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 83,
+    "volume": 522
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2024-11",
+    "index": 83.1,
+    "weightedAvgUnitPrice": 69,
+    "volume": 714
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2024-12",
+    "index": 87.4,
+    "weightedAvgUnitPrice": 72.57,
+    "volume": 2294
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-01",
+    "index": 94.4,
+    "weightedAvgUnitPrice": 78.36,
+    "volume": 2882
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-02",
+    "index": 58.7,
+    "weightedAvgUnitPrice": 48.74,
+    "volume": 692
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-03",
+    "index": 100,
+    "weightedAvgUnitPrice": 83.01,
+    "volume": 4253
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-04",
+    "index": 79.7,
+    "weightedAvgUnitPrice": 66.16,
+    "volume": 434
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-05",
+    "index": 77.5,
+    "weightedAvgUnitPrice": 64.37,
+    "volume": 1591
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-06",
+    "index": 68.6,
+    "weightedAvgUnitPrice": 56.91,
+    "volume": 732
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-07",
+    "index": 149.1,
+    "weightedAvgUnitPrice": 123.77,
+    "volume": 1462
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-08",
+    "index": 42.1,
+    "weightedAvgUnitPrice": 34.95,
+    "volume": 906
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-09",
+    "index": 89.3,
+    "weightedAvgUnitPrice": 74.11,
+    "volume": 3116
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-10",
+    "index": 72.5,
+    "weightedAvgUnitPrice": 60.16,
+    "volume": 2233
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-11",
+    "index": 74.6,
+    "weightedAvgUnitPrice": 61.92,
+    "volume": 1004
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2025-12",
+    "index": 95.7,
+    "weightedAvgUnitPrice": 79.45,
+    "volume": 2830
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-01",
+    "index": 105.7,
+    "weightedAvgUnitPrice": 87.77,
+    "volume": 2125
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-02",
+    "index": 103.4,
+    "weightedAvgUnitPrice": 85.79,
+    "volume": 2511
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-03",
+    "index": 81.6,
+    "weightedAvgUnitPrice": 67.72,
+    "volume": 4540
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-04",
+    "index": 79.1,
+    "weightedAvgUnitPrice": 65.69,
+    "volume": 2799
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-05",
+    "index": 105.3,
+    "weightedAvgUnitPrice": 87.42,
+    "volume": 1529
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-06",
+    "index": 95,
+    "weightedAvgUnitPrice": 78.86,
+    "volume": 3460
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-07",
+    "index": 99.2,
+    "weightedAvgUnitPrice": 82.36,
+    "volume": 6023
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-08",
+    "index": 118,
+    "weightedAvgUnitPrice": 97.94,
+    "volume": 1682
+  },
+  {
+    "commodity": "ELEC",
+    "month": "2026-09",
+    "index": 104.9,
+    "weightedAvgUnitPrice": 87.06,
+    "volume": 2351
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 669.38,
+    "volume": 3665
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2024-11",
+    "index": 52.4,
+    "weightedAvgUnitPrice": 350.42,
+    "volume": 2958
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2024-12",
+    "index": 75.1,
+    "weightedAvgUnitPrice": 502.86,
+    "volume": 3725
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-01",
+    "index": 49.1,
+    "weightedAvgUnitPrice": 328.38,
+    "volume": 1853
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-02",
+    "index": 91.4,
+    "weightedAvgUnitPrice": 612.02,
+    "volume": 863
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-03",
+    "index": 73.8,
+    "weightedAvgUnitPrice": 494.32,
+    "volume": 4036
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-04",
+    "index": 59.9,
+    "weightedAvgUnitPrice": 400.87,
+    "volume": 2603
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-05",
+    "index": 65,
+    "weightedAvgUnitPrice": 435.13,
+    "volume": 830
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-06",
+    "index": 61.9,
+    "weightedAvgUnitPrice": 414.28,
+    "volume": 2046
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-07",
+    "index": 56.9,
+    "weightedAvgUnitPrice": 380.72,
+    "volume": 1577
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-08",
+    "index": 99.3,
+    "weightedAvgUnitPrice": 664.65,
+    "volume": 4359
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-09",
+    "index": 92.9,
+    "weightedAvgUnitPrice": 621.52,
+    "volume": 3009
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-10",
+    "index": 92.1,
+    "weightedAvgUnitPrice": 616.28,
+    "volume": 552
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-11",
+    "index": 69.2,
+    "weightedAvgUnitPrice": 462.94,
+    "volume": 727
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2025-12",
+    "index": 116.6,
+    "weightedAvgUnitPrice": 780.61,
+    "volume": 2657
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-01",
+    "index": 99.4,
+    "weightedAvgUnitPrice": 665.22,
+    "volume": 2567
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-02",
+    "index": 108.2,
+    "weightedAvgUnitPrice": 723.97,
+    "volume": 1275
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-03",
+    "index": 107.4,
+    "weightedAvgUnitPrice": 718.96,
+    "volume": 2567
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-04",
+    "index": 79.8,
+    "weightedAvgUnitPrice": 534,
+    "volume": 3242
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-05",
+    "index": 60.3,
+    "weightedAvgUnitPrice": 403.7,
+    "volume": 1618
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-06",
+    "index": 97.3,
+    "weightedAvgUnitPrice": 651.42,
+    "volume": 1022
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-07",
+    "index": 100.6,
+    "weightedAvgUnitPrice": 673.18,
+    "volume": 1768
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-08",
+    "index": 125.3,
+    "weightedAvgUnitPrice": 838.6,
+    "volume": 2976
+  },
+  {
+    "commodity": "HRNS",
+    "month": "2026-09",
+    "index": 102.9,
+    "weightedAvgUnitPrice": 688.7,
+    "volume": 662
+  },
+  {
+    "commodity": "CAST",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 626.51,
+    "volume": 1062
+  },
+  {
+    "commodity": "CAST",
+    "month": "2024-11",
+    "index": 75.5,
+    "weightedAvgUnitPrice": 472.74,
+    "volume": 222
+  },
+  {
+    "commodity": "CAST",
+    "month": "2024-12",
+    "index": 87.7,
+    "weightedAvgUnitPrice": 549.67,
+    "volume": 3895
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-01",
+    "index": 69.6,
+    "weightedAvgUnitPrice": 435.8,
+    "volume": 1892
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-02",
+    "index": 76.8,
+    "weightedAvgUnitPrice": 481.47,
+    "volume": 3621
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-03",
+    "index": 120.1,
+    "weightedAvgUnitPrice": 752.3,
+    "volume": 1172
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-04",
+    "index": 89,
+    "weightedAvgUnitPrice": 557.89,
+    "volume": 1599
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-05",
+    "index": 81,
+    "weightedAvgUnitPrice": 507.73,
     "volume": 3105
   },
   {
-    "commodity": "COAT",
+    "commodity": "CAST",
+    "month": "2025-06",
+    "index": 82.7,
+    "weightedAvgUnitPrice": 518.41,
+    "volume": 1969
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-07",
+    "index": 91.8,
+    "weightedAvgUnitPrice": 574.88,
+    "volume": 1009
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-08",
+    "index": 96.7,
+    "weightedAvgUnitPrice": 605.87,
+    "volume": 1851
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-09",
+    "index": 64.1,
+    "weightedAvgUnitPrice": 401.39,
+    "volume": 0
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-10",
+    "index": 55.7,
+    "weightedAvgUnitPrice": 348.68,
+    "volume": 1094
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-11",
+    "index": 114.1,
+    "weightedAvgUnitPrice": 715.12,
+    "volume": 857
+  },
+  {
+    "commodity": "CAST",
+    "month": "2025-12",
+    "index": 95.5,
+    "weightedAvgUnitPrice": 598.35,
+    "volume": 351
+  },
+  {
+    "commodity": "CAST",
+    "month": "2026-01",
+    "index": 86.3,
+    "weightedAvgUnitPrice": 540.83,
+    "volume": 3451
+  },
+  {
+    "commodity": "CAST",
     "month": "2026-02",
-    "index": 99.6,
-    "weightedAvgUnitPrice": 155.63,
+    "index": 132.8,
+    "weightedAvgUnitPrice": 831.94,
+    "volume": 993
+  },
+  {
+    "commodity": "CAST",
+    "month": "2026-03",
+    "index": 78.7,
+    "weightedAvgUnitPrice": 493.32,
+    "volume": 1686
+  },
+  {
+    "commodity": "CAST",
+    "month": "2026-04",
+    "index": 105.6,
+    "weightedAvgUnitPrice": 661.78,
+    "volume": 1582
+  },
+  {
+    "commodity": "CAST",
+    "month": "2026-05",
+    "index": 105,
+    "weightedAvgUnitPrice": 657.55,
+    "volume": 1221
+  },
+  {
+    "commodity": "CAST",
+    "month": "2026-06",
+    "index": 133.7,
+    "weightedAvgUnitPrice": 837.79,
+    "volume": 920
+  },
+  {
+    "commodity": "CAST",
+    "month": "2026-07",
+    "index": 72.2,
+    "weightedAvgUnitPrice": 452.31,
+    "volume": 2622
+  },
+  {
+    "commodity": "CAST",
+    "month": "2026-08",
+    "index": 103.3,
+    "weightedAvgUnitPrice": 647.37,
+    "volume": 618
+  },
+  {
+    "commodity": "CAST",
+    "month": "2026-09",
+    "index": 159.7,
+    "weightedAvgUnitPrice": 1000.64,
+    "volume": 2128
+  },
+  {
+    "commodity": "FORG",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 609.18,
+    "volume": 3027
+  },
+  {
+    "commodity": "FORG",
+    "month": "2024-11",
+    "index": 122.5,
+    "weightedAvgUnitPrice": 746.5,
+    "volume": 5207
+  },
+  {
+    "commodity": "FORG",
+    "month": "2024-12",
+    "index": 111.1,
+    "weightedAvgUnitPrice": 676.84,
+    "volume": 1865
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-01",
+    "index": 215.5,
+    "weightedAvgUnitPrice": 1312.71,
+    "volume": 2439
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-02",
+    "index": 173.1,
+    "weightedAvgUnitPrice": 1054.51,
+    "volume": 4917
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-03",
+    "index": 179.1,
+    "weightedAvgUnitPrice": 1090.91,
+    "volume": 2410
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-04",
+    "index": 112.1,
+    "weightedAvgUnitPrice": 682.79,
+    "volume": 3
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-05",
+    "index": 179,
+    "weightedAvgUnitPrice": 1090.33,
+    "volume": 2088
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-06",
+    "index": 167,
+    "weightedAvgUnitPrice": 1017.28,
+    "volume": 2957
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-07",
+    "index": 184,
+    "weightedAvgUnitPrice": 1120.77,
+    "volume": 3127
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-08",
+    "index": 129.3,
+    "weightedAvgUnitPrice": 787.79,
+    "volume": 4521
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-09",
+    "index": 166.2,
+    "weightedAvgUnitPrice": 1012.27,
+    "volume": 2799
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-10",
+    "index": 230.5,
+    "weightedAvgUnitPrice": 1404.07,
+    "volume": 2066
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-11",
+    "index": 138.5,
+    "weightedAvgUnitPrice": 843.66,
+    "volume": 1275
+  },
+  {
+    "commodity": "FORG",
+    "month": "2025-12",
+    "index": 180.5,
+    "weightedAvgUnitPrice": 1099.39,
+    "volume": 2183
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-01",
+    "index": 204.5,
+    "weightedAvgUnitPrice": 1245.61,
+    "volume": 2308
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-02",
+    "index": 194.3,
+    "weightedAvgUnitPrice": 1183.78,
+    "volume": 6353
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-03",
+    "index": 203.7,
+    "weightedAvgUnitPrice": 1240.77,
+    "volume": 3329
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-04",
+    "index": 243,
+    "weightedAvgUnitPrice": 1480.29,
+    "volume": 1700
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-05",
+    "index": 206.5,
+    "weightedAvgUnitPrice": 1258.24,
+    "volume": 1769
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-06",
+    "index": 220.3,
+    "weightedAvgUnitPrice": 1342.19,
+    "volume": 3252
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-07",
+    "index": 218.5,
+    "weightedAvgUnitPrice": 1331.35,
+    "volume": 1036
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-08",
+    "index": 200,
+    "weightedAvgUnitPrice": 1218.26,
+    "volume": 1248
+  },
+  {
+    "commodity": "FORG",
+    "month": "2026-09",
+    "index": 189.9,
+    "weightedAvgUnitPrice": 1156.95,
+    "volume": 2034
+  },
+  {
+    "commodity": "MACH",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 406.05,
+    "volume": 3215
+  },
+  {
+    "commodity": "MACH",
+    "month": "2024-11",
+    "index": 108.1,
+    "weightedAvgUnitPrice": 439.08,
+    "volume": 1871
+  },
+  {
+    "commodity": "MACH",
+    "month": "2024-12",
+    "index": 132.1,
+    "weightedAvgUnitPrice": 536.26,
+    "volume": 1032
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-01",
+    "index": 81.6,
+    "weightedAvgUnitPrice": 331.39,
+    "volume": 2625
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-02",
+    "index": 74.4,
+    "weightedAvgUnitPrice": 301.98,
+    "volume": 233
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-03",
+    "index": 115.9,
+    "weightedAvgUnitPrice": 470.57,
+    "volume": 1048
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-04",
+    "index": 60.3,
+    "weightedAvgUnitPrice": 244.72,
+    "volume": 1183
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-05",
+    "index": 124,
+    "weightedAvgUnitPrice": 503.45,
+    "volume": 1400
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-06",
+    "index": 134.8,
+    "weightedAvgUnitPrice": 547.16,
+    "volume": 2622
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-07",
+    "index": 113,
+    "weightedAvgUnitPrice": 458.91,
+    "volume": 1455
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-08",
+    "index": 144.2,
+    "weightedAvgUnitPrice": 585.5,
+    "volume": 1264
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-09",
+    "index": 52.7,
+    "weightedAvgUnitPrice": 213.96,
+    "volume": 1186
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-10",
+    "index": 120.1,
+    "weightedAvgUnitPrice": 487.57,
+    "volume": 3330
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-11",
+    "index": 72.5,
+    "weightedAvgUnitPrice": 294.34,
+    "volume": 636
+  },
+  {
+    "commodity": "MACH",
+    "month": "2025-12",
+    "index": 94.9,
+    "weightedAvgUnitPrice": 385.34,
+    "volume": 2837
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-01",
+    "index": 81.5,
+    "weightedAvgUnitPrice": 330.89,
+    "volume": 433
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-02",
+    "index": 124.1,
+    "weightedAvgUnitPrice": 503.86,
+    "volume": 886
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-03",
+    "index": 105.8,
+    "weightedAvgUnitPrice": 429.72,
+    "volume": 2461
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-04",
+    "index": 133.4,
+    "weightedAvgUnitPrice": 541.53,
+    "volume": 750
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-05",
+    "index": 113.3,
+    "weightedAvgUnitPrice": 460.18,
+    "volume": 575
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-06",
+    "index": 118.5,
+    "weightedAvgUnitPrice": 481.14,
+    "volume": 1495
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-07",
+    "index": 136,
+    "weightedAvgUnitPrice": 552.11,
+    "volume": 3374
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-08",
+    "index": 99.4,
+    "weightedAvgUnitPrice": 403.8,
+    "volume": 3366
+  },
+  {
+    "commodity": "MACH",
+    "month": "2026-09",
+    "index": 136.3,
+    "weightedAvgUnitPrice": 553.57,
+    "volume": 3442
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 31.12,
+    "volume": 2903
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2024-11",
+    "index": 98.5,
+    "weightedAvgUnitPrice": 30.66,
+    "volume": 1511
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2024-12",
+    "index": 124.3,
+    "weightedAvgUnitPrice": 38.67,
+    "volume": 2744
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-01",
+    "index": 87.2,
+    "weightedAvgUnitPrice": 27.13,
+    "volume": 5389
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-02",
+    "index": 97.7,
+    "weightedAvgUnitPrice": 30.42,
+    "volume": 4786
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-03",
+    "index": 104.1,
+    "weightedAvgUnitPrice": 32.41,
+    "volume": 2578
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-04",
+    "index": 71.5,
+    "weightedAvgUnitPrice": 22.24,
+    "volume": 4885
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-05",
+    "index": 69.6,
+    "weightedAvgUnitPrice": 21.65,
+    "volume": 1039
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-06",
+    "index": 101.1,
+    "weightedAvgUnitPrice": 31.46,
+    "volume": 3391
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-07",
+    "index": 140.2,
+    "weightedAvgUnitPrice": 43.64,
+    "volume": 1074
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-08",
+    "index": 85.4,
+    "weightedAvgUnitPrice": 26.58,
+    "volume": 1770
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-09",
+    "index": 88.6,
+    "weightedAvgUnitPrice": 27.59,
+    "volume": 2496
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-10",
+    "index": 117.2,
+    "weightedAvgUnitPrice": 36.47,
+    "volume": 294
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-11",
+    "index": 53.4,
+    "weightedAvgUnitPrice": 16.61,
+    "volume": 2863
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2025-12",
+    "index": 79,
+    "weightedAvgUnitPrice": 24.59,
+    "volume": 6701
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-01",
+    "index": 89.9,
+    "weightedAvgUnitPrice": 27.99,
+    "volume": 2323
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-02",
+    "index": 110.1,
+    "weightedAvgUnitPrice": 34.25,
+    "volume": 2844
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-03",
+    "index": 71.6,
+    "weightedAvgUnitPrice": 22.28,
+    "volume": 2464
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-04",
+    "index": 102.3,
+    "weightedAvgUnitPrice": 31.85,
+    "volume": 2422
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-05",
+    "index": 83.7,
+    "weightedAvgUnitPrice": 26.06,
+    "volume": 533
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-06",
+    "index": 103.5,
+    "weightedAvgUnitPrice": 32.22,
+    "volume": 2597
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-07",
+    "index": 118,
+    "weightedAvgUnitPrice": 36.73,
+    "volume": 2290
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-08",
+    "index": 108.3,
+    "weightedAvgUnitPrice": 33.72,
+    "volume": 1848
+  },
+  {
+    "commodity": "SEAL",
+    "month": "2026-09",
+    "index": 115.8,
+    "weightedAvgUnitPrice": 36.04,
+    "volume": 1982
+  },
+  {
+    "commodity": "STRC",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 1214.63,
+    "volume": 967
+  },
+  {
+    "commodity": "STRC",
+    "month": "2024-11",
+    "index": 115.6,
+    "weightedAvgUnitPrice": 1404.12,
+    "volume": 430
+  },
+  {
+    "commodity": "STRC",
+    "month": "2024-12",
+    "index": 105.1,
+    "weightedAvgUnitPrice": 1276.2,
+    "volume": 2951
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-01",
+    "index": 138.6,
+    "weightedAvgUnitPrice": 1683.26,
+    "volume": 828
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-02",
+    "index": 84.1,
+    "weightedAvgUnitPrice": 1021.91,
+    "volume": 2919
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-03",
+    "index": 76.7,
+    "weightedAvgUnitPrice": 931.76,
+    "volume": 1101
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-04",
+    "index": 128.7,
+    "weightedAvgUnitPrice": 1562.73,
+    "volume": 2506
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-05",
+    "index": 122,
+    "weightedAvgUnitPrice": 1482.26,
+    "volume": 2954
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-06",
+    "index": 120.5,
+    "weightedAvgUnitPrice": 1463.14,
+    "volume": 2626
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-07",
+    "index": 82.8,
+    "weightedAvgUnitPrice": 1005.28,
+    "volume": 785
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-08",
+    "index": 107.8,
+    "weightedAvgUnitPrice": 1309.43,
+    "volume": 1618
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-09",
+    "index": 99.1,
+    "weightedAvgUnitPrice": 1204.03,
+    "volume": 2486
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-10",
+    "index": 110.2,
+    "weightedAvgUnitPrice": 1337.95,
+    "volume": 1450
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-11",
+    "index": 130.9,
+    "weightedAvgUnitPrice": 1589.82,
+    "volume": 2817
+  },
+  {
+    "commodity": "STRC",
+    "month": "2025-12",
+    "index": 104.3,
+    "weightedAvgUnitPrice": 1266.51,
+    "volume": 1313
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-01",
+    "index": 144.7,
+    "weightedAvgUnitPrice": 1757.19,
+    "volume": 2163
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-02",
+    "index": 114.4,
+    "weightedAvgUnitPrice": 1389.79,
+    "volume": 2304
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-03",
+    "index": 116.9,
+    "weightedAvgUnitPrice": 1419.86,
+    "volume": 1391
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-04",
+    "index": 95,
+    "weightedAvgUnitPrice": 1153.66,
+    "volume": 2924
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-05",
+    "index": 91,
+    "weightedAvgUnitPrice": 1105.03,
+    "volume": 2770
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-06",
+    "index": 132.8,
+    "weightedAvgUnitPrice": 1613.11,
+    "volume": 1841
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-07",
+    "index": 150.6,
+    "weightedAvgUnitPrice": 1829.41,
+    "volume": 2152
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-08",
+    "index": 120.6,
+    "weightedAvgUnitPrice": 1464.95,
+    "volume": 676
+  },
+  {
+    "commodity": "STRC",
+    "month": "2026-09",
+    "index": 140.2,
+    "weightedAvgUnitPrice": 1702.68,
+    "volume": 2061
+  },
+  {
+    "commodity": "COAT",
+    "month": "2024-10",
+    "index": 100,
+    "weightedAvgUnitPrice": 182.22,
+    "volume": 2135
+  },
+  {
+    "commodity": "COAT",
+    "month": "2024-11",
+    "index": 91.6,
+    "weightedAvgUnitPrice": 166.97,
+    "volume": 2662
+  },
+  {
+    "commodity": "COAT",
+    "month": "2024-12",
+    "index": 61.4,
+    "weightedAvgUnitPrice": 111.88,
+    "volume": 2902
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-01",
+    "index": 104.6,
+    "weightedAvgUnitPrice": 190.64,
     "volume": 3219
   },
   {
     "commodity": "COAT",
-    "month": "2026-03",
+    "month": "2025-02",
+    "index": 74.7,
+    "weightedAvgUnitPrice": 136.08,
+    "volume": 1556
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-03",
+    "index": 67.7,
+    "weightedAvgUnitPrice": 123.42,
+    "volume": 1976
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-04",
+    "index": 71.2,
+    "weightedAvgUnitPrice": 129.72,
+    "volume": 2843
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-05",
+    "index": 68.3,
+    "weightedAvgUnitPrice": 124.51,
+    "volume": 1830
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-06",
+    "index": 82.1,
+    "weightedAvgUnitPrice": 149.58,
+    "volume": 1352
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-07",
+    "index": 85.4,
+    "weightedAvgUnitPrice": 155.68,
+    "volume": 3835
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-08",
+    "index": 100.9,
+    "weightedAvgUnitPrice": 183.95,
+    "volume": 3212
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-09",
+    "index": 97.2,
+    "weightedAvgUnitPrice": 177.13,
+    "volume": 3245
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-10",
+    "index": 69.3,
+    "weightedAvgUnitPrice": 126.32,
+    "volume": 3020
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-11",
+    "index": 93.1,
+    "weightedAvgUnitPrice": 169.63,
+    "volume": 5041
+  },
+  {
+    "commodity": "COAT",
+    "month": "2025-12",
     "index": 107.9,
-    "weightedAvgUnitPrice": 168.56,
-    "volume": 1151
+    "weightedAvgUnitPrice": 196.66,
+    "volume": 1264
+  },
+  {
+    "commodity": "COAT",
+    "month": "2026-01",
+    "index": 67.2,
+    "weightedAvgUnitPrice": 122.42,
+    "volume": 4561
+  },
+  {
+    "commodity": "COAT",
+    "month": "2026-02",
+    "index": 81.8,
+    "weightedAvgUnitPrice": 149.11,
+    "volume": 2526
+  },
+  {
+    "commodity": "COAT",
+    "month": "2026-03",
+    "index": 99.2,
+    "weightedAvgUnitPrice": 180.8,
+    "volume": 3354
   },
   {
     "commodity": "COAT",
     "month": "2026-04",
-    "index": 92.5,
-    "weightedAvgUnitPrice": 144.54,
-    "volume": 2575
+    "index": 85.2,
+    "weightedAvgUnitPrice": 155.29,
+    "volume": 3451
   },
   {
     "commodity": "COAT",
     "month": "2026-05",
-    "index": 80.1,
-    "weightedAvgUnitPrice": 125.18,
-    "volume": 2812
+    "index": 100.5,
+    "weightedAvgUnitPrice": 183.06,
+    "volume": 3045
   },
   {
     "commodity": "COAT",
     "month": "2026-06",
-    "index": 118.1,
-    "weightedAvgUnitPrice": 184.53,
-    "volume": 2351
+    "index": 77.2,
+    "weightedAvgUnitPrice": 140.59,
+    "volume": 1489
   },
   {
     "commodity": "COAT",
     "month": "2026-07",
-    "index": 109.5,
-    "weightedAvgUnitPrice": 171.02,
-    "volume": 5977
+    "index": 103.2,
+    "weightedAvgUnitPrice": 188.13,
+    "volume": 2785
   },
   {
     "commodity": "COAT",
     "month": "2026-08",
-    "index": 105.4,
-    "weightedAvgUnitPrice": 164.71,
-    "volume": 2260
+    "index": 93.8,
+    "weightedAvgUnitPrice": 170.89,
+    "volume": 4769
   },
   {
     "commodity": "COAT",
     "month": "2026-09",
-    "index": 95.3,
-    "weightedAvgUnitPrice": 148.99,
-    "volume": 2837
+    "index": 100.4,
+    "weightedAvgUnitPrice": 182.99,
+    "volume": 1524
   }
 ]

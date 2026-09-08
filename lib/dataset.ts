@@ -16,6 +16,7 @@ import orgs from "@/data/generated/orgs.json"
 import parts from "@/data/generated/parts.json"
 import priceHistory from "@/data/generated/price-history.json"
 import purchaseOrderLines from "@/data/generated/purchase-order-lines.json"
+import quoteSets from "@/data/generated/quote-sets.json"
 import requisitions from "@/data/generated/requisitions.json"
 import suppliers from "@/data/generated/suppliers.json"
 
@@ -29,6 +30,7 @@ import type {
   PartRecord,
   PricePoint,
   PurchaseOrderLine,
+  QuoteSet,
   Requisition,
   Supplier,
 } from "./domain"
@@ -50,4 +52,5 @@ export const DATASET = {
   requisitions: requisitions as unknown as Requisition[],
   assets: assets as unknown as MaintainableAsset[],
   priceHistory: priceHistory as unknown as PricePoint[],
+  quoteSets: quoteSets as unknown as QuoteSet[],
 }

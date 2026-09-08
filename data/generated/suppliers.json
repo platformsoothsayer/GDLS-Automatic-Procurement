@@ -8,8 +8,8 @@
     "active": true,
     "onTimeDeliveryPct": 76,
     "qualityDefectPpm": 1383,
-    "approvedPartCount": 6,
-    "spend24m": 8576.12
+    "approvedPartCount": 5,
+    "spend24m": 5693.06
   },
   {
     "supplierId": "SUP-10001",
@@ -20,8 +20,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.4,
     "qualityDefectPpm": 3988,
-    "approvedPartCount": 6,
-    "spend24m": 52118.96
+    "approvedPartCount": 9,
+    "spend24m": 271921.49
   },
   {
     "supplierId": "SUP-10002",
@@ -32,8 +32,8 @@
     "active": true,
     "onTimeDeliveryPct": 71.4,
     "qualityDefectPpm": 2866,
-    "approvedPartCount": 6,
-    "spend24m": 773588.44
+    "approvedPartCount": 7,
+    "spend24m": 795620.84
   },
   {
     "supplierId": "SUP-10003",
@@ -44,8 +44,8 @@
     "active": true,
     "onTimeDeliveryPct": 78,
     "qualityDefectPpm": 3879,
-    "approvedPartCount": 5,
-    "spend24m": 163659.23
+    "approvedPartCount": 6,
+    "spend24m": 340964.1
   },
   {
     "supplierId": "SUP-10004",
@@ -56,8 +56,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.4,
     "qualityDefectPpm": 1272,
-    "approvedPartCount": 10,
-    "spend24m": 269270.55
+    "approvedPartCount": 6,
+    "spend24m": 162473.9
   },
   {
     "supplierId": "SUP-10005",
@@ -68,8 +68,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.1,
     "qualityDefectPpm": 3170,
-    "approvedPartCount": 5,
-    "spend24m": 2529129.14
+    "approvedPartCount": 9,
+    "spend24m": 1503026.32
   },
   {
     "supplierId": "SUP-10006",
@@ -81,7 +81,7 @@
     "onTimeDeliveryPct": 76.9,
     "qualityDefectPpm": 1147,
     "approvedPartCount": 3,
-    "spend24m": 446454.6
+    "spend24m": 59954.38
   },
   {
     "supplierId": "SUP-10007",
@@ -92,8 +92,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.9,
     "qualityDefectPpm": 2819,
-    "approvedPartCount": 3,
-    "spend24m": 22857.21
+    "approvedPartCount": 6,
+    "spend24m": 5715665.25
   },
   {
     "supplierId": "SUP-10008",
@@ -116,8 +116,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.3,
     "qualityDefectPpm": 883,
-    "approvedPartCount": 4,
-    "spend24m": 48667.39
+    "approvedPartCount": 5,
+    "spend24m": 172451.22
   },
   {
     "supplierId": "SUP-10010",
@@ -128,8 +128,8 @@
     "active": true,
     "onTimeDeliveryPct": 86.8,
     "qualityDefectPpm": 636,
-    "approvedPartCount": 7,
-    "spend24m": 1554551.03
+    "approvedPartCount": 11,
+    "spend24m": 2137781.51
   },
   {
     "supplierId": "SUP-10011",
@@ -152,8 +152,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.3,
     "qualityDefectPpm": 424,
-    "approvedPartCount": 6,
-    "spend24m": 6341.39
+    "approvedPartCount": 4,
+    "spend24m": 353895.51
   },
   {
     "supplierId": "SUP-10013",
@@ -164,8 +164,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.1,
     "qualityDefectPpm": 1703,
-    "approvedPartCount": 8,
-    "spend24m": 253441.95
+    "approvedPartCount": 10,
+    "spend24m": 390036.07
   },
   {
     "supplierId": "SUP-10014",
@@ -176,8 +176,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.5,
     "qualityDefectPpm": 2963,
-    "approvedPartCount": 11,
-    "spend24m": 1067134.79
+    "approvedPartCount": 4,
+    "spend24m": 1047570
   },
   {
     "supplierId": "SUP-10015",
@@ -188,8 +188,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.6,
     "qualityDefectPpm": 1056,
-    "approvedPartCount": 3,
-    "spend24m": 21519.56
+    "approvedPartCount": 7,
+    "spend24m": 360660.29
   },
   {
     "supplierId": "SUP-10016",
@@ -212,8 +212,8 @@
     "active": true,
     "onTimeDeliveryPct": 88.3,
     "qualityDefectPpm": 2205,
-    "approvedPartCount": 2,
-    "spend24m": 209445.02
+    "approvedPartCount": 9,
+    "spend24m": 2305113.13
   },
   {
     "supplierId": "SUP-10018",
@@ -224,8 +224,8 @@
     "active": true,
     "onTimeDeliveryPct": 67.1,
     "qualityDefectPpm": 1041,
-    "approvedPartCount": 5,
-    "spend24m": 350155.39
+    "approvedPartCount": 6,
+    "spend24m": 836223.28
   },
   {
     "supplierId": "SUP-10019",
@@ -237,7 +237,7 @@
     "onTimeDeliveryPct": 72.6,
     "qualityDefectPpm": 600,
     "approvedPartCount": 6,
-    "spend24m": 1514730.94
+    "spend24m": 5039465.99
   },
   {
     "supplierId": "SUP-10020",
@@ -248,8 +248,8 @@
     "active": true,
     "onTimeDeliveryPct": 66.6,
     "qualityDefectPpm": 490,
-    "approvedPartCount": 5,
-    "spend24m": 354477.04
+    "approvedPartCount": 10,
+    "spend24m": 869764.83
   },
   {
     "supplierId": "SUP-10021",
@@ -260,8 +260,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.3,
     "qualityDefectPpm": 3892,
-    "approvedPartCount": 5,
-    "spend24m": 1646446.52
+    "approvedPartCount": 8,
+    "spend24m": 170287.76
   },
   {
     "supplierId": "SUP-10022",
@@ -273,7 +273,7 @@
     "onTimeDeliveryPct": 81,
     "qualityDefectPpm": 1755,
     "approvedPartCount": 5,
-    "spend24m": 461323.79
+    "spend24m": 805511.31
   },
   {
     "supplierId": "SUP-10023",
@@ -284,8 +284,8 @@
     "active": true,
     "onTimeDeliveryPct": 88.5,
     "qualityDefectPpm": 3295,
-    "approvedPartCount": 4,
-    "spend24m": 358990.71
+    "approvedPartCount": 5,
+    "spend24m": 195740.07
   },
   {
     "supplierId": "SUP-10024",
@@ -297,7 +297,7 @@
     "onTimeDeliveryPct": 89,
     "qualityDefectPpm": 793,
     "approvedPartCount": 9,
-    "spend24m": 126862.86
+    "spend24m": 8045.29
   },
   {
     "supplierId": "SUP-10025",
@@ -320,8 +320,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.1,
     "qualityDefectPpm": 1431,
-    "approvedPartCount": 9,
-    "spend24m": 872759.99
+    "approvedPartCount": 6,
+    "spend24m": 1023779.91
   },
   {
     "supplierId": "SUP-10027",
@@ -332,8 +332,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.5,
     "qualityDefectPpm": 3406,
-    "approvedPartCount": 6,
-    "spend24m": 405765.58
+    "approvedPartCount": 3,
+    "spend24m": 123018.12
   },
   {
     "supplierId": "SUP-10028",
@@ -356,8 +356,8 @@
     "active": true,
     "onTimeDeliveryPct": 87.9,
     "qualityDefectPpm": 746,
-    "approvedPartCount": 4,
-    "spend24m": 406769.63
+    "approvedPartCount": 6,
+    "spend24m": 1083577.35
   },
   {
     "supplierId": "SUP-10030",
@@ -368,8 +368,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.5,
     "qualityDefectPpm": 573,
-    "approvedPartCount": 7,
-    "spend24m": 1460760.8
+    "approvedPartCount": 6,
+    "spend24m": 1627566.67
   },
   {
     "supplierId": "SUP-10031",
@@ -380,8 +380,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.2,
     "qualityDefectPpm": 2647,
-    "approvedPartCount": 7,
-    "spend24m": 4800947.35
+    "approvedPartCount": 4,
+    "spend24m": 2248035.19
   },
   {
     "supplierId": "SUP-10032",
@@ -392,8 +392,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.5,
     "qualityDefectPpm": 2212,
-    "approvedPartCount": 8,
-    "spend24m": 1558805.17
+    "approvedPartCount": 11,
+    "spend24m": 1392082.88
   },
   {
     "supplierId": "SUP-10033",
@@ -404,8 +404,8 @@
     "active": true,
     "onTimeDeliveryPct": 93.9,
     "qualityDefectPpm": 3616,
-    "approvedPartCount": 3,
-    "spend24m": 43515.39
+    "approvedPartCount": 2,
+    "spend24m": 199431.36
   },
   {
     "supplierId": "SUP-10034",
@@ -416,8 +416,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.3,
     "qualityDefectPpm": 3249,
-    "approvedPartCount": 6,
-    "spend24m": 1804631.15
+    "approvedPartCount": 5,
+    "spend24m": 2671910.05
   },
   {
     "supplierId": "SUP-10035",
@@ -428,8 +428,8 @@
     "active": true,
     "onTimeDeliveryPct": 69,
     "qualityDefectPpm": 266,
-    "approvedPartCount": 8,
-    "spend24m": 447106.33
+    "approvedPartCount": 6,
+    "spend24m": 357663.01
   },
   {
     "supplierId": "SUP-10036",
@@ -440,8 +440,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.1,
     "qualityDefectPpm": 2584,
-    "approvedPartCount": 8,
-    "spend24m": 10909.08
+    "approvedPartCount": 2,
+    "spend24m": 16.8
   },
   {
     "supplierId": "SUP-10037",
@@ -452,8 +452,8 @@
     "active": true,
     "onTimeDeliveryPct": 68.9,
     "qualityDefectPpm": 1171,
-    "approvedPartCount": 6,
-    "spend24m": 235068.23
+    "approvedPartCount": 14,
+    "spend24m": 925510.58
   },
   {
     "supplierId": "SUP-10038",
@@ -464,8 +464,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.9,
     "qualityDefectPpm": 1993,
-    "approvedPartCount": 4,
-    "spend24m": 588381.04
+    "approvedPartCount": 6,
+    "spend24m": 974047.71
   },
   {
     "supplierId": "SUP-10039",
@@ -476,8 +476,8 @@
     "active": true,
     "onTimeDeliveryPct": 67.8,
     "qualityDefectPpm": 719,
-    "approvedPartCount": 7,
-    "spend24m": 1379338.22
+    "approvedPartCount": 8,
+    "spend24m": 331826.07
   },
   {
     "supplierId": "SUP-10040",
@@ -488,8 +488,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.2,
     "qualityDefectPpm": 1871,
-    "approvedPartCount": 8,
-    "spend24m": 407840.07
+    "approvedPartCount": 2,
+    "spend24m": 36482.54
   },
   {
     "supplierId": "SUP-10041",
@@ -501,7 +501,7 @@
     "onTimeDeliveryPct": 70.5,
     "qualityDefectPpm": 269,
     "approvedPartCount": 6,
-    "spend24m": 1041257.25
+    "spend24m": 2050577.04
   },
   {
     "supplierId": "SUP-10042",
@@ -524,8 +524,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.4,
     "qualityDefectPpm": 3585,
-    "approvedPartCount": 4,
-    "spend24m": 166774
+    "approvedPartCount": 3,
+    "spend24m": 814680.42
   },
   {
     "supplierId": "SUP-10044",
@@ -536,8 +536,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.7,
     "qualityDefectPpm": 3381,
-    "approvedPartCount": 5,
-    "spend24m": 217207.2
+    "approvedPartCount": 4,
+    "spend24m": 2254.9
   },
   {
     "supplierId": "SUP-10045",
@@ -548,8 +548,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.4,
     "qualityDefectPpm": 1189,
-    "approvedPartCount": 2,
-    "spend24m": 19391.62
+    "approvedPartCount": 7,
+    "spend24m": 133687.83
   },
   {
     "supplierId": "SUP-10046",
@@ -560,8 +560,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.5,
     "qualityDefectPpm": 173,
-    "approvedPartCount": 3,
-    "spend24m": 1071555.23
+    "approvedPartCount": 7,
+    "spend24m": 682710.02
   },
   {
     "supplierId": "SUP-10047",
@@ -572,8 +572,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.3,
     "qualityDefectPpm": 1013,
-    "approvedPartCount": 5,
-    "spend24m": 737003.96
+    "approvedPartCount": 7,
+    "spend24m": 118498.23
   },
   {
     "supplierId": "SUP-10048",
@@ -584,8 +584,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.7,
     "qualityDefectPpm": 1375,
-    "approvedPartCount": 8,
-    "spend24m": 17207.96
+    "approvedPartCount": 5,
+    "spend24m": 3093.48
   },
   {
     "supplierId": "SUP-10049",
@@ -608,8 +608,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.7,
     "qualityDefectPpm": 1986,
-    "approvedPartCount": 6,
-    "spend24m": 912452.17
+    "approvedPartCount": 5,
+    "spend24m": 77298.32
   },
   {
     "supplierId": "SUP-10051",
@@ -620,8 +620,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.4,
     "qualityDefectPpm": 890,
-    "approvedPartCount": 2,
-    "spend24m": 0
+    "approvedPartCount": 7,
+    "spend24m": 501165.6
   },
   {
     "supplierId": "SUP-10052",
@@ -632,8 +632,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.2,
     "qualityDefectPpm": 3072,
-    "approvedPartCount": 6,
-    "spend24m": 110028.93
+    "approvedPartCount": 5,
+    "spend24m": 297266.82
   },
   {
     "supplierId": "SUP-10053",
@@ -644,8 +644,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.5,
     "qualityDefectPpm": 300,
-    "approvedPartCount": 5,
-    "spend24m": 2137576.02
+    "approvedPartCount": 4,
+    "spend24m": 182535.05
   },
   {
     "supplierId": "SUP-10054",
@@ -656,8 +656,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.2,
     "qualityDefectPpm": 3602,
-    "approvedPartCount": 3,
-    "spend24m": 0
+    "approvedPartCount": 4,
+    "spend24m": 1477145.95
   },
   {
     "supplierId": "SUP-10055",
@@ -668,8 +668,8 @@
     "active": true,
     "onTimeDeliveryPct": 68.8,
     "qualityDefectPpm": 1061,
-    "approvedPartCount": 4,
-    "spend24m": 715554.92
+    "approvedPartCount": 5,
+    "spend24m": 4504983.88
   },
   {
     "supplierId": "SUP-10056",
@@ -680,8 +680,8 @@
     "active": true,
     "onTimeDeliveryPct": 86.4,
     "qualityDefectPpm": 1395,
-    "approvedPartCount": 7,
-    "spend24m": 2592347.97
+    "approvedPartCount": 6,
+    "spend24m": 792271.45
   },
   {
     "supplierId": "SUP-10057",
@@ -692,8 +692,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.6,
     "qualityDefectPpm": 3425,
-    "approvedPartCount": 1,
-    "spend24m": 11893.37
+    "approvedPartCount": 6,
+    "spend24m": 89389.42
   },
   {
     "supplierId": "SUP-10058",
@@ -704,8 +704,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.4,
     "qualityDefectPpm": 2611,
-    "approvedPartCount": 6,
-    "spend24m": 194733.64
+    "approvedPartCount": 5,
+    "spend24m": 2168365.03
   },
   {
     "supplierId": "SUP-10059",
@@ -717,7 +717,7 @@
     "onTimeDeliveryPct": 77.7,
     "qualityDefectPpm": 2226,
     "approvedPartCount": 6,
-    "spend24m": 1389569.13
+    "spend24m": 181261.71
   },
   {
     "supplierId": "SUP-10060",
@@ -728,8 +728,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.5,
     "qualityDefectPpm": 1810,
-    "approvedPartCount": 5,
-    "spend24m": 1434.16
+    "approvedPartCount": 7,
+    "spend24m": 43523.89
   },
   {
     "supplierId": "SUP-10061",
@@ -740,8 +740,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.9,
     "qualityDefectPpm": 552,
-    "approvedPartCount": 9,
-    "spend24m": 776973.32
+    "approvedPartCount": 5,
+    "spend24m": 874962.22
   },
   {
     "supplierId": "SUP-10062",
@@ -752,8 +752,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.1,
     "qualityDefectPpm": 3367,
-    "approvedPartCount": 4,
-    "spend24m": 190741.48
+    "approvedPartCount": 7,
+    "spend24m": 690022.26
   },
   {
     "supplierId": "SUP-10063",
@@ -764,8 +764,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.7,
     "qualityDefectPpm": 3114,
-    "approvedPartCount": 5,
-    "spend24m": 13715.58
+    "approvedPartCount": 4,
+    "spend24m": 187416.27
   },
   {
     "supplierId": "SUP-10064",
@@ -776,8 +776,8 @@
     "active": true,
     "onTimeDeliveryPct": 72.3,
     "qualityDefectPpm": 3901,
-    "approvedPartCount": 5,
-    "spend24m": 91710.65
+    "approvedPartCount": 8,
+    "spend24m": 163225.12
   },
   {
     "supplierId": "SUP-10065",
@@ -788,8 +788,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.7,
     "qualityDefectPpm": 1239,
-    "approvedPartCount": 6,
-    "spend24m": 1596621.36
+    "approvedPartCount": 5,
+    "spend24m": 1761037.53
   },
   {
     "supplierId": "SUP-10066",
@@ -800,8 +800,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.4,
     "qualityDefectPpm": 2777,
-    "approvedPartCount": 5,
-    "spend24m": 161862.05
+    "approvedPartCount": 3,
+    "spend24m": 351270.6
   },
   {
     "supplierId": "SUP-10067",
@@ -812,8 +812,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.7,
     "qualityDefectPpm": 4147,
-    "approvedPartCount": 5,
-    "spend24m": 2644665.01
+    "approvedPartCount": 4,
+    "spend24m": 2983713.15
   },
   {
     "supplierId": "SUP-10068",
@@ -824,8 +824,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.5,
     "qualityDefectPpm": 3612,
-    "approvedPartCount": 5,
-    "spend24m": 65237.92
+    "approvedPartCount": 4,
+    "spend24m": 439797.89
   },
   {
     "supplierId": "SUP-10069",
@@ -836,8 +836,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.3,
     "qualityDefectPpm": 2751,
-    "approvedPartCount": 8,
-    "spend24m": 86996.52
+    "approvedPartCount": 4,
+    "spend24m": 63061.31
   },
   {
     "supplierId": "SUP-10070",
@@ -860,8 +860,8 @@
     "active": true,
     "onTimeDeliveryPct": 90,
     "qualityDefectPpm": 2310,
-    "approvedPartCount": 7,
-    "spend24m": 605675.37
+    "approvedPartCount": 8,
+    "spend24m": 318098.96
   },
   {
     "supplierId": "SUP-10072",
@@ -872,8 +872,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.6,
     "qualityDefectPpm": 1151,
-    "approvedPartCount": 6,
-    "spend24m": 3615.39
+    "approvedPartCount": 9,
+    "spend24m": 6831.44
   },
   {
     "supplierId": "SUP-10073",
@@ -884,8 +884,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.6,
     "qualityDefectPpm": 1436,
-    "approvedPartCount": 7,
-    "spend24m": 250238.11
+    "approvedPartCount": 6,
+    "spend24m": 403460.88
   },
   {
     "supplierId": "SUP-10074",
@@ -896,8 +896,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.6,
     "qualityDefectPpm": 363,
-    "approvedPartCount": 9,
-    "spend24m": 1279338.76
+    "approvedPartCount": 0,
+    "spend24m": 0
   },
   {
     "supplierId": "SUP-10075",
@@ -908,8 +908,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.9,
     "qualityDefectPpm": 162,
-    "approvedPartCount": 6,
-    "spend24m": 420710.84
+    "approvedPartCount": 4,
+    "spend24m": 437704.8
   },
   {
     "supplierId": "SUP-10076",
@@ -933,7 +933,7 @@
     "onTimeDeliveryPct": 70.3,
     "qualityDefectPpm": 2432,
     "approvedPartCount": 6,
-    "spend24m": 641870.07
+    "spend24m": 1362159.34
   },
   {
     "supplierId": "SUP-10078",
@@ -944,8 +944,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.7,
     "qualityDefectPpm": 3083,
-    "approvedPartCount": 3,
-    "spend24m": 3450666.63
+    "approvedPartCount": 2,
+    "spend24m": 6662.59
   },
   {
     "supplierId": "SUP-10079",
@@ -956,8 +956,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.3,
     "qualityDefectPpm": 305,
-    "approvedPartCount": 12,
-    "spend24m": 5666959.98
+    "approvedPartCount": 5,
+    "spend24m": 1250781.3
   },
   {
     "supplierId": "SUP-10080",
@@ -968,8 +968,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.1,
     "qualityDefectPpm": 834,
-    "approvedPartCount": 6,
-    "spend24m": 2903069.13
+    "approvedPartCount": 12,
+    "spend24m": 2784321.1
   },
   {
     "supplierId": "SUP-10081",
@@ -980,8 +980,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.8,
     "qualityDefectPpm": 1059,
-    "approvedPartCount": 5,
-    "spend24m": 627260.31
+    "approvedPartCount": 4,
+    "spend24m": 58568.94
   },
   {
     "supplierId": "SUP-10082",
@@ -993,7 +993,7 @@
     "onTimeDeliveryPct": 79,
     "qualityDefectPpm": 1887,
     "approvedPartCount": 5,
-    "spend24m": 1616507.96
+    "spend24m": 2612016.4
   },
   {
     "supplierId": "SUP-10083",
@@ -1004,8 +1004,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.2,
     "qualityDefectPpm": 3462,
-    "approvedPartCount": 5,
-    "spend24m": 310157.8
+    "approvedPartCount": 6,
+    "spend24m": 709421.29
   },
   {
     "supplierId": "SUP-10084",
@@ -1016,8 +1016,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.4,
     "qualityDefectPpm": 1433,
-    "approvedPartCount": 4,
-    "spend24m": 26103.32
+    "approvedPartCount": 6,
+    "spend24m": 226829.34
   },
   {
     "supplierId": "SUP-10085",
@@ -1028,8 +1028,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.3,
     "qualityDefectPpm": 1416,
-    "approvedPartCount": 5,
-    "spend24m": 731273.11
+    "approvedPartCount": 10,
+    "spend24m": 126691.67
   },
   {
     "supplierId": "SUP-10086",
@@ -1040,8 +1040,8 @@
     "active": true,
     "onTimeDeliveryPct": 72.2,
     "qualityDefectPpm": 2590,
-    "approvedPartCount": 9,
-    "spend24m": 1310063.71
+    "approvedPartCount": 4,
+    "spend24m": 930443.48
   },
   {
     "supplierId": "SUP-10087",
@@ -1052,8 +1052,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.1,
     "qualityDefectPpm": 2437,
-    "approvedPartCount": 1,
-    "spend24m": 0
+    "approvedPartCount": 6,
+    "spend24m": 182930.92
   },
   {
     "supplierId": "SUP-10088",
@@ -1064,8 +1064,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.1,
     "qualityDefectPpm": 1432,
-    "approvedPartCount": 10,
-    "spend24m": 457089.03
+    "approvedPartCount": 7,
+    "spend24m": 82552.49
   },
   {
     "supplierId": "SUP-10089",
@@ -1076,8 +1076,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.6,
     "qualityDefectPpm": 752,
-    "approvedPartCount": 3,
-    "spend24m": 356534.95
+    "approvedPartCount": 5,
+    "spend24m": 965669.03
   },
   {
     "supplierId": "SUP-10090",
@@ -1089,7 +1089,7 @@
     "onTimeDeliveryPct": 75.1,
     "qualityDefectPpm": 1877,
     "approvedPartCount": 4,
-    "spend24m": 1091954.95
+    "spend24m": 967877.59
   },
   {
     "supplierId": "SUP-10091",
@@ -1100,8 +1100,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.8,
     "qualityDefectPpm": 2751,
-    "approvedPartCount": 5,
-    "spend24m": 2191595.63
+    "approvedPartCount": 3,
+    "spend24m": 725360.87
   },
   {
     "supplierId": "SUP-10092",
@@ -1112,8 +1112,8 @@
     "active": true,
     "onTimeDeliveryPct": 71.3,
     "qualityDefectPpm": 4177,
-    "approvedPartCount": 8,
-    "spend24m": 3518717.31
+    "approvedPartCount": 6,
+    "spend24m": 1436849.46
   },
   {
     "supplierId": "SUP-10093",
@@ -1124,8 +1124,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.9,
     "qualityDefectPpm": 504,
-    "approvedPartCount": 5,
-    "spend24m": 95592.61
+    "approvedPartCount": 7,
+    "spend24m": 64012.42
   },
   {
     "supplierId": "SUP-10094",
@@ -1136,8 +1136,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.5,
     "qualityDefectPpm": 4162,
-    "approvedPartCount": 4,
-    "spend24m": 1773226.27
+    "approvedPartCount": 10,
+    "spend24m": 3417864.07
   },
   {
     "supplierId": "SUP-10095",
@@ -1148,8 +1148,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.7,
     "qualityDefectPpm": 817,
-    "approvedPartCount": 2,
-    "spend24m": 91442.69
+    "approvedPartCount": 4,
+    "spend24m": 379487.85
   },
   {
     "supplierId": "SUP-10096",
@@ -1172,8 +1172,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.3,
     "qualityDefectPpm": 943,
-    "approvedPartCount": 2,
-    "spend24m": 80121.75
+    "approvedPartCount": 5,
+    "spend24m": 224342.23
   },
   {
     "supplierId": "SUP-10098",
@@ -1184,8 +1184,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.4,
     "qualityDefectPpm": 209,
-    "approvedPartCount": 7,
-    "spend24m": 1256603.36
+    "approvedPartCount": 4,
+    "spend24m": 448144.47
   },
   {
     "supplierId": "SUP-10099",
@@ -1196,8 +1196,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.4,
     "qualityDefectPpm": 2421,
-    "approvedPartCount": 2,
-    "spend24m": 22437.29
+    "approvedPartCount": 3,
+    "spend24m": 150909.3
   },
   {
     "supplierId": "SUP-10100",
@@ -1208,8 +1208,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.4,
     "qualityDefectPpm": 3538,
-    "approvedPartCount": 9,
-    "spend24m": 423267.36
+    "approvedPartCount": 5,
+    "spend24m": 428388.9
   },
   {
     "supplierId": "SUP-10101",
@@ -1220,8 +1220,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.2,
     "qualityDefectPpm": 3385,
-    "approvedPartCount": 7,
-    "spend24m": 2189573.53
+    "approvedPartCount": 6,
+    "spend24m": 629945.92
   },
   {
     "supplierId": "SUP-10102",
@@ -1244,8 +1244,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.4,
     "qualityDefectPpm": 3575,
-    "approvedPartCount": 6,
-    "spend24m": 1526648.64
+    "approvedPartCount": 5,
+    "spend24m": 6424873.92
   },
   {
     "supplierId": "SUP-10104",
@@ -1256,8 +1256,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.4,
     "qualityDefectPpm": 2654,
-    "approvedPartCount": 8,
-    "spend24m": 1077874.32
+    "approvedPartCount": 3,
+    "spend24m": 494811.16
   },
   {
     "supplierId": "SUP-10105",
@@ -1268,8 +1268,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.1,
     "qualityDefectPpm": 1990,
-    "approvedPartCount": 8,
-    "spend24m": 97833.89
+    "approvedPartCount": 3,
+    "spend24m": 36484.26
   },
   {
     "supplierId": "SUP-10106",
@@ -1280,8 +1280,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.5,
     "qualityDefectPpm": 1403,
-    "approvedPartCount": 4,
-    "spend24m": 75134.29
+    "approvedPartCount": 2,
+    "spend24m": 724340.34
   },
   {
     "supplierId": "SUP-10107",
@@ -1292,8 +1292,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.1,
     "qualityDefectPpm": 978,
-    "approvedPartCount": 8,
-    "spend24m": 18154.6
+    "approvedPartCount": 3,
+    "spend24m": 30132.19
   },
   {
     "supplierId": "SUP-10108",
@@ -1304,8 +1304,8 @@
     "active": true,
     "onTimeDeliveryPct": 69.4,
     "qualityDefectPpm": 1734,
-    "approvedPartCount": 6,
-    "spend24m": 13073.25
+    "approvedPartCount": 8,
+    "spend24m": 18304.72
   },
   {
     "supplierId": "SUP-10109",
@@ -1316,8 +1316,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.1,
     "qualityDefectPpm": 118,
-    "approvedPartCount": 4,
-    "spend24m": 304087.92
+    "approvedPartCount": 5,
+    "spend24m": 211743.45
   },
   {
     "supplierId": "SUP-10110",
@@ -1328,8 +1328,8 @@
     "active": true,
     "onTimeDeliveryPct": 79,
     "qualityDefectPpm": 649,
-    "approvedPartCount": 8,
-    "spend24m": 1053662.96
+    "approvedPartCount": 7,
+    "spend24m": 53945.32
   },
   {
     "supplierId": "SUP-10111",
@@ -1340,8 +1340,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.5,
     "qualityDefectPpm": 2500,
-    "approvedPartCount": 6,
-    "spend24m": 110939.92
+    "approvedPartCount": 5,
+    "spend24m": 34068.6
   },
   {
     "supplierId": "SUP-10112",
@@ -1352,8 +1352,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.5,
     "qualityDefectPpm": 136,
-    "approvedPartCount": 2,
-    "spend24m": 144220.33
+    "approvedPartCount": 4,
+    "spend24m": 128726.93
   },
   {
     "supplierId": "SUP-10113",
@@ -1376,8 +1376,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.6,
     "qualityDefectPpm": 2764,
-    "approvedPartCount": 4,
-    "spend24m": 980969.29
+    "approvedPartCount": 3,
+    "spend24m": 664873.51
   },
   {
     "supplierId": "SUP-10115",
@@ -1388,8 +1388,8 @@
     "active": true,
     "onTimeDeliveryPct": 66.6,
     "qualityDefectPpm": 2802,
-    "approvedPartCount": 7,
-    "spend24m": 4483793.08
+    "approvedPartCount": 11,
+    "spend24m": 4023376.73
   },
   {
     "supplierId": "SUP-10116",
@@ -1400,8 +1400,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.2,
     "qualityDefectPpm": 4004,
-    "approvedPartCount": 9,
-    "spend24m": 141783.59
+    "approvedPartCount": 6,
+    "spend24m": 364059.74
   },
   {
     "supplierId": "SUP-10117",
@@ -1412,8 +1412,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.9,
     "qualityDefectPpm": 168,
-    "approvedPartCount": 9,
-    "spend24m": 81143.86
+    "approvedPartCount": 4,
+    "spend24m": 29553.84
   },
   {
     "supplierId": "SUP-10118",
@@ -1424,8 +1424,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.9,
     "qualityDefectPpm": 3550,
-    "approvedPartCount": 5,
-    "spend24m": 910019.84
+    "approvedPartCount": 9,
+    "spend24m": 5383210.45
   },
   {
     "supplierId": "SUP-10119",
@@ -1436,8 +1436,8 @@
     "active": true,
     "onTimeDeliveryPct": 71.9,
     "qualityDefectPpm": 820,
-    "approvedPartCount": 6,
-    "spend24m": 448121.87
+    "approvedPartCount": 8,
+    "spend24m": 817229.63
   },
   {
     "supplierId": "SUP-10120",
@@ -1448,8 +1448,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.7,
     "qualityDefectPpm": 1572,
-    "approvedPartCount": 5,
-    "spend24m": 2421.38
+    "approvedPartCount": 8,
+    "spend24m": 21125.52
   },
   {
     "supplierId": "SUP-10121",
@@ -1472,8 +1472,8 @@
     "active": true,
     "onTimeDeliveryPct": 73,
     "qualityDefectPpm": 770,
-    "approvedPartCount": 6,
-    "spend24m": 1085693.1
+    "approvedPartCount": 5,
+    "spend24m": 0
   },
   {
     "supplierId": "SUP-10123",
@@ -1484,8 +1484,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.6,
     "qualityDefectPpm": 3546,
-    "approvedPartCount": 10,
-    "spend24m": 540267.89
+    "approvedPartCount": 6,
+    "spend24m": 113648.49
   },
   {
     "supplierId": "SUP-10124",
@@ -1496,8 +1496,8 @@
     "active": true,
     "onTimeDeliveryPct": 91.5,
     "qualityDefectPpm": 1060,
-    "approvedPartCount": 7,
-    "spend24m": 234485.24
+    "approvedPartCount": 6,
+    "spend24m": 170356.86
   },
   {
     "supplierId": "SUP-10125",
@@ -1508,8 +1508,8 @@
     "active": true,
     "onTimeDeliveryPct": 86.5,
     "qualityDefectPpm": 126,
-    "approvedPartCount": 10,
-    "spend24m": 1417469.89
+    "approvedPartCount": 9,
+    "spend24m": 1321133.21
   },
   {
     "supplierId": "SUP-10126",
@@ -1520,8 +1520,8 @@
     "active": true,
     "onTimeDeliveryPct": 81,
     "qualityDefectPpm": 3223,
-    "approvedPartCount": 12,
-    "spend24m": 1118030.99
+    "approvedPartCount": 8,
+    "spend24m": 3548858.52
   },
   {
     "supplierId": "SUP-10127",
@@ -1532,8 +1532,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.1,
     "qualityDefectPpm": 192,
-    "approvedPartCount": 9,
-    "spend24m": 6046465.66
+    "approvedPartCount": 6,
+    "spend24m": 2610808.63
   },
   {
     "supplierId": "SUP-10128",
@@ -1544,8 +1544,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.1,
     "qualityDefectPpm": 3534,
-    "approvedPartCount": 3,
-    "spend24m": 1618229.01
+    "approvedPartCount": 5,
+    "spend24m": 3004365.96
   },
   {
     "supplierId": "SUP-10129",
@@ -1556,8 +1556,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.8,
     "qualityDefectPpm": 3553,
-    "approvedPartCount": 6,
-    "spend24m": 35225.62
+    "approvedPartCount": 5,
+    "spend24m": 48182.74
   },
   {
     "supplierId": "SUP-10130",
@@ -1568,8 +1568,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.5,
     "qualityDefectPpm": 379,
-    "approvedPartCount": 8,
-    "spend24m": 7284322.92
+    "approvedPartCount": 6,
+    "spend24m": 1176008.29
   },
   {
     "supplierId": "SUP-10131",
@@ -1580,8 +1580,8 @@
     "active": true,
     "onTimeDeliveryPct": 86,
     "qualityDefectPpm": 938,
-    "approvedPartCount": 2,
-    "spend24m": 18888.45
+    "approvedPartCount": 8,
+    "spend24m": 107665.34
   },
   {
     "supplierId": "SUP-10132",
@@ -1593,7 +1593,7 @@
     "onTimeDeliveryPct": 66.7,
     "qualityDefectPpm": 2459,
     "approvedPartCount": 6,
-    "spend24m": 18915.8
+    "spend24m": 21525.15
   },
   {
     "supplierId": "SUP-10133",
@@ -1604,8 +1604,8 @@
     "active": true,
     "onTimeDeliveryPct": 71.5,
     "qualityDefectPpm": 153,
-    "approvedPartCount": 6,
-    "spend24m": 290229.5
+    "approvedPartCount": 8,
+    "spend24m": 297842.21
   },
   {
     "supplierId": "SUP-10134",
@@ -1616,8 +1616,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.8,
     "qualityDefectPpm": 2818,
-    "approvedPartCount": 4,
-    "spend24m": 1585.1
+    "approvedPartCount": 5,
+    "spend24m": 272970.42
   },
   {
     "supplierId": "SUP-10135",
@@ -1629,7 +1629,7 @@
     "onTimeDeliveryPct": 81.5,
     "qualityDefectPpm": 2796,
     "approvedPartCount": 4,
-    "spend24m": 301478.33
+    "spend24m": 284090.87
   },
   {
     "supplierId": "SUP-10136",
@@ -1641,7 +1641,7 @@
     "onTimeDeliveryPct": 81.9,
     "qualityDefectPpm": 2115,
     "approvedPartCount": 6,
-    "spend24m": 165630.45
+    "spend24m": 376092.49
   },
   {
     "supplierId": "SUP-10137",
@@ -1652,8 +1652,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.1,
     "qualityDefectPpm": 2784,
-    "approvedPartCount": 7,
-    "spend24m": 945308.93
+    "approvedPartCount": 4,
+    "spend24m": 164239.63
   },
   {
     "supplierId": "SUP-10138",
@@ -1664,8 +1664,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.4,
     "qualityDefectPpm": 3699,
-    "approvedPartCount": 4,
-    "spend24m": 1140763.34
+    "approvedPartCount": 5,
+    "spend24m": 169924.58
   },
   {
     "supplierId": "SUP-10139",
@@ -1688,8 +1688,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.7,
     "qualityDefectPpm": 4175,
-    "approvedPartCount": 6,
-    "spend24m": 180051.95
+    "approvedPartCount": 3,
+    "spend24m": 61174.85
   },
   {
     "supplierId": "SUP-10141",
@@ -1712,8 +1712,8 @@
     "active": true,
     "onTimeDeliveryPct": 90.4,
     "qualityDefectPpm": 1090,
-    "approvedPartCount": 4,
-    "spend24m": 685252.41
+    "approvedPartCount": 5,
+    "spend24m": 1494532.88
   },
   {
     "supplierId": "SUP-10143",
@@ -1724,8 +1724,8 @@
     "active": true,
     "onTimeDeliveryPct": 86.7,
     "qualityDefectPpm": 1949,
-    "approvedPartCount": 6,
-    "spend24m": 433038.36
+    "approvedPartCount": 5,
+    "spend24m": 411328.13
   },
   {
     "supplierId": "SUP-10144",
@@ -1737,7 +1737,7 @@
     "onTimeDeliveryPct": 83.2,
     "qualityDefectPpm": 771,
     "approvedPartCount": 8,
-    "spend24m": 20785.82
+    "spend24m": 29988.2
   },
   {
     "supplierId": "SUP-10145",
@@ -1748,8 +1748,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.6,
     "qualityDefectPpm": 2347,
-    "approvedPartCount": 9,
-    "spend24m": 351320.17
+    "approvedPartCount": 4,
+    "spend24m": 82009.57
   },
   {
     "supplierId": "SUP-10146",
@@ -1760,8 +1760,8 @@
     "active": true,
     "onTimeDeliveryPct": 70,
     "qualityDefectPpm": 2931,
-    "approvedPartCount": 8,
-    "spend24m": 1520896.17
+    "approvedPartCount": 6,
+    "spend24m": 343734.96
   },
   {
     "supplierId": "SUP-10147",
@@ -1772,8 +1772,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.3,
     "qualityDefectPpm": 1943,
-    "approvedPartCount": 5,
-    "spend24m": 222800.88
+    "approvedPartCount": 9,
+    "spend24m": 922405.46
   },
   {
     "supplierId": "SUP-10148",
@@ -1784,8 +1784,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.6,
     "qualityDefectPpm": 1144,
-    "approvedPartCount": 8,
-    "spend24m": 374257.83
+    "approvedPartCount": 4,
+    "spend24m": 0
   },
   {
     "supplierId": "SUP-10149",
@@ -1796,8 +1796,8 @@
     "active": true,
     "onTimeDeliveryPct": 63.1,
     "qualityDefectPpm": 1103,
-    "approvedPartCount": 8,
-    "spend24m": 2112155.85
+    "approvedPartCount": 7,
+    "spend24m": 2540734.77
   },
   {
     "supplierId": "SUP-10150",
@@ -1808,8 +1808,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.9,
     "qualityDefectPpm": 3652,
-    "approvedPartCount": 1,
-    "spend24m": 780576.55
+    "approvedPartCount": 3,
+    "spend24m": 112195.11
   },
   {
     "supplierId": "SUP-10151",
@@ -1820,8 +1820,8 @@
     "active": true,
     "onTimeDeliveryPct": 87.5,
     "qualityDefectPpm": 73,
-    "approvedPartCount": 5,
-    "spend24m": 1769371.23
+    "approvedPartCount": 9,
+    "spend24m": 2641517.3
   },
   {
     "supplierId": "SUP-10152",
@@ -1832,8 +1832,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.5,
     "qualityDefectPpm": 1560,
-    "approvedPartCount": 7,
-    "spend24m": 445714.5
+    "approvedPartCount": 8,
+    "spend24m": 59019.53
   },
   {
     "supplierId": "SUP-10153",
@@ -1844,8 +1844,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.1,
     "qualityDefectPpm": 2742,
-    "approvedPartCount": 3,
-    "spend24m": 46083.09
+    "approvedPartCount": 5,
+    "spend24m": 203455.81
   },
   {
     "supplierId": "SUP-10154",
@@ -1856,8 +1856,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.3,
     "qualityDefectPpm": 3058,
-    "approvedPartCount": 6,
-    "spend24m": 2434018.22
+    "approvedPartCount": 5,
+    "spend24m": 822645.83
   },
   {
     "supplierId": "SUP-10155",
@@ -1868,8 +1868,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.5,
     "qualityDefectPpm": 3879,
-    "approvedPartCount": 6,
-    "spend24m": 315731.41
+    "approvedPartCount": 5,
+    "spend24m": 177395.04
   },
   {
     "supplierId": "SUP-10156",
@@ -1880,8 +1880,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.3,
     "qualityDefectPpm": 1444,
-    "approvedPartCount": 4,
-    "spend24m": 14321.17
+    "approvedPartCount": 2,
+    "spend24m": 4617.77
   },
   {
     "supplierId": "SUP-10157",
@@ -1893,7 +1893,7 @@
     "onTimeDeliveryPct": 75,
     "qualityDefectPpm": 179,
     "approvedPartCount": 8,
-    "spend24m": 167522.87
+    "spend24m": 96203.01
   },
   {
     "supplierId": "SUP-10158",
@@ -1904,8 +1904,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.9,
     "qualityDefectPpm": 307,
-    "approvedPartCount": 5,
-    "spend24m": 20887.76
+    "approvedPartCount": 8,
+    "spend24m": 1366721.62
   },
   {
     "supplierId": "SUP-10159",
@@ -1916,8 +1916,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.1,
     "qualityDefectPpm": 3437,
-    "approvedPartCount": 4,
-    "spend24m": 83402.72
+    "approvedPartCount": 3,
+    "spend24m": 50175.27
   },
   {
     "supplierId": "SUP-10160",
@@ -1929,7 +1929,7 @@
     "onTimeDeliveryPct": 91.7,
     "qualityDefectPpm": 1265,
     "approvedPartCount": 9,
-    "spend24m": 332311.69
+    "spend24m": 185406.99
   },
   {
     "supplierId": "SUP-10161",
@@ -1940,8 +1940,8 @@
     "active": true,
     "onTimeDeliveryPct": 71.5,
     "qualityDefectPpm": 1412,
-    "approvedPartCount": 7,
-    "spend24m": 2762665.27
+    "approvedPartCount": 5,
+    "spend24m": 189187.78
   },
   {
     "supplierId": "SUP-10162",
@@ -1952,8 +1952,8 @@
     "active": true,
     "onTimeDeliveryPct": 86.2,
     "qualityDefectPpm": 538,
-    "approvedPartCount": 7,
-    "spend24m": 268056.74
+    "approvedPartCount": 3,
+    "spend24m": 1059107.34
   },
   {
     "supplierId": "SUP-10163",
@@ -1976,8 +1976,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.1,
     "qualityDefectPpm": 3160,
-    "approvedPartCount": 9,
-    "spend24m": 1560806.46
+    "approvedPartCount": 5,
+    "spend24m": 196615.38
   },
   {
     "supplierId": "SUP-10165",
@@ -1988,8 +1988,8 @@
     "active": true,
     "onTimeDeliveryPct": 87.9,
     "qualityDefectPpm": 2208,
-    "approvedPartCount": 8,
-    "spend24m": 322378.27
+    "approvedPartCount": 6,
+    "spend24m": 69176.01
   },
   {
     "supplierId": "SUP-10166",
@@ -2000,8 +2000,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.5,
     "qualityDefectPpm": 3414,
-    "approvedPartCount": 5,
-    "spend24m": 2642532.58
+    "approvedPartCount": 4,
+    "spend24m": 7067094.82
   },
   {
     "supplierId": "SUP-10167",
@@ -2012,8 +2012,8 @@
     "active": true,
     "onTimeDeliveryPct": 71,
     "qualityDefectPpm": 2552,
-    "approvedPartCount": 9,
-    "spend24m": 564179.14
+    "approvedPartCount": 10,
+    "spend24m": 440855.05
   },
   {
     "supplierId": "SUP-10168",
@@ -2024,8 +2024,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.1,
     "qualityDefectPpm": 423,
-    "approvedPartCount": 10,
-    "spend24m": 1161210.15
+    "approvedPartCount": 9,
+    "spend24m": 14816.54
   },
   {
     "supplierId": "SUP-10169",
@@ -2036,8 +2036,8 @@
     "active": true,
     "onTimeDeliveryPct": 72.1,
     "qualityDefectPpm": 2728,
-    "approvedPartCount": 3,
-    "spend24m": 10606.94
+    "approvedPartCount": 2,
+    "spend24m": 17413.55
   },
   {
     "supplierId": "SUP-10170",
@@ -2048,8 +2048,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.1,
     "qualityDefectPpm": 446,
-    "approvedPartCount": 4,
-    "spend24m": 392386.3
+    "approvedPartCount": 8,
+    "spend24m": 355403.24
   },
   {
     "supplierId": "SUP-10171",
@@ -2060,8 +2060,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.8,
     "qualityDefectPpm": 2523,
-    "approvedPartCount": 9,
-    "spend24m": 294293.86
+    "approvedPartCount": 6,
+    "spend24m": 539025.43
   },
   {
     "supplierId": "SUP-10172",
@@ -2072,8 +2072,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.2,
     "qualityDefectPpm": 2006,
-    "approvedPartCount": 5,
-    "spend24m": 0
+    "approvedPartCount": 6,
+    "spend24m": 184886.45
   },
   {
     "supplierId": "SUP-10173",
@@ -2084,8 +2084,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.3,
     "qualityDefectPpm": 3086,
-    "approvedPartCount": 8,
-    "spend24m": 2778341.76
+    "approvedPartCount": 6,
+    "spend24m": 1452980.22
   },
   {
     "supplierId": "SUP-10174",
@@ -2097,7 +2097,7 @@
     "onTimeDeliveryPct": 78.1,
     "qualityDefectPpm": 3793,
     "approvedPartCount": 5,
-    "spend24m": 77865.39
+    "spend24m": 1421857
   },
   {
     "supplierId": "SUP-10175",
@@ -2108,8 +2108,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.8,
     "qualityDefectPpm": 3147,
-    "approvedPartCount": 12,
-    "spend24m": 5515022.13
+    "approvedPartCount": 6,
+    "spend24m": 1806456.42
   },
   {
     "supplierId": "SUP-10176",
@@ -2120,8 +2120,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.4,
     "qualityDefectPpm": 4060,
-    "approvedPartCount": 5,
-    "spend24m": 787710.32
+    "approvedPartCount": 9,
+    "spend24m": 1206755.58
   },
   {
     "supplierId": "SUP-10177",
@@ -2132,8 +2132,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.7,
     "qualityDefectPpm": 3589,
-    "approvedPartCount": 8,
-    "spend24m": 340779.85
+    "approvedPartCount": 4,
+    "spend24m": 14495.37
   },
   {
     "supplierId": "SUP-10178",
@@ -2144,8 +2144,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.3,
     "qualityDefectPpm": 2838,
-    "approvedPartCount": 4,
-    "spend24m": 0
+    "approvedPartCount": 7,
+    "spend24m": 4089167.42
   },
   {
     "supplierId": "SUP-10179",
@@ -2157,7 +2157,7 @@
     "onTimeDeliveryPct": 82.7,
     "qualityDefectPpm": 1993,
     "approvedPartCount": 4,
-    "spend24m": 747251.46
+    "spend24m": 223000.59
   },
   {
     "supplierId": "SUP-10180",
@@ -2169,7 +2169,7 @@
     "onTimeDeliveryPct": 75.7,
     "qualityDefectPpm": 363,
     "approvedPartCount": 6,
-    "spend24m": 21101.39
+    "spend24m": 25748.41
   },
   {
     "supplierId": "SUP-10181",
@@ -2180,8 +2180,8 @@
     "active": true,
     "onTimeDeliveryPct": 76,
     "qualityDefectPpm": 3638,
-    "approvedPartCount": 8,
-    "spend24m": 144911.19
+    "approvedPartCount": 5,
+    "spend24m": 360054.62
   },
   {
     "supplierId": "SUP-10182",
@@ -2192,8 +2192,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.1,
     "qualityDefectPpm": 358,
-    "approvedPartCount": 2,
-    "spend24m": 280172.19
+    "approvedPartCount": 9,
+    "spend24m": 1652452.02
   },
   {
     "supplierId": "SUP-10183",
@@ -2204,8 +2204,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.6,
     "qualityDefectPpm": 2940,
-    "approvedPartCount": 8,
-    "spend24m": 232652.32
+    "approvedPartCount": 6,
+    "spend24m": 716865.93
   },
   {
     "supplierId": "SUP-10184",
@@ -2228,8 +2228,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.9,
     "qualityDefectPpm": 3611,
-    "approvedPartCount": 6,
-    "spend24m": 1768172.94
+    "approvedPartCount": 5,
+    "spend24m": 641136.87
   },
   {
     "supplierId": "SUP-10186",
@@ -2240,8 +2240,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.2,
     "qualityDefectPpm": 2869,
-    "approvedPartCount": 9,
-    "spend24m": 1256083.4
+    "approvedPartCount": 5,
+    "spend24m": 1069110.27
   },
   {
     "supplierId": "SUP-10187",
@@ -2252,8 +2252,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.6,
     "qualityDefectPpm": 170,
-    "approvedPartCount": 9,
-    "spend24m": 3491053.92
+    "approvedPartCount": 12,
+    "spend24m": 4724886.78
   },
   {
     "supplierId": "SUP-10188",
@@ -2264,8 +2264,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.2,
     "qualityDefectPpm": 792,
-    "approvedPartCount": 6,
-    "spend24m": 422881.13
+    "approvedPartCount": 8,
+    "spend24m": 689006.8
   },
   {
     "supplierId": "SUP-10189",
@@ -2300,8 +2300,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.8,
     "qualityDefectPpm": 504,
-    "approvedPartCount": 6,
-    "spend24m": 533540.02
+    "approvedPartCount": 10,
+    "spend24m": 598465.01
   },
   {
     "supplierId": "SUP-10192",
@@ -2312,8 +2312,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.7,
     "qualityDefectPpm": 2536,
-    "approvedPartCount": 10,
-    "spend24m": 10703.61
+    "approvedPartCount": 9,
+    "spend24m": 6915.57
   },
   {
     "supplierId": "SUP-10193",
@@ -2324,8 +2324,8 @@
     "active": true,
     "onTimeDeliveryPct": 72.9,
     "qualityDefectPpm": 3196,
-    "approvedPartCount": 4,
-    "spend24m": 200937.97
+    "approvedPartCount": 2,
+    "spend24m": 245393.41
   },
   {
     "supplierId": "SUP-10194",
@@ -2336,8 +2336,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.4,
     "qualityDefectPpm": 1579,
-    "approvedPartCount": 8,
-    "spend24m": 1560238.45
+    "approvedPartCount": 3,
+    "spend24m": 412509.03
   },
   {
     "supplierId": "SUP-10195",
@@ -2348,8 +2348,8 @@
     "active": true,
     "onTimeDeliveryPct": 71.8,
     "qualityDefectPpm": 1267,
-    "approvedPartCount": 1,
-    "spend24m": 0
+    "approvedPartCount": 2,
+    "spend24m": 628190.14
   },
   {
     "supplierId": "SUP-10196",
@@ -2360,8 +2360,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.6,
     "qualityDefectPpm": 135,
-    "approvedPartCount": 7,
-    "spend24m": 295237.38
+    "approvedPartCount": 5,
+    "spend24m": 80378.85
   },
   {
     "supplierId": "SUP-10197",
@@ -2372,8 +2372,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.8,
     "qualityDefectPpm": 398,
-    "approvedPartCount": 1,
-    "spend24m": 87591.77
+    "approvedPartCount": 7,
+    "spend24m": 2437337.59
   },
   {
     "supplierId": "SUP-10198",
@@ -2384,8 +2384,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.7,
     "qualityDefectPpm": 484,
-    "approvedPartCount": 5,
-    "spend24m": 1497670.9
+    "approvedPartCount": 6,
+    "spend24m": 434354.29
   },
   {
     "supplierId": "SUP-10199",
@@ -2396,8 +2396,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.4,
     "qualityDefectPpm": 3789,
-    "approvedPartCount": 3,
-    "spend24m": 852398.86
+    "approvedPartCount": 8,
+    "spend24m": 1015411.78
   },
   {
     "supplierId": "SUP-10200",
@@ -2421,7 +2421,7 @@
     "onTimeDeliveryPct": 84.6,
     "qualityDefectPpm": 3816,
     "approvedPartCount": 4,
-    "spend24m": 64578.02
+    "spend24m": 46495.08
   },
   {
     "supplierId": "SUP-10202",
@@ -2432,8 +2432,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.9,
     "qualityDefectPpm": 2657,
-    "approvedPartCount": 6,
-    "spend24m": 1435947.62
+    "approvedPartCount": 3,
+    "spend24m": 1297520.48
   },
   {
     "supplierId": "SUP-10203",
@@ -2444,8 +2444,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.1,
     "qualityDefectPpm": 2369,
-    "approvedPartCount": 8,
-    "spend24m": 698519.3
+    "approvedPartCount": 1,
+    "spend24m": 202310.49
   },
   {
     "supplierId": "SUP-10204",
@@ -2456,8 +2456,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.9,
     "qualityDefectPpm": 2295,
-    "approvedPartCount": 2,
-    "spend24m": 676.99
+    "approvedPartCount": 4,
+    "spend24m": 6896.57
   },
   {
     "supplierId": "SUP-10205",
@@ -2468,8 +2468,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.4,
     "qualityDefectPpm": 4088,
-    "approvedPartCount": 12,
-    "spend24m": 247768.38
+    "approvedPartCount": 10,
+    "spend24m": 740319.45
   },
   {
     "supplierId": "SUP-10206",
@@ -2480,8 +2480,8 @@
     "active": true,
     "onTimeDeliveryPct": 87.7,
     "qualityDefectPpm": 3556,
-    "approvedPartCount": 4,
-    "spend24m": 163660.96
+    "approvedPartCount": 3,
+    "spend24m": 365522.32
   },
   {
     "supplierId": "SUP-10207",
@@ -2492,8 +2492,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.7,
     "qualityDefectPpm": 58,
-    "approvedPartCount": 5,
-    "spend24m": 416886.84
+    "approvedPartCount": 7,
+    "spend24m": 125039.8
   },
   {
     "supplierId": "SUP-10208",
@@ -2504,8 +2504,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.2,
     "qualityDefectPpm": 3880,
-    "approvedPartCount": 6,
-    "spend24m": 507931.66
+    "approvedPartCount": 11,
+    "spend24m": 164666.32
   },
   {
     "supplierId": "SUP-10209",
@@ -2516,8 +2516,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.5,
     "qualityDefectPpm": 1573,
-    "approvedPartCount": 7,
-    "spend24m": 249122.75
+    "approvedPartCount": 4,
+    "spend24m": 894908.04
   },
   {
     "supplierId": "SUP-10210",
@@ -2540,8 +2540,8 @@
     "active": true,
     "onTimeDeliveryPct": 83,
     "qualityDefectPpm": 1815,
-    "approvedPartCount": 4,
-    "spend24m": 1471521.04
+    "approvedPartCount": 7,
+    "spend24m": 2140356.36
   },
   {
     "supplierId": "SUP-10212",
@@ -2552,8 +2552,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.2,
     "qualityDefectPpm": 2638,
-    "approvedPartCount": 5,
-    "spend24m": 356064.04
+    "approvedPartCount": 3,
+    "spend24m": 12432.21
   },
   {
     "supplierId": "SUP-10213",
@@ -2564,8 +2564,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.4,
     "qualityDefectPpm": 46,
-    "approvedPartCount": 8,
-    "spend24m": 69421.93
+    "approvedPartCount": 6,
+    "spend24m": 31435.83
   },
   {
     "supplierId": "SUP-10214",
@@ -2576,8 +2576,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.4,
     "qualityDefectPpm": 1101,
-    "approvedPartCount": 4,
-    "spend24m": 2225186.73
+    "approvedPartCount": 6,
+    "spend24m": 686552.75
   },
   {
     "supplierId": "SUP-10215",
@@ -2588,8 +2588,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.6,
     "qualityDefectPpm": 927,
-    "approvedPartCount": 9,
-    "spend24m": 508218.96
+    "approvedPartCount": 7,
+    "spend24m": 703086.31
   },
   {
     "supplierId": "SUP-10216",
@@ -2600,8 +2600,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.3,
     "qualityDefectPpm": 2863,
-    "approvedPartCount": 4,
-    "spend24m": 4360.75
+    "approvedPartCount": 8,
+    "spend24m": 15184.81
   },
   {
     "supplierId": "SUP-10217",
@@ -2612,8 +2612,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.7,
     "qualityDefectPpm": 1717,
-    "approvedPartCount": 5,
-    "spend24m": 776278.69
+    "approvedPartCount": 7,
+    "spend24m": 614378.84
   },
   {
     "supplierId": "SUP-10218",
@@ -2625,7 +2625,7 @@
     "onTimeDeliveryPct": 69.7,
     "qualityDefectPpm": 1967,
     "approvedPartCount": 7,
-    "spend24m": 505070.33
+    "spend24m": 1105474.01
   },
   {
     "supplierId": "SUP-10219",
@@ -2636,8 +2636,8 @@
     "active": true,
     "onTimeDeliveryPct": 72.1,
     "qualityDefectPpm": 2343,
-    "approvedPartCount": 9,
-    "spend24m": 597361.35
+    "approvedPartCount": 8,
+    "spend24m": 881443.63
   },
   {
     "supplierId": "SUP-10220",
@@ -2648,8 +2648,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.9,
     "qualityDefectPpm": 745,
-    "approvedPartCount": 4,
-    "spend24m": 1522496.37
+    "approvedPartCount": 6,
+    "spend24m": 342545.06
   },
   {
     "supplierId": "SUP-10221",
@@ -2660,8 +2660,8 @@
     "active": true,
     "onTimeDeliveryPct": 77,
     "qualityDefectPpm": 2824,
-    "approvedPartCount": 6,
-    "spend24m": 1015171.02
+    "approvedPartCount": 7,
+    "spend24m": 888152.63
   },
   {
     "supplierId": "SUP-10222",
@@ -2672,8 +2672,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.3,
     "qualityDefectPpm": 1374,
-    "approvedPartCount": 2,
-    "spend24m": 227568.89
+    "approvedPartCount": 3,
+    "spend24m": 340931.75
   },
   {
     "supplierId": "SUP-10223",
@@ -2684,8 +2684,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.3,
     "qualityDefectPpm": 172,
-    "approvedPartCount": 8,
-    "spend24m": 6643839.12
+    "approvedPartCount": 6,
+    "spend24m": 239765.18
   },
   {
     "supplierId": "SUP-10224",
@@ -2708,8 +2708,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.5,
     "qualityDefectPpm": 1359,
-    "approvedPartCount": 7,
-    "spend24m": 252798.34
+    "approvedPartCount": 4,
+    "spend24m": 867.9
   },
   {
     "supplierId": "SUP-10226",
@@ -2720,8 +2720,8 @@
     "active": true,
     "onTimeDeliveryPct": 72.9,
     "qualityDefectPpm": 1216,
-    "approvedPartCount": 6,
-    "spend24m": 1618934.47
+    "approvedPartCount": 12,
+    "spend24m": 11513868.85
   },
   {
     "supplierId": "SUP-10227",
@@ -2732,8 +2732,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.6,
     "qualityDefectPpm": 818,
-    "approvedPartCount": 2,
-    "spend24m": 0
+    "approvedPartCount": 7,
+    "spend24m": 537034.1
   },
   {
     "supplierId": "SUP-10228",
@@ -2744,8 +2744,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.2,
     "qualityDefectPpm": 3649,
-    "approvedPartCount": 6,
-    "spend24m": 7857.55
+    "approvedPartCount": 11,
+    "spend24m": 48641.59
   },
   {
     "supplierId": "SUP-10229",
@@ -2756,8 +2756,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.8,
     "qualityDefectPpm": 945,
-    "approvedPartCount": 7,
-    "spend24m": 435953.46
+    "approvedPartCount": 5,
+    "spend24m": 155602.95
   },
   {
     "supplierId": "SUP-10230",
@@ -2768,8 +2768,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.7,
     "qualityDefectPpm": 4007,
-    "approvedPartCount": 5,
-    "spend24m": 801168.79
+    "approvedPartCount": 8,
+    "spend24m": 1504625.87
   },
   {
     "supplierId": "SUP-10231",
@@ -2780,8 +2780,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.6,
     "qualityDefectPpm": 677,
-    "approvedPartCount": 11,
-    "spend24m": 275066.88
+    "approvedPartCount": 6,
+    "spend24m": 116792.79
   },
   {
     "supplierId": "SUP-10232",
@@ -2792,8 +2792,8 @@
     "active": true,
     "onTimeDeliveryPct": 71.3,
     "qualityDefectPpm": 1558,
-    "approvedPartCount": 5,
-    "spend24m": 125550.68
+    "approvedPartCount": 4,
+    "spend24m": 36822.28
   },
   {
     "supplierId": "SUP-10233",
@@ -2804,8 +2804,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.7,
     "qualityDefectPpm": 1316,
-    "approvedPartCount": 9,
-    "spend24m": 827109.18
+    "approvedPartCount": 4,
+    "spend24m": 233695.96
   },
   {
     "supplierId": "SUP-10234",
@@ -2816,8 +2816,8 @@
     "active": true,
     "onTimeDeliveryPct": 76,
     "qualityDefectPpm": 2162,
-    "approvedPartCount": 7,
-    "spend24m": 2849788.11
+    "approvedPartCount": 4,
+    "spend24m": 669333.63
   },
   {
     "supplierId": "SUP-10235",
@@ -2828,8 +2828,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.1,
     "qualityDefectPpm": 3091,
-    "approvedPartCount": 9,
-    "spend24m": 3751980.8
+    "approvedPartCount": 4,
+    "spend24m": 451252
   },
   {
     "supplierId": "SUP-10236",
@@ -2840,8 +2840,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.6,
     "qualityDefectPpm": 879,
-    "approvedPartCount": 6,
-    "spend24m": 961276.91
+    "approvedPartCount": 8,
+    "spend24m": 638193.07
   },
   {
     "supplierId": "SUP-10237",
@@ -2852,8 +2852,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.5,
     "qualityDefectPpm": 3623,
-    "approvedPartCount": 4,
-    "spend24m": 15630.15
+    "approvedPartCount": 6,
+    "spend24m": 64688
   },
   {
     "supplierId": "SUP-10238",
@@ -2864,8 +2864,8 @@
     "active": true,
     "onTimeDeliveryPct": 87.2,
     "qualityDefectPpm": 1421,
-    "approvedPartCount": 6,
-    "spend24m": 1328226.38
+    "approvedPartCount": 3,
+    "spend24m": 246540.21
   },
   {
     "supplierId": "SUP-10239",
@@ -2877,7 +2877,7 @@
     "onTimeDeliveryPct": 75.9,
     "qualityDefectPpm": 451,
     "approvedPartCount": 5,
-    "spend24m": 80296.2
+    "spend24m": 680698.07
   },
   {
     "supplierId": "SUP-10240",
@@ -2888,8 +2888,8 @@
     "active": true,
     "onTimeDeliveryPct": 72.4,
     "qualityDefectPpm": 3172,
-    "approvedPartCount": 10,
-    "spend24m": 309312.25
+    "approvedPartCount": 5,
+    "spend24m": 68786.69
   },
   {
     "supplierId": "SUP-10241",
@@ -2900,8 +2900,8 @@
     "active": true,
     "onTimeDeliveryPct": 81,
     "qualityDefectPpm": 664,
-    "approvedPartCount": 6,
-    "spend24m": 254851.01
+    "approvedPartCount": 5,
+    "spend24m": 150898.64
   },
   {
     "supplierId": "SUP-10242",
@@ -2912,8 +2912,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.6,
     "qualityDefectPpm": 1329,
-    "approvedPartCount": 5,
-    "spend24m": 458734.24
+    "approvedPartCount": 6,
+    "spend24m": 880254.71
   },
   {
     "supplierId": "SUP-10243",
@@ -2924,8 +2924,8 @@
     "active": true,
     "onTimeDeliveryPct": 90,
     "qualityDefectPpm": 3510,
-    "approvedPartCount": 4,
-    "spend24m": 274029.36
+    "approvedPartCount": 6,
+    "spend24m": 28864.95
   },
   {
     "supplierId": "SUP-10244",
@@ -2936,8 +2936,8 @@
     "active": true,
     "onTimeDeliveryPct": 87.7,
     "qualityDefectPpm": 3965,
-    "approvedPartCount": 3,
-    "spend24m": 185658.92
+    "approvedPartCount": 5,
+    "spend24m": 120368.6
   },
   {
     "supplierId": "SUP-10245",
@@ -2948,8 +2948,8 @@
     "active": true,
     "onTimeDeliveryPct": 71.2,
     "qualityDefectPpm": 1908,
-    "approvedPartCount": 6,
-    "spend24m": 1204622.49
+    "approvedPartCount": 2,
+    "spend24m": 0
   },
   {
     "supplierId": "SUP-10246",
@@ -2960,8 +2960,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.9,
     "qualityDefectPpm": 325,
-    "approvedPartCount": 3,
-    "spend24m": 445177.18
+    "approvedPartCount": 1,
+    "spend24m": 0
   },
   {
     "supplierId": "SUP-10247",
@@ -2972,8 +2972,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.3,
     "qualityDefectPpm": 460,
-    "approvedPartCount": 7,
-    "spend24m": 2057367.17
+    "approvedPartCount": 10,
+    "spend24m": 4025748.5
   },
   {
     "supplierId": "SUP-10248",
@@ -2984,8 +2984,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.9,
     "qualityDefectPpm": 3371,
-    "approvedPartCount": 9,
-    "spend24m": 2526682.24
+    "approvedPartCount": 5,
+    "spend24m": 836879.25
   },
   {
     "supplierId": "SUP-10249",
@@ -2996,8 +2996,8 @@
     "active": true,
     "onTimeDeliveryPct": 74,
     "qualityDefectPpm": 3087,
-    "approvedPartCount": 6,
-    "spend24m": 61468.07
+    "approvedPartCount": 8,
+    "spend24m": 61395.02
   },
   {
     "supplierId": "SUP-10250",
@@ -3008,8 +3008,8 @@
     "active": true,
     "onTimeDeliveryPct": 81.9,
     "qualityDefectPpm": 2612,
-    "approvedPartCount": 8,
-    "spend24m": 2104231.61
+    "approvedPartCount": 3,
+    "spend24m": 267093.39
   },
   {
     "supplierId": "SUP-10251",
@@ -3020,8 +3020,8 @@
     "active": true,
     "onTimeDeliveryPct": 68.5,
     "qualityDefectPpm": 3886,
-    "approvedPartCount": 9,
-    "spend24m": 522420.92
+    "approvedPartCount": 6,
+    "spend24m": 28992.77
   },
   {
     "supplierId": "SUP-10252",
@@ -3032,8 +3032,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.7,
     "qualityDefectPpm": 3291,
-    "approvedPartCount": 11,
-    "spend24m": 374538.02
+    "approvedPartCount": 8,
+    "spend24m": 9716.88
   },
   {
     "supplierId": "SUP-10253",
@@ -3044,8 +3044,8 @@
     "active": true,
     "onTimeDeliveryPct": 81,
     "qualityDefectPpm": 1744,
-    "approvedPartCount": 13,
-    "spend24m": 469451.43
+    "approvedPartCount": 6,
+    "spend24m": 191699.98
   },
   {
     "supplierId": "SUP-10254",
@@ -3068,8 +3068,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.8,
     "qualityDefectPpm": 4105,
-    "approvedPartCount": 3,
-    "spend24m": 482548.72
+    "approvedPartCount": 7,
+    "spend24m": 378754.37
   },
   {
     "supplierId": "SUP-10256",
@@ -3080,8 +3080,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.5,
     "qualityDefectPpm": 2282,
-    "approvedPartCount": 7,
-    "spend24m": 98299.78
+    "approvedPartCount": 9,
+    "spend24m": 329332.57
   },
   {
     "supplierId": "SUP-10257",
@@ -3092,8 +3092,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.4,
     "qualityDefectPpm": 738,
-    "approvedPartCount": 6,
-    "spend24m": 552805.82
+    "approvedPartCount": 5,
+    "spend24m": 1643982.84
   },
   {
     "supplierId": "SUP-10258",
@@ -3104,8 +3104,8 @@
     "active": true,
     "onTimeDeliveryPct": 90.2,
     "qualityDefectPpm": 3902,
-    "approvedPartCount": 5,
-    "spend24m": 1376690.76
+    "approvedPartCount": 8,
+    "spend24m": 1204459.96
   },
   {
     "supplierId": "SUP-10259",
@@ -3116,8 +3116,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.9,
     "qualityDefectPpm": 1013,
-    "approvedPartCount": 7,
-    "spend24m": 2845072.29
+    "approvedPartCount": 5,
+    "spend24m": 414873.61
   },
   {
     "supplierId": "SUP-10260",
@@ -3128,8 +3128,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.8,
     "qualityDefectPpm": 3488,
-    "approvedPartCount": 6,
-    "spend24m": 421608.02
+    "approvedPartCount": 4,
+    "spend24m": 317803.9
   },
   {
     "supplierId": "SUP-10261",
@@ -3140,8 +3140,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.8,
     "qualityDefectPpm": 2486,
-    "approvedPartCount": 6,
-    "spend24m": 152944.8
+    "approvedPartCount": 2,
+    "spend24m": 827416.27
   },
   {
     "supplierId": "SUP-10262",
@@ -3152,8 +3152,8 @@
     "active": true,
     "onTimeDeliveryPct": 67.1,
     "qualityDefectPpm": 2151,
-    "approvedPartCount": 6,
-    "spend24m": 2432019.69
+    "approvedPartCount": 4,
+    "spend24m": 568541.04
   },
   {
     "supplierId": "SUP-10263",
@@ -3164,8 +3164,8 @@
     "active": true,
     "onTimeDeliveryPct": 76,
     "qualityDefectPpm": 252,
-    "approvedPartCount": 12,
-    "spend24m": 839172.57
+    "approvedPartCount": 8,
+    "spend24m": 499263.12
   },
   {
     "supplierId": "SUP-10264",
@@ -3176,8 +3176,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.9,
     "qualityDefectPpm": 3842,
-    "approvedPartCount": 4,
-    "spend24m": 90128.29
+    "approvedPartCount": 8,
+    "spend24m": 28600.66
   },
   {
     "supplierId": "SUP-10265",
@@ -3188,8 +3188,8 @@
     "active": true,
     "onTimeDeliveryPct": 67.8,
     "qualityDefectPpm": 1695,
-    "approvedPartCount": 4,
-    "spend24m": 13332.66
+    "approvedPartCount": 7,
+    "spend24m": 145425.3
   },
   {
     "supplierId": "SUP-10266",
@@ -3200,8 +3200,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.5,
     "qualityDefectPpm": 1071,
-    "approvedPartCount": 4,
-    "spend24m": 103084.51
+    "approvedPartCount": 9,
+    "spend24m": 214872.71
   },
   {
     "supplierId": "SUP-10267",
@@ -3213,7 +3213,7 @@
     "onTimeDeliveryPct": 84.8,
     "qualityDefectPpm": 3410,
     "approvedPartCount": 4,
-    "spend24m": 243470.17
+    "spend24m": 336798.41
   },
   {
     "supplierId": "SUP-10268",
@@ -3224,8 +3224,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.9,
     "qualityDefectPpm": 1223,
-    "approvedPartCount": 2,
-    "spend24m": 64503.68
+    "approvedPartCount": 6,
+    "spend24m": 87935.4
   },
   {
     "supplierId": "SUP-10269",
@@ -3236,8 +3236,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.4,
     "qualityDefectPpm": 1666,
-    "approvedPartCount": 8,
-    "spend24m": 1966484.86
+    "approvedPartCount": 7,
+    "spend24m": 3715029.31
   },
   {
     "supplierId": "SUP-10270",
@@ -3248,8 +3248,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.1,
     "qualityDefectPpm": 1605,
-    "approvedPartCount": 4,
-    "spend24m": 2030540.65
+    "approvedPartCount": 10,
+    "spend24m": 1633580.4
   },
   {
     "supplierId": "SUP-10271",
@@ -3260,8 +3260,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.3,
     "qualityDefectPpm": 2020,
-    "approvedPartCount": 3,
-    "spend24m": 0
+    "approvedPartCount": 12,
+    "spend24m": 1226736.3
   },
   {
     "supplierId": "SUP-10272",
@@ -3272,8 +3272,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.8,
     "qualityDefectPpm": 2046,
-    "approvedPartCount": 3,
-    "spend24m": 340428.85
+    "approvedPartCount": 6,
+    "spend24m": 2130865.72
   },
   {
     "supplierId": "SUP-10273",
@@ -3284,8 +3284,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.8,
     "qualityDefectPpm": 366,
-    "approvedPartCount": 6,
-    "spend24m": 55997.73
+    "approvedPartCount": 8,
+    "spend24m": 27843.38
   },
   {
     "supplierId": "SUP-10274",
@@ -3296,8 +3296,8 @@
     "active": true,
     "onTimeDeliveryPct": 90,
     "qualityDefectPpm": 4180,
-    "approvedPartCount": 7,
-    "spend24m": 2485207.97
+    "approvedPartCount": 9,
+    "spend24m": 5511335.45
   },
   {
     "supplierId": "SUP-10275",
@@ -3308,8 +3308,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.7,
     "qualityDefectPpm": 2339,
-    "approvedPartCount": 4,
-    "spend24m": 292618.83
+    "approvedPartCount": 3,
+    "spend24m": 100964.83
   },
   {
     "supplierId": "SUP-10276",
@@ -3320,8 +3320,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.8,
     "qualityDefectPpm": 3622,
-    "approvedPartCount": 4,
-    "spend24m": 5438.17
+    "approvedPartCount": 3,
+    "spend24m": 313.21
   },
   {
     "supplierId": "SUP-10277",
@@ -3332,8 +3332,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.1,
     "qualityDefectPpm": 2510,
-    "approvedPartCount": 5,
-    "spend24m": 114321.87
+    "approvedPartCount": 7,
+    "spend24m": 386653.21
   },
   {
     "supplierId": "SUP-10278",
@@ -3344,8 +3344,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.8,
     "qualityDefectPpm": 551,
-    "approvedPartCount": 3,
-    "spend24m": 1058075.54
+    "approvedPartCount": 5,
+    "spend24m": 2284294.34
   },
   {
     "supplierId": "SUP-10279",
@@ -3356,8 +3356,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.9,
     "qualityDefectPpm": 2177,
-    "approvedPartCount": 6,
-    "spend24m": 66980.58
+    "approvedPartCount": 7,
+    "spend24m": 595570.28
   },
   {
     "supplierId": "SUP-10280",
@@ -3368,8 +3368,8 @@
     "active": true,
     "onTimeDeliveryPct": 85,
     "qualityDefectPpm": 3170,
-    "approvedPartCount": 7,
-    "spend24m": 58302.78
+    "approvedPartCount": 4,
+    "spend24m": 135833.84
   },
   {
     "supplierId": "SUP-10281",
@@ -3380,8 +3380,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.7,
     "qualityDefectPpm": 307,
-    "approvedPartCount": 10,
-    "spend24m": 3386149.88
+    "approvedPartCount": 7,
+    "spend24m": 526003.58
   },
   {
     "supplierId": "SUP-10282",
@@ -3404,8 +3404,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.6,
     "qualityDefectPpm": 3822,
-    "approvedPartCount": 5,
-    "spend24m": 1638507.19
+    "approvedPartCount": 8,
+    "spend24m": 6472244.03
   },
   {
     "supplierId": "SUP-10284",
@@ -3416,8 +3416,8 @@
     "active": true,
     "onTimeDeliveryPct": 79.9,
     "qualityDefectPpm": 245,
-    "approvedPartCount": 8,
-    "spend24m": 2347812.49
+    "approvedPartCount": 7,
+    "spend24m": 781110.62
   },
   {
     "supplierId": "SUP-10285",
@@ -3428,8 +3428,8 @@
     "active": true,
     "onTimeDeliveryPct": 82.2,
     "qualityDefectPpm": 1267,
-    "approvedPartCount": 6,
-    "spend24m": 174785.46
+    "approvedPartCount": 10,
+    "spend24m": 125203.46
   },
   {
     "supplierId": "SUP-10286",
@@ -3440,8 +3440,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.2,
     "qualityDefectPpm": 3210,
-    "approvedPartCount": 7,
-    "spend24m": 4501743.43
+    "approvedPartCount": 6,
+    "spend24m": 2303847.23
   },
   {
     "supplierId": "SUP-10287",
@@ -3452,8 +3452,8 @@
     "active": true,
     "onTimeDeliveryPct": 87.3,
     "qualityDefectPpm": 1784,
-    "approvedPartCount": 4,
-    "spend24m": 206702.58
+    "approvedPartCount": 5,
+    "spend24m": 368505.88
   },
   {
     "supplierId": "SUP-10288",
@@ -3465,7 +3465,7 @@
     "onTimeDeliveryPct": 72.6,
     "qualityDefectPpm": 2581,
     "approvedPartCount": 6,
-    "spend24m": 5339.2
+    "spend24m": 3400.1
   },
   {
     "supplierId": "SUP-10289",
@@ -3476,8 +3476,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.1,
     "qualityDefectPpm": 2901,
-    "approvedPartCount": 8,
-    "spend24m": 653000.55
+    "approvedPartCount": 5,
+    "spend24m": 195633.16
   },
   {
     "supplierId": "SUP-10290",
@@ -3488,8 +3488,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.2,
     "qualityDefectPpm": 1539,
-    "approvedPartCount": 5,
-    "spend24m": 507901.67
+    "approvedPartCount": 8,
+    "spend24m": 640684.01
   },
   {
     "supplierId": "SUP-10291",
@@ -3500,8 +3500,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.2,
     "qualityDefectPpm": 1771,
-    "approvedPartCount": 7,
-    "spend24m": 257331.87
+    "approvedPartCount": 5,
+    "spend24m": 98350.79
   },
   {
     "supplierId": "SUP-10292",
@@ -3512,8 +3512,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.2,
     "qualityDefectPpm": 2174,
-    "approvedPartCount": 9,
-    "spend24m": 684307.89
+    "approvedPartCount": 7,
+    "spend24m": 13892.78
   },
   {
     "supplierId": "SUP-10293",
@@ -3524,8 +3524,8 @@
     "active": true,
     "onTimeDeliveryPct": 82,
     "qualityDefectPpm": 485,
-    "approvedPartCount": 4,
-    "spend24m": 1516523.83
+    "approvedPartCount": 7,
+    "spend24m": 323493.98
   },
   {
     "supplierId": "SUP-10294",
@@ -3536,8 +3536,8 @@
     "active": true,
     "onTimeDeliveryPct": 70.3,
     "qualityDefectPpm": 562,
-    "approvedPartCount": 4,
-    "spend24m": 2197772.17
+    "approvedPartCount": 8,
+    "spend24m": 1156174.17
   },
   {
     "supplierId": "SUP-10295",
@@ -3548,8 +3548,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.5,
     "qualityDefectPpm": 323,
-    "approvedPartCount": 7,
-    "spend24m": 3802528.43
+    "approvedPartCount": 3,
+    "spend24m": 213923.12
   },
   {
     "supplierId": "SUP-10296",
@@ -3560,8 +3560,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.5,
     "qualityDefectPpm": 3153,
-    "approvedPartCount": 7,
-    "spend24m": 3057526.28
+    "approvedPartCount": 6,
+    "spend24m": 414934.91
   },
   {
     "supplierId": "SUP-10297",
@@ -3572,8 +3572,8 @@
     "active": true,
     "onTimeDeliveryPct": 76.3,
     "qualityDefectPpm": 1861,
-    "approvedPartCount": 6,
-    "spend24m": 1346203.13
+    "approvedPartCount": 9,
+    "spend24m": 56838.28
   },
   {
     "supplierId": "SUP-10298",
@@ -3584,8 +3584,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.1,
     "qualityDefectPpm": 2929,
-    "approvedPartCount": 7,
-    "spend24m": 2557310.96
+    "approvedPartCount": 4,
+    "spend24m": 1343375.89
   },
   {
     "supplierId": "SUP-10299",
@@ -3597,7 +3597,7 @@
     "onTimeDeliveryPct": 79.1,
     "qualityDefectPpm": 2012,
     "approvedPartCount": 8,
-    "spend24m": 312573.03
+    "spend24m": 506896.56
   },
   {
     "supplierId": "SUP-10300",
@@ -3608,8 +3608,8 @@
     "active": true,
     "onTimeDeliveryPct": 78.9,
     "qualityDefectPpm": 610,
-    "approvedPartCount": 7,
-    "spend24m": 10551.06
+    "approvedPartCount": 5,
+    "spend24m": 10790.91
   },
   {
     "supplierId": "SUP-10301",
@@ -3620,8 +3620,8 @@
     "active": true,
     "onTimeDeliveryPct": 73.4,
     "qualityDefectPpm": 946,
-    "approvedPartCount": 5,
-    "spend24m": 368381.16
+    "approvedPartCount": 3,
+    "spend24m": 411645.07
   },
   {
     "supplierId": "SUP-10302",
@@ -3633,7 +3633,7 @@
     "onTimeDeliveryPct": 83,
     "qualityDefectPpm": 135,
     "approvedPartCount": 4,
-    "spend24m": 1120896.46
+    "spend24m": 378841.14
   },
   {
     "supplierId": "SUP-10303",
@@ -3644,8 +3644,8 @@
     "active": true,
     "onTimeDeliveryPct": 67.8,
     "qualityDefectPpm": 1837,
-    "approvedPartCount": 4,
-    "spend24m": 154635.34
+    "approvedPartCount": 2,
+    "spend24m": 23852.76
   },
   {
     "supplierId": "SUP-10304",
@@ -3656,8 +3656,8 @@
     "active": true,
     "onTimeDeliveryPct": 74.2,
     "qualityDefectPpm": 1392,
-    "approvedPartCount": 2,
-    "spend24m": 10737.18
+    "approvedPartCount": 6,
+    "spend24m": 44391.28
   },
   {
     "supplierId": "SUP-10305",
@@ -3680,8 +3680,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.5,
     "qualityDefectPpm": 796,
-    "approvedPartCount": 1,
-    "spend24m": 0
+    "approvedPartCount": 3,
+    "spend24m": 2449092.97
   },
   {
     "supplierId": "SUP-10307",
@@ -3692,8 +3692,8 @@
     "active": true,
     "onTimeDeliveryPct": 83.1,
     "qualityDefectPpm": 1542,
-    "approvedPartCount": 4,
-    "spend24m": 2693068.63
+    "approvedPartCount": 8,
+    "spend24m": 4727980.81
   },
   {
     "supplierId": "SUP-10308",
@@ -3704,8 +3704,8 @@
     "active": true,
     "onTimeDeliveryPct": 85.6,
     "qualityDefectPpm": 627,
-    "approvedPartCount": 5,
-    "spend24m": 943616.19
+    "approvedPartCount": 7,
+    "spend24m": 1376891.03
   },
   {
     "supplierId": "SUP-10309",
@@ -3716,8 +3716,8 @@
     "active": true,
     "onTimeDeliveryPct": 84.3,
     "qualityDefectPpm": 2923,
-    "approvedPartCount": 3,
-    "spend24m": 0
+    "approvedPartCount": 4,
+    "spend24m": 35588.28
   },
   {
     "supplierId": "SUP-10310",
@@ -3728,8 +3728,8 @@
     "active": true,
     "onTimeDeliveryPct": 77.8,
     "qualityDefectPpm": 1846,
-    "approvedPartCount": 11,
-    "spend24m": 6215306.16
+    "approvedPartCount": 4,
+    "spend24m": 1718232.8
   },
   {
     "supplierId": "SUP-10311",
@@ -3741,7 +3741,7 @@
     "onTimeDeliveryPct": 77.4,
     "qualityDefectPpm": 2049,
     "approvedPartCount": 7,
-    "spend24m": 509430.06
+    "spend24m": 940472.15
   },
   {
     "supplierId": "SUP-10312",
@@ -3753,7 +3753,7 @@
     "onTimeDeliveryPct": 77.4,
     "qualityDefectPpm": 2510,
     "approvedPartCount": 5,
-    "spend24m": 1158606.12
+    "spend24m": 18451.55
   },
   {
     "supplierId": "SUP-10313",
@@ -3764,8 +3764,8 @@
     "active": true,
     "onTimeDeliveryPct": 75.8,
     "qualityDefectPpm": 283,
-    "approvedPartCount": 7,
-    "spend24m": 558613.28
+    "approvedPartCount": 9,
+    "spend24m": 45274.81
   },
   {
     "supplierId": "SUP-10314",
@@ -3776,8 +3776,8 @@
     "active": true,
     "onTimeDeliveryPct": 89.4,
     "qualityDefectPpm": 1399,
-    "approvedPartCount": 5,
-    "spend24m": 199837.17
+    "approvedPartCount": 8,
+    "spend24m": 2028437.59
   },
   {
     "supplierId": "SUP-10315",
@@ -3788,8 +3788,8 @@
     "active": true,
     "onTimeDeliveryPct": 80.7,
     "qualityDefectPpm": 556,
-    "approvedPartCount": 9,
-    "spend24m": 426892.02
+    "approvedPartCount": 5,
+    "spend24m": 103471.81
   },
   {
     "supplierId": "SUP-10316",
@@ -3800,8 +3800,8 @@
     "active": true,
     "onTimeDeliveryPct": 79,
     "qualityDefectPpm": 2058,
-    "approvedPartCount": 3,
-    "spend24m": 50735.3
+    "approvedPartCount": 9,
+    "spend24m": 340906.59
   },
   {
     "supplierId": "SUP-10317",
@@ -3812,8 +3812,8 @@
     "active": true,
     "onTimeDeliveryPct": 69.8,
     "qualityDefectPpm": 2477,
-    "approvedPartCount": 3,
-    "spend24m": 43948.8
+    "approvedPartCount": 8,
+    "spend24m": 444941.83
   },
   {
     "supplierId": "SUP-10318",
@@ -3825,7 +3825,7 @@
     "onTimeDeliveryPct": 76.3,
     "qualityDefectPpm": 1188,
     "approvedPartCount": 5,
-    "spend24m": 856108.34
+    "spend24m": 812364.89
   },
   {
     "supplierId": "SUP-10319",
@@ -3836,7 +3836,7 @@
     "active": true,
     "onTimeDeliveryPct": 78.7,
     "qualityDefectPpm": 2109,
-    "approvedPartCount": 9,
-    "spend24m": 1692132.63
+    "approvedPartCount": 4,
+    "spend24m": 0
   }
 ]

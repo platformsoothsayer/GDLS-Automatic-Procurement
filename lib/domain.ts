@@ -64,6 +64,8 @@ export type PartRecord = {
   onHandQty: number
   onHandByOrg: { orgCode: string; qty: number }[]
   unitCost: number
+  /** Blanket agreement price where one exists. Null means buy at last paid. */
+  contractPrice: number | null
   spend24m: number
   purchaseQty24m: number
   poLineCount: number
@@ -209,6 +211,31 @@ export type MaintainableAsset = {
   needBasis: "PLANNED_SERVICE" | "PREDICTED_FAILURE"
   signalScore: number
   signalBand: "ATTENTION" | "WATCH" | "HEALTHY"
+}
+
+/** One supplier's response to a request for quotation. */
+export type SupplierQuote = {
+  supplierId: string
+  supplierName: string
+  quoted: boolean
+  unitPrice: number
+  leadTimeDaysOffered: number
+  paymentTerms: string
+  respondedOn: string
+  /** Lines the supplier chose not to quote. */
+  declinedLines: number
+  onTimeDeliveryPct: number
+  qualityRatePct: number
+}
+
+/** The responses to one asset's request. Generated at build time, never at runtime. */
+export type QuoteSet = {
+  assetNumber: string
+  partKey: string
+  daysUntilNeed: number
+  issuedOn: string
+  responseDeadline: string
+  quotes: SupplierQuote[]
 }
 
 export type PricePoint = {

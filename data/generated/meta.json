@@ -11,12 +11,13 @@
     "parts": 2400,
     "engineeringParts": 1850,
     "duplicateClusters": 140,
-    "duplicateMembers": 385,
+    "duplicateMembers": 380,
     "revisionAnomalyClusters": 35,
     "purchaseOrderLines": 5600,
     "requisitions": 480,
     "maintainableAssets": 210,
-    "pricePoints": 288
+    "pricePoints": 288,
+    "quoteSets": 210
   },
   "notice": "Illustrative data. Not connected to any production system."
 }

@@ -1,25 +1,22 @@
-import { ScreenPlaceholder } from "@/components/ui/ScreenPlaceholder"
-import { SignalReceipt } from "@/components/screens/mro/SignalReceipt"
-import { buildSignals } from "@/lib/mro"
-import { SCREENS } from "@/lib/routes"
+import { ProcurementScreen } from "@/components/screens/procurement/ProcurementScreen"
+import { buildQuoteAnalysis, buildRecommendation, signalOptions } from "@/lib/procurement"
+import type { QuoteAnalysis, Recommendation } from "@/lib/procurement"
 
-const SCREEN = SCREENS[4]
+/**
+ * Screen 5. Recommendations and quotation analyses are derived on the server for
+ * every active signal, so the presenter can pick any of them without a round trip.
+ */
+export default function ProcurementPage() {
+  const signals = signalOptions()
 
-export default function Page() {
-  return (
-    <>
-      {/* Screen 5 is not built yet. This is what makes the handoff from screen 4
-          visible on arrival rather than implied. */}
-      <SignalReceipt signals={buildSignals()} />
-      <ScreenPlaceholder
-        screen={SCREEN}
-        intent="From a signal to a proposed requisition, with the reasoning shown at every step. Nothing releases without a person."
-        sourceChecks={[
-          { key: "MRO.WORK_ORDER_MATERIAL", label: "Demand from work orders", value: "38 lines" },
-          { key: "SUP.APPROVED_LIST", label: "Approved supplier", value: "SUP-10142" },
-          { key: "REQ.LINE", label: "Proposed requisition", value: "REQ-51236" },
-        ]}
-      />
-    </>
-  )
+  const recommendations: Record<string, Recommendation> = {}
+  const analyses: Record<string, QuoteAnalysis> = {}
+  for (const signal of signals) {
+    const recommendation = buildRecommendation(signal.signalId)
+    const analysis = buildQuoteAnalysis(signal.signalId)
+    if (recommendation) recommendations[signal.signalId] = recommendation
+    if (analysis) analyses[signal.signalId] = analysis
+  }
+
+  return <ProcurementScreen signals={signals} recommendations={recommendations} analyses={analyses} />
 }

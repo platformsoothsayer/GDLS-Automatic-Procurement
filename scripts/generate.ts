@@ -25,6 +25,8 @@ import type {
   InventoryOrg,
   MaintainableAsset,
   OrgId,
+  QuoteSet,
+  SupplierQuote,
   PartRecord,
   PricePoint,
   PurchaseOrderLine,
@@ -190,6 +192,8 @@ const suppliers: Supplier[] = supplierNames.map((supplierName, i) => {
 const supplierById = new Map(suppliers.map((s) => [s.supplierId, s]))
 
 // --- parts ---------------------------------------------------------
+const unitCostOf = (p: { unitCost: number }) => p.unitCost
+
 function describe(c: CommoditySpec, r: Rng): string {
   const size = r.bool(0.5) ? `M${r.int(4, 30)} X ${r.int(10, 180)}` : `${r.int(10, 400)} MM`
   return [r.pick(c.nouns), r.pick(c.forms), size, r.pick(c.materials), r.pick(c.finishes)].join(", ")
@@ -248,6 +252,7 @@ for (let i = 0; i < 2400; i++) {
     onHandQty: 0,
     onHandByOrg: [],
     unitCost,
+    contractPrice: null,
     spend24m: 0,
     purchaseQty24m: 0,
     poLineCount: 0,
@@ -277,6 +282,11 @@ for (const p of parts) {
     // A share of bought parts carry no approved supplier at all, which is one of the
     // things that blocks a part from automated procurement.
     p.primarySupplierId = rng.bool(0.06) ? null : s.supplierId
+    // Roughly half of bought parts sit on a blanket agreement. The rest are bought
+    // at whatever was paid last, which is the gap the recommendation has to expose.
+    p.contractPrice = rng.bool(0.46)
+      ? Math.round(unitCostOf(p) * rng.float(0.88, 1.06, 3) * 100) / 100
+      : null
     p.supplierPartRef = rng.bool(0.62)
       ? `${String.fromCharCode(65 + rng.int(0, 25))}${String.fromCharCode(65 + rng.int(0, 25))}-${rng.int(10_000, 99_999)}`
       : null
@@ -737,6 +747,64 @@ for (let i = 0; i < 210; i++) {
 }
 assets.sort((a, b) => b.signalScore - a.signalScore || a.assetNumber.localeCompare(b.assetNumber))
 
+// --- request for quotation responses ----------------------------------
+// Generated for every asset so the RFQ branch is deterministic whichever signal the
+// presenter picks. Nothing about this is produced at runtime.
+const PAYMENT_TERMS = ["NET 30", "NET 45", "NET 60", "2/10 NET 30", "NET 15"]
+
+const quoteSets: QuoteSet[] = assets.map((asset) => {
+  const spare = partByKey.get(asset.primarySparePartKey)!
+  const daysUntilNeed = Math.round((Date.parse(asset.predictedNeedOn) - AS_OF) / DAY)
+  const nominalLead = spare.leadTimeDays ?? 45
+
+  const invited = rng.sample(
+    suppliers.filter((s) => s.active && s.primaryCommodity === spare.commodity),
+    5
+  )
+  const panel = invited.length >= 4 ? invited : rng.sample(suppliers.filter((s) => s.active), 5)
+
+  // The panel is built so the branch always has something to decide.
+  //  index 0 and 1  respond and can make the need date
+  //  index 2        responds, is the cheapest on the panel, and cannot make the date
+  //  index 3 and 4  respond sometimes, on their own natural lead times
+  const feasibleLead = () => Math.max(4, daysUntilNeed - rng.int(3, Math.max(4, Math.round(daysUntilNeed * 0.4))))
+
+  const quotes: SupplierQuote[] = panel.map((supplier, index) => {
+    const quoted = index <= 2 || rng.bool(0.7)
+    const leadTimeDaysOffered =
+      index <= 1 ? feasibleLead() : Math.max(4, Math.round(nominalLead * rng.float(0.55, 1.15, 3)))
+    return {
+      supplierId: supplier.supplierId,
+      supplierName: supplier.supplierName,
+      quoted,
+      unitPrice: Math.round(spare.unitCost * rng.float(0.92, 1.24, 3) * 100) / 100,
+      leadTimeDaysOffered,
+      paymentTerms: rng.pick(PAYMENT_TERMS),
+      respondedOn: iso(AS_OF - rng.int(0, 5) * DAY),
+      declinedLines: quoted ? (rng.bool(0.18) ? 1 : 0) : 1,
+      onTimeDeliveryPct: supplier.onTimeDeliveryPct,
+      qualityRatePct: Math.round((100 - supplier.qualityDefectPpm / 10_000) * 10) / 10,
+    }
+  })
+
+  // The cheapest response on the panel is deliberately one that cannot make the need
+  // date. A ranking that lets it win on price alone is not worth showing anyone.
+  const tooSlow = quotes[2]
+  const floor = Math.min(...quotes.filter((q) => q.quoted).map((q) => q.unitPrice))
+  tooSlow.unitPrice = Math.round(floor * rng.float(0.74, 0.88, 3) * 100) / 100
+  tooSlow.leadTimeDaysOffered = daysUntilNeed + rng.int(12, 55)
+  tooSlow.declinedLines = 0
+
+  return {
+    assetNumber: asset.assetNumber,
+    partKey: spare.partKey,
+    daysUntilNeed,
+    issuedOn: iso(AS_OF - rng.int(4, 9) * DAY),
+    responseDeadline: iso(AS_OF - rng.int(0, 2) * DAY),
+    quotes,
+  }
+})
+
 // --- requisitions -----------------------------------------------------
 const requisitions: Requisition[] = []
 for (let i = 0; i < 480; i++) {
@@ -808,6 +876,7 @@ const meta: DatasetMeta = {
     requisitions: requisitions.length,
     maintainableAssets: assets.length,
     pricePoints: pricePoints.length,
+    quoteSets: quoteSets.length,
   },
   notice: "Illustrative data. Not connected to any production system.",
 }
@@ -829,6 +898,7 @@ write("purchase-order-lines.json", purchaseOrderLines)
 write("requisitions.json", requisitions)
 write("assets.json", assets)
 write("price-history.json", pricePoints)
+write("quote-sets.json", quoteSets)
 
 const causeTally = CAUSE_PLAN.map((p) => `${p.cause}=${p.count}`).join(" ")
 const bands = [100, 99, 92, 78, 51].map((anchor) => {

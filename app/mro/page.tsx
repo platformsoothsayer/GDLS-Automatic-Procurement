@@ -1,18 +1,20 @@
-import { ScreenPlaceholder } from "@/components/ui/ScreenPlaceholder"
-import { SCREENS } from "@/lib/routes"
+import { MroScreen } from "@/components/screens/mro/MroScreen"
+import { buildAssetRows, buildSignals } from "@/lib/mro"
 
-const SCREEN = SCREENS[3]
-
-export default function Page() {
-  return (
-    <ScreenPlaceholder
-      screen={SCREEN}
-      intent="What the assets are telling us, ranked so the first thing on the list is the thing to do first."
-      sourceChecks={[
-        { key: "MRO.ASSET_REGISTER", label: "Asset", value: "AST-3084" },
-        { key: "MRO.ASSET_CRITICALITY", label: "Criticality", value: "HIGH" },
-        { key: "MRO.CONDITION_SIGNAL", label: "Signal score", value: "78.4" },
-      ]}
-    />
+/**
+ * Screen 4. Signals are evaluated on the server from the seeded data rather than
+ * stored, so the two conditions are visible as conditions rather than as flags.
+ */
+export default function MroPage() {
+  const rows = buildAssetRows()
+  // Signalling assets first, then the most critical, so the table opens on the work.
+  rows.sort(
+    (a, b) =>
+      Number(Boolean(b.signalId)) - Number(Boolean(a.signalId)) ||
+      Number(b.timingCondition) - Number(a.timingCondition) ||
+      a.criticality - b.criticality ||
+      a.conditionScore - b.conditionScore
   )
+
+  return <MroScreen rows={rows} signals={buildSignals()} />
 }

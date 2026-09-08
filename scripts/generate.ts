@@ -676,23 +676,44 @@ for (const c of COMMODITIES) {
 }
 
 // --- maintainable assets ---------------------------------------------
+// A spare is only usable as a signal source if it carries a lead time and a reorder
+// point, because both conditions are measured against them.
+const sparePool = buyableParts.filter((p) => p.leadTimeDays !== null && p.reorderPoint !== null)
+// Most spares are short lead commodity items. A minority are long lead castings and
+// forgings, and those are where the timing condition earns its keep.
+const SHORT_LEAD_DAYS = 60
+const shortLeadSpares = sparePool.filter((p) => (p.leadTimeDays ?? 0) <= SHORT_LEAD_DAYS)
+const longLeadSpares = sparePool.filter((p) => (p.leadTimeDays ?? 0) > SHORT_LEAD_DAYS)
+
 const assets: MaintainableAsset[] = []
 for (let i = 0; i < 210; i++) {
   const group = rng.pick(ASSET_GROUPS)
   const criticality = rng.weighted([
-    { value: "HIGH" as const, weight: 24 },
-    { value: "MEDIUM" as const, weight: 45 },
-    { value: "LOW" as const, weight: 31 },
+    { value: 1 as const, weight: 12 },
+    { value: 2 as const, weight: 24 },
+    { value: 3 as const, weight: 38 },
+    { value: 4 as const, weight: 26 },
   ])
   const conditionScore = rng.normal(18, 99, 1)
   const failures12m = rng.weighted([
     { value: 0, weight: 38 }, { value: rng.int(1, 2), weight: 34 },
     { value: rng.int(3, 6), weight: 20 }, { value: rng.int(7, 14), weight: 8 },
   ])
-  const critWeight = criticality === "HIGH" ? 1 : criticality === "MEDIUM" ? 0.6 : 0.3
-  const lastServicedMs = AS_OF - rng.int(5, 640) * DAY
+  const critWeight = criticality === 1 ? 1 : criticality === 2 ? 0.72 : criticality === 3 ? 0.45 : 0.22
+  const lastServicedMs = AS_OF - rng.int(20, 430) * DAY
   const signalScore =
     Math.round(((100 - conditionScore) * 0.45 + Math.min(failures12m, 14) * 3.2 + critWeight * 22) * 10) / 10
+
+  const longLead = rng.bool(0.14)
+  const primarySpare = rng.pick(longLead && longLeadSpares.length ? longLeadSpares : shortLeadSpares)
+  const spares = [primarySpare, ...rng.sample(sparePool, rng.int(2, 7))]
+
+  // Planned service comes from the interval. The predicted failure date comes from
+  // condition: the worse the asset looks, the sooner it is expected to need a part.
+  const nextServiceMs = AS_OF + rng.int(15, 540) * DAY
+  const predictedFailureMs = AS_OF + Math.round(conditionScore * 4.4 + rng.int(-10, 60)) * DAY
+  const usePredicted = predictedFailureMs < nextServiceMs
+  const predictedNeedMs = usePredicted ? predictedFailureMs : nextServiceMs
 
   assets.push({
     assetNumber: `AST-${String(3000 + i * 3)}`,
@@ -705,8 +726,11 @@ for (let i = 0; i < 210; i++) {
     meterRatePerDay: rng.float(1.2, 22, 1),
     failures12m,
     lastServicedOn: iso(lastServicedMs),
-    nextServiceDueOn: iso(lastServicedMs + rng.int(90, 400) * DAY),
-    consumesPartKeys: rng.sample(buyableParts, rng.int(3, 8)).map((p) => p.partKey),
+    nextServiceDueOn: iso(nextServiceMs),
+    primarySparePartKey: primarySpare.partKey,
+    consumesPartKeys: spares.map((p) => p.partKey),
+    predictedNeedOn: iso(predictedNeedMs),
+    needBasis: usePredicted ? "PREDICTED_FAILURE" : "PLANNED_SERVICE",
     signalScore,
     signalBand: signalScore >= 62 ? "ATTENTION" : signalScore >= 42 ? "WATCH" : "HEALTHY",
   })

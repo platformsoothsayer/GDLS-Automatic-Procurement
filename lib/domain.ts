@@ -190,14 +190,23 @@ export type MaintainableAsset = {
   description: string
   orgId: OrgId
   assetGroup: string
-  criticality: "HIGH" | "MEDIUM" | "LOW"
+  /** One is the most critical. Four is the least. */
+  criticality: 1 | 2 | 3 | 4
   conditionScore: number
   meterReading: number
   meterRatePerDay: number
   failures12m: number
   lastServicedOn: string
   nextServiceDueOn: string
+  /** The spare this asset is most likely to need next. */
+  primarySparePartKey: string
   consumesPartKeys: string[]
+  /**
+   * The earlier of the next planned service and a failure date predicted from
+   * condition. This is the date the timing condition is measured against.
+   */
+  predictedNeedOn: string
+  needBasis: "PLANNED_SERVICE" | "PREDICTED_FAILURE"
   signalScore: number
   signalBand: "ATTENTION" | "WATCH" | "HEALTHY"
 }

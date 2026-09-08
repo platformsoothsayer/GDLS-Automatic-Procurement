@@ -12,6 +12,7 @@ import { useEffect } from "react"
 import {
   getSource,
   LAYER_LABEL,
+  OBJECT_LEVEL_NOTE,
   SYSTEM_LABEL,
   VERIFIED_LABEL,
   type SourceRef,
@@ -45,6 +46,7 @@ export function LineagePanel() {
   if (!activeKey || !isDataView) return null
 
   const source: SourceRef = getSource(activeKey)
+  const objectLevel = source.granularity === "OBJECT"
 
   return (
     <aside
@@ -73,7 +75,10 @@ export function LineagePanel() {
         </Row>
 
         <Row label="Source object">
-          <p className="mono break-all text-[13px]">{source.object}</p>
+          <div className="flex items-center gap-2">
+            <p className="mono break-all text-[13px]">{source.object}</p>
+            {objectLevel && <Chip tone="attention">Object level</Chip>}
+          </div>
           {source.service && (
             <p className="mt-2">
               <span className="text-navy-muted">SOA service </span>
@@ -82,7 +87,10 @@ export function LineagePanel() {
           )}
         </Row>
 
-        <Row label="Fields involved">
+        <Row label={objectLevel ? "Data elements needed" : "Fields involved"}>
+          {objectLevel && (
+            <p className="mb-2 text-[12px] leading-snug text-attention">{OBJECT_LEVEL_NOTE}</p>
+          )}
           <ul className="space-y-2">
             {source.fields.map((field) => (
               <li key={field.name}>
@@ -110,7 +118,9 @@ export function LineagePanel() {
 
         {source.assumption && (
           <Row label="Assumption">
-            <p className="text-navy-muted">{source.assumption}</p>
+            <p className="rounded border border-attention/30 bg-attention-soft px-3 py-2 text-[12px] leading-snug text-attention">
+              {source.assumption}
+            </p>
           </Row>
         )}
 

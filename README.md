@@ -14,7 +14,7 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 
 | Built | Not built |
 | --- | --- |
-| Navigation, routing and the walkthrough order | Screens 4, 5 and 7 |
+| Navigation, routing and the walkthrough order | Screens 5 and 7 |
 | Design system and layout frame | — |
 | Nomenclature registry | — |
 | Deterministic data generation | — |
@@ -23,6 +23,7 @@ This commit is the **shell only**. Screen content is deliberately not built yet.
 | Screen 1, problem selection | — |
 | Screens 2 and 6, the fabric | — |
 | Screen 3, part master intelligence | — |
+| Screen 4, MRO signals | — |
 
 The remaining screens render a scaffold that names the screen, states its intent and
 exercises the overlay. Those scaffolds are deleted one at a time as real screens land.
@@ -167,6 +168,32 @@ so. Nothing on the screen implies a write to a production system.
 Completeness is organised by the process that needs the field, not as a score. A
 missing lead time is not a low quality record in the abstract, it is a part that
 cannot be bought automatically, and the card says which parts and how many.
+
+### Screen 4 · MRO signals
+
+Deliberately lean. It exists to produce a signal screen 5 consumes, not to be a
+maintenance product. An asset register on the left, active signals on the right, one
+action per signal.
+
+A signal is evaluated rather than stored. Two conditions fire it: on hand at or below
+the reorder point, or a predicted need date falling inside the supplier lead time
+window. The second is the one that matters, and it is drawn loudest, with a timeline
+showing today, the lead time window and the predicted need date so the collision is
+obvious. Twenty six of the 210 assets are signalling, fifteen of them on timing.
+
+Send to procurement writes the signal into the session and navigates to
+`/procurement`, which acknowledges receipt on arrival. That receipt component is
+temporary scaffolding: when screen 5 is built it reads the same session value.
+
+#### Nomenclature at object level
+
+We do not know whether the manufacturer runs an enterprise asset management module,
+so the MRO sources are registered at **object level only**. They name the object and
+the data elements needed, and assert no field names. `SourceRef` gained an optional
+`granularity` field to carry this; the overlay marks those entries with an object
+level chip, changes the heading to "data elements needed", and states that the field
+names describe what is needed rather than what the source calls it. Every assumption
+now renders in amber rather than as a footnote.
 
 ## Cross module session state
 

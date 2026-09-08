@@ -21,6 +21,16 @@ export type SourceRef = {
   system: "ORACLE_EBS" | "TEAMCENTER"
   object: string
   service?: string
+  /**
+   * How far the registration goes.
+   *
+   * FIELD  the object and its column or property names are asserted.
+   * OBJECT the object is named but its field names are NOT asserted, because the
+   *        source system itself is still an assumption. The overlay says so.
+   *
+   * Defaults to FIELD when absent.
+   */
+  granularity?: "OBJECT" | "FIELD"
   fields: { name: string; note: string }[]
   layer: "BRONZE" | "SILVER" | "GOLD"
   mart?: string
@@ -642,105 +652,114 @@ const REGISTRY = {
   "MRO.ASSET_REGISTER": {
     key: "MRO.ASSET_REGISTER",
     system: "ORACLE_EBS",
-    object: "MTL_EAM_ASSET_NUMBERS",
+    object: "Asset register",
+    granularity: "OBJECT",
     fields: [
-      { name: "ASSET_NUMBER", note: "Asset identifier" },
-      { name: "INVENTORY_ITEM_ID", note: "Asset group the asset belongs to" },
-      { name: "CURRENT_ORGANIZATION_ID", note: "Plant the asset sits in" },
-      { name: "DESCRIPTIVE_TEXT", note: "Asset description" },
+      { name: "asset identifier", note: "Whatever the maintenance system uses to identify an asset" },
+      { name: "asset description", note: "Readable description of the asset" },
+      { name: "operating location", note: "Plant or line the asset runs in" },
+      { name: "asset group", note: "Family the asset belongs to" },
     ],
     layer: "BRONZE",
-    transform: "The maintainable asset register is landed as held.",
+    transform: "The maintainable asset register is landed as held, without reshaping.",
+    assumption: "The maintenance system of record is assumed and requires confirmation. We do not know that the manufacturer runs the enterprise asset management module of the same instance. These objects are registered at object level only and no field name here is asserted.",
     verified: "NEEDS_SME_REVIEW",
   },
 
   "MRO.ASSET_CRITICALITY": {
     key: "MRO.ASSET_CRITICALITY",
     system: "ORACLE_EBS",
-    object: "MTL_EAM_ASSET_ATTR_VALUES",
+    object: "Asset attributes",
+    granularity: "OBJECT",
     fields: [
-      { name: "ATTRIBUTE_NAME", note: "Named asset attribute, here criticality" },
-      { name: "ATTRIBUTE_VALUE", note: "Recorded criticality value" },
-      { name: "ASSET_NUMBER", note: "Asset the attribute belongs to" },
+      { name: "criticality", note: "How much it matters when this asset stops" },
+      { name: "asset identifier", note: "The asset the attribute belongs to" },
     ],
     layer: "SILVER",
-    transform: "Criticality is read from the asset attributes and mapped onto a single high, medium or low scale used everywhere in the preview.",
-    assumption: "Criticality is recorded as an asset attribute rather than derived from the production plan.",
+    transform: "Criticality is read from the asset attributes and mapped onto a single one to four scale used everywhere in the preview, where one is the most critical.",
+    assumption: "The maintenance system of record is assumed and requires confirmation. We do not know that the manufacturer runs the enterprise asset management module of the same instance. These objects are registered at object level only and no field name here is asserted. Whether criticality is recorded as an attribute at all, and on what scale, is the first thing to confirm.",
     verified: "NEEDS_SME_REVIEW",
   },
 
   "MRO.WORK_ORDER": {
     key: "MRO.WORK_ORDER",
     system: "ORACLE_EBS",
-    object: "WIP_DISCRETE_JOBS",
+    object: "Maintenance work order",
+    granularity: "OBJECT",
     fields: [
-      { name: "WIP_ENTITY_ID", note: "Work order key" },
-      { name: "MAINTENANCE_OBJECT_ID", note: "Asset the work order is raised against" },
-      { name: "STATUS_TYPE", note: "Open, released or complete" },
-      { name: "SCHEDULED_START_DATE", note: "Planned start of the work" },
+      { name: "work order identifier", note: "Identifies the job" },
+      { name: "asset identifier", note: "The asset the job is raised against" },
+      { name: "status", note: "Whether the job is open, released or complete" },
+      { name: "scheduled start", note: "When the work is planned to begin" },
     ],
     layer: "SILVER",
-    transform: "Maintenance work orders are joined to the asset so repeat work on one asset can be counted.",
+    transform: "Work orders are joined to the asset so repeat work on one asset can be counted.",
+    assumption: "The maintenance system of record is assumed and requires confirmation. We do not know that the manufacturer runs the enterprise asset management module of the same instance. These objects are registered at object level only and no field name here is asserted.",
     verified: "NEEDS_SME_REVIEW",
   },
 
   "MRO.WORK_ORDER_MATERIAL": {
     key: "MRO.WORK_ORDER_MATERIAL",
     system: "ORACLE_EBS",
-    object: "WIP_REQUIREMENT_OPERATIONS",
+    object: "Work order material requirement",
+    granularity: "OBJECT",
     fields: [
-      { name: "INVENTORY_ITEM_ID", note: "Part the work order needs" },
-      { name: "REQUIRED_QUANTITY", note: "Quantity required" },
-      { name: "DATE_REQUIRED", note: "When the part is needed on the job" },
+      { name: "part required", note: "The spare the job needs" },
+      { name: "quantity required", note: "How many" },
+      { name: "date required", note: "When the part has to be on the job" },
     ],
     layer: "GOLD",
     mart: "mro_reliability_mart",
-    transform: "Material requirements on open work orders become the forward demand signal that a proposed requisition is built from.",
+    transform: "Material requirements on open work orders become the forward demand signal a proposed requisition is built from.",
+    assumption: "The maintenance system of record is assumed and requires confirmation. We do not know that the manufacturer runs the enterprise asset management module of the same instance. These objects are registered at object level only and no field name here is asserted. The link from a work order to the part it consumes is the single most important thing to confirm, because the procurement signal is built on it.",
     verified: "NEEDS_SME_REVIEW",
   },
 
   "MRO.METER_READING": {
     key: "MRO.METER_READING",
     system: "ORACLE_EBS",
-    object: "EAM_METER_READINGS",
+    object: "Meter reading",
+    granularity: "OBJECT",
     fields: [
-      { name: "METER_ID", note: "Meter recorded against the asset" },
-      { name: "CURRENT_READING", note: "Latest reading value" },
-      { name: "READING_DATE", note: "When the reading was taken" },
+      { name: "meter", note: "The meter recorded against the asset" },
+      { name: "reading", note: "Latest value" },
+      { name: "reading date", note: "When it was taken" },
     ],
     layer: "SILVER",
     transform: "Readings are turned into a rate of use per asset so the next service interval can be estimated.",
-    assumption: "Meter readings are taken regularly enough for a rate to be meaningful.",
+    assumption: "The maintenance system of record is assumed and requires confirmation. We do not know that the manufacturer runs the enterprise asset management module of the same instance. These objects are registered at object level only and no field name here is asserted. Whether readings are taken often enough for a rate to mean anything also needs checking.",
     verified: "NEEDS_SME_REVIEW",
   },
 
   "MRO.FAILURE_HISTORY": {
     key: "MRO.FAILURE_HISTORY",
     system: "ORACLE_EBS",
-    object: "EAM_FAILURE_CODES",
+    object: "Failure record",
+    granularity: "OBJECT",
     fields: [
-      { name: "FAILURE_CODE", note: "Recorded failure classification" },
-      { name: "ASSET_NUMBER", note: "Asset that failed" },
-      { name: "FAILURE_DATE", note: "When the failure was recorded" },
+      { name: "failure classification", note: "How the failure was coded" },
+      { name: "asset identifier", note: "The asset that failed" },
+      { name: "failure date", note: "When it was recorded" },
     ],
     layer: "SILVER",
-    transform: "Failures are counted per asset and per failure code over the period to show which assets fail repeatedly for the same reason.",
-    assumption: "Failure coding is applied consistently by maintenance crews. Coverage should be checked before this drives anything.",
+    transform: "Failures are counted per asset and per classification over the period to show which assets fail repeatedly for the same reason.",
+    assumption: "The maintenance system of record is assumed and requires confirmation. We do not know that the manufacturer runs the enterprise asset management module of the same instance. These objects are registered at object level only and no field name here is asserted. Coding discipline varies between crews, so coverage should be measured before this drives anything.",
     verified: "NEEDS_SME_REVIEW",
   },
 
   "MRO.CONDITION_SIGNAL": {
     key: "MRO.CONDITION_SIGNAL",
     system: "ORACLE_EBS",
-    object: "MTL_EAM_ASSET_ATTR_VALUES",
+    object: "Asset condition",
+    granularity: "OBJECT",
     fields: [
-      { name: "ATTRIBUTE_VALUE", note: "Condition observations recorded against the asset" },
-      { name: "ASSET_NUMBER", note: "Asset the signal belongs to" },
+      { name: "condition observation", note: "What the asset is reporting about itself" },
+      { name: "asset identifier", note: "The asset the observation belongs to" },
     ],
     layer: "GOLD",
     mart: "mro_reliability_mart",
-    transform: "Condition, meter rate, failure history and criticality are combined into one signal per asset that ranks what needs attention first.",
-    assumption: "The weighting between the four inputs is illustrative and would be set with the manufacturer's reliability engineers.",
+    transform: "Condition, meter rate, failure history and criticality are combined into one signal per asset, and the signal fires on either a stock condition or a timing condition.",
+    assumption: "The maintenance system of record is assumed and requires confirmation. We do not know that the manufacturer runs the enterprise asset management module of the same instance. These objects are registered at object level only and no field name here is asserted. The weighting between the inputs is illustrative and would be set with the manufacturer's reliability engineers.",
     verified: "NEEDS_SME_REVIEW",
   },
 
@@ -876,6 +895,10 @@ export const LAYER_LABEL: Record<SourceRef["layer"], string> = {
   SILVER: "Silver",
   GOLD: "Gold",
 }
+
+/** Shown when an entry is registered at object level rather than field level. */
+export const OBJECT_LEVEL_NOTE =
+  "Registered at object level. The field names below describe what is needed, not what the source calls it."
 
 export const VERIFIED_LABEL: Record<SourceRef["verified"], string> = {
   VERIFIED: "Verified",

@@ -8,7 +8,7 @@
  */
 
 import { readFileSync, readdirSync, statSync } from "node:fs"
-import { join, relative } from "node:path"
+import { join, relative, sep } from "node:path"
 
 const ROOT = process.cwd()
 const ALLOWED = [
@@ -51,10 +51,13 @@ const RULES = [
   },
 ]
 
+/** Path separators differ between platforms. Compare on forward slashes always. */
+const toPosix = (full) => relative(ROOT, full).split(sep).join("/")
+
 function walk(dir, out = []) {
   for (const entry of readdirSync(dir)) {
     const full = join(dir, entry)
-    const rel = relative(ROOT, full)
+    const rel = toPosix(full)
     if (SKIP_DIRS.has(entry) || SKIP_DIRS.has(rel)) continue
     if (statSync(full).isDirectory()) walk(full, out)
     else if (/\.(ts|tsx|js|jsx|mjs|css|md)$/.test(entry)) out.push(rel)

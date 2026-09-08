@@ -10,7 +10,7 @@
  */
 
 import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs"
-import { join, relative } from "node:path"
+import { join, relative, sep } from "node:path"
 import {
   LAYER_LABEL,
   NOMENCLATURE,
@@ -33,10 +33,13 @@ const SCREEN_OF: { match: RegExp; screens: string[] }[] = [
   { match: /screens\/engagement|app\/engagement|data\/engagement-content\.ts/, screens: ["7 What it takes"] },
 ]
 
+/** Path separators differ between platforms. Compare on forward slashes always. */
+const toPosix = (full: string) => relative(ROOT, full).split(sep).join("/")
+
 function walk(dir: string, out: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {
     const full = join(dir, entry)
-    const rel = relative(ROOT, full)
+    const rel = toPosix(full)
     if (SKIP.has(entry) || SKIP.has(rel)) continue
     if (statSync(full).isDirectory()) walk(full, out)
     else if (/\.(ts|tsx)$/.test(entry) && rel !== "data/nomenclature.ts") out.push(rel)

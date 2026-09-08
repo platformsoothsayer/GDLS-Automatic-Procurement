@@ -52,6 +52,12 @@ npm run verify     # both guards, typecheck, production build
 npm run review     # regenerate docs/nomenclature-review.md
 ```
 
+## Dependencies
+
+Next.js is held at a version with no known advisories. Vercel refuses to build a
+Next.js version with an open security advisory, so a stale pin is not just untidy, it
+blocks deployment. `npm audit --omit=dev` should read zero.
+
 ## Deploying
 
 The production build is verified from a clean checkout. Deploy with the Vercel CLI:
